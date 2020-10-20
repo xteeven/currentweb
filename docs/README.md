@@ -3,8 +3,8 @@ home: true
 heroImage: /images/VR.svg
 heroText: Steeven Villa
 tagline: HCI Researcher
-actionText: Enter →
-actionLink: /bio/
+actionText: MUM Workshop 2020 →
+actionLink: /WI2-MUM2020/
 features:
 - title: Research Interest
   details: |+ 

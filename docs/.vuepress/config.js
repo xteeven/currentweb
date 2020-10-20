@@ -3,16 +3,16 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/images/VR.svg' }]
   ],
-  title: 'Steeven Villa',
-  description: 'HCI Researcher',
+  title: 'PostHCI',
+  description: 'The future of humans, computers and interaction',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About me', link: '/bio/' },
       { text: 'Teaching', link: '/teaching/' },
       {
-        text: 'Research', link: '/research/', items:
-          [{ text: 'Current Research', link: '/research/' },
+        text: 'Research', link: '/research/#current-reseach', items:
+          [{ text: 'Current Research', link: '/research/#current-reseach' },
           { text: 'Ms.C Research', link: '/research/#ms-c-research' },
           { text: 'Bs. Research', link: '/research/#bs-research' }
           ]
