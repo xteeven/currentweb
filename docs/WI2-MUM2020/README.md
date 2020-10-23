@@ -43,7 +43,7 @@ Given their current relevance for ubiquitous computing to enhance seamless human
 ## Call for participation
 
 This half-day workshop provides a multi-disciplinary forum for researchers and practitioners working on Wearable Computing or/and Implicit interaction. Participants are asked to submit an expression of interest and describe their recent or future work in the Workshop’s areas of interest.
-Submissions should be done through the following [form](https://docs.google.com/forms/d/1FgwfFdxbEVgBfsu7ruZoEpHAVvVbqeXxq2djmXE5VgM/prefill)
+Submissions should be done through the following [form](https://forms.gle/8ZkTScWbX8MZjL8L6) (Fixed Link)
 
 
 
