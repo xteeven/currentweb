@@ -24,8 +24,44 @@ jor*********ack@gmail.com
 
 
 
+
+
 ::: tip Pronto nos pondremos en contacto con el ganador del premio.
 
-
 De nuevo, agradecemos su participación.
+
 :::
+
+::: warning Si quiere recibir información sobre los resultados del estudio, y participar en futuros estudios, por favor introduzca su correo electrónico a continuación.
+
+.
+
+:::
+
+<form action="/research/" netlify align="center">
+  <label for="mail">Correo electronico:</label><br>
+  <input type="text" id="mail" name="mail" value=""><br>
+  <input type="submit" value="Si quiero" id="button1">
+</form>
+
+<style>
+#button1 {  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 52px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+#mail { 
+
+  border-style: dashed none dashed none;
+  color: black;
+  padding: 6px 32px;
+  text-align: center;
+    margin: 15px;
+  display: inline-block;
+  font-size: 16px;}
+</style>
