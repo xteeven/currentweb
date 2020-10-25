@@ -14,10 +14,18 @@ En esta pagina, usted podrá saber quien sera el ganador de la rifa de un bono E
 El ganador será escogido aleatoriamente entre los participantes de la encuesta. Una vez seleccionemos un ganador, lo anunciaremos en esta misma página.
 :::
 
-##  El ganador sera anunciado el:
-> 25 de Octubre de 2020 8pm Col
+##  Ganador
+<p align="center">
+<img src="/images/user.svg"  max-height=100% height=250px class="center">
+<p align="center">
+jor*********ack@gmail.com
+</p>
+</p>
 
-::: tip Ingrese a este sitio web despues de esta fecha para saber si usted fue el ganador.
+
+
+::: tip Pronto nos pondremos en contacto con el ganador del premio.
+
 
 De nuevo, agradecemos su participación.
 :::
