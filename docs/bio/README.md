@@ -4,7 +4,7 @@ sidebar: false
 
 # Bio
 
-![Steeven](/images/bio.jpg)
+![Steeven](/images/biocov.jpeg)
 
 
 
