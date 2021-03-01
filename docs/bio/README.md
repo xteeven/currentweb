@@ -12,7 +12,10 @@ sidebar: false
 
 ---
 <Badge text="Member IEEE Technical Committee on Haptics" vertical="middle"/> 
+<Badge text="Reviewer World Haptics 2021" vertical="middle"/>
+<Badge text="Reviewer Augmented Humans Conference 2021" vertical="middle"/> 
 <Badge text="Reviewer IEEE VR 2020" vertical="middle"/> 
+<Badge text="Reviewer ISMAR 2020" vertical="middle"/> 
 <Badge text="Reviewer ISMAR 2020" vertical="middle"/> 
 <Badge text="World Haptics 2019 SC 1st Place" vertical="middle"/> 
 ---
