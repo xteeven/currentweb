@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['vuepress-plugin-nprogress'],
   head: [
-    ['link', { rel: 'icon', href: '/images/VR.svg' }]
+    ['link', { rel: 'icon', href: '/images/PostHCI.svg' }]
   ],
   title: 'PostHCI',
   description: 'The future of humans, computers and interaction',
