@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/VR.svg
+heroImage: /images/PostHCI.svg
 heroText: Steeven Villa
 tagline: HCI Researcher
 actionText: Enter →
