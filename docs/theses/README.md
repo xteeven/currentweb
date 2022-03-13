@@ -52,7 +52,7 @@ picture="/theses/UH.jpg">
 
 <Thesis 
 title="How do emotions feel?: Creating a vibrotactile encoding of emotions" 
-abstract="Lorem Ipsum et salar"
+abstract="Complex information can be encoded in tactile sensations, thus skipping the visual and auditory channels. Furthermore, emotions can be encoded and decoded using the human's body skin. Therefore, using arrays of vibrotactile motors can help to facilitate the interpretation of such emotions. In this thesis, you will conduct studies to discover which tactile patterns are associated with specific emotions such as sadness, happiness, angriness."
 picture="/theses/Vest.jpg">
 
 <Badge type="tip" text="Arduino" vertical="middle" />
@@ -65,7 +65,7 @@ picture="/theses/Vest.jpg">
 
 <Thesis 
 title="Human augmentation in VR: How cognitive augmentations shape us?" 
-abstract="Lorem Ipsum et salar"
+abstract="Cognitive Augmentations are challenging to implement in the real world. Modulating the environment based on brain signals is still far from being possible. At the same time, there is little knowledge of the impact of such augmentations on the user's ego. This thesis will develop a super-hero-like VR experience using Brain-Computer interfaces and analyze the impact on the user's perception of the self."
 picture="/theses/Augm.jpg">
 
 <Badge type="tip" text="User Experiments" vertical="middle" />
