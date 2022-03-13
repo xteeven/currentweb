@@ -11,7 +11,7 @@ PS: Any of these projects require you to read the related work and understand th
 
 <Thesis 
 title="Full-Chasis Encountered-type Haptics for VR" 
-abstract="Lorem Ipsum et salar"
+abstract="Collaborative robots, used for haptics are composed by a set of links and joints. However, encountered-type Haptics typically uses makes use of the robot's end-effector (Last link of the chain). In this thesis, we will explore the design space, new opportunities and challenges that bring the use of all the links of the robot for providing encountered-type haptics"
 picture="/theses/Kinova.jpg">
 
 <Badge type="tip" text="C#" vertical="middle" />
@@ -24,8 +24,8 @@ picture="/theses/Kinova.jpg">
 --- 
 
 <Thesis 
-title="Finger-mounted haptic feedback for surface exploration" 
-abstract="Lorem Ipsum et salar"
+title="Finger-mounted Haptic Feedback for Topological Surface Rendering" 
+abstract="Imagine how you interact with google maps; How can you know the altitude on the map?. Now imagine that you can feel the peaks of the mountains with your fingertips, the heigh difference between two spots with the deformation in your fingers. This thesis will replicate a state-of-the-art finger-mounted haptic device and test it in mobile interactions."
 picture="/images/Papers/altering.jpg">
 
 <Badge type="tip" text="ESP32/RPi/Arduino" vertical="middle" /> 
@@ -38,7 +38,7 @@ picture="/images/Papers/altering.jpg">
 
 <Thesis 
 title="Encountered-type Mid-air Haptics" 
-abstract="Lorem Ipsum et salar"
+abstract="Haptic interfaces are generally stimulation-specific; a given device has a (typically) very constrained range of rendering possibilities. Integration Kinaesthetic and Mid-air ultrasound haptics open the doors to a new time of interfaces capable of rendering a broad range of haptic sensations. In this thesis, you will explore the design space of these interfaces and run user studies to showcase the advantages and drawbacks of this setup."
 picture="/theses/UH.jpg">
 
 <Badge type="tip" text="C#" vertical="middle" />
