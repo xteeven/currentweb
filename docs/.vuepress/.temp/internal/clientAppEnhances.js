@@ -8,6 +8,8 @@ import clientAppEnhance6 from 'C:/Repositories/Web/node_modules/vuepress-theme-h
 import clientAppEnhance7 from 'C:/Repositories/Web/node_modules/vuepress-theme-hope/lib/client/module/navbar/appEnhance.js'
 import clientAppEnhance8 from 'C:/Repositories/Web/node_modules/vuepress-theme-hope/lib/client/module/sidebar/appEnhance.js'
 import clientAppEnhance9 from 'C:/Repositories/Web/node_modules/vuepress-theme-hope/lib/client/module/blog/appEnhance.js'
+import clientAppEnhance10 from 'C:/Repositories/Web/docs/.vuepress/.temp/register-components/clientAppEnhance.2dd40e15.js'
+import clientAppEnhance11 from 'C:/Repositories/Web/docs/.vuepress/clientAppEnhance.ts'
 
 export const clientAppEnhances = [
   clientAppEnhance0,
@@ -20,4 +22,6 @@ export const clientAppEnhances = [
   clientAppEnhance7,
   clientAppEnhance8,
   clientAppEnhance9,
+  clientAppEnhance10,
+  clientAppEnhance11,
 ]

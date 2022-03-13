@@ -4,7 +4,7 @@ export const data = {
   "title": "Publications",
   "lang": "en-US",
   "frontmatter": {
-    "summary": "Publications",
+    "summary": "Publications <Paper v-for=\"paper in posts\" :year=\"paper.id\" :title=\"paper.title\" /> export default { // ... data() { return { posts: [ { id: 1, title: 'My journey with Vue' }, { id",
     "head": [
       [
         "meta",
@@ -67,8 +67,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 0,
-    "words": 1
+    "minutes": 0.14,
+    "words": 42
   },
   "filePathRelative": "publications/README.md"
 }

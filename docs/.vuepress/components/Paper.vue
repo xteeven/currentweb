@@ -1,8 +1,8 @@
 <template>
 
-<h1>{{tittle}}</h1>
+<h2>{{title}}</h2>
 <h2>{{authors}}</h2>
-<p>{{year}}</p>
+<p>SNO: {{year}}</p>
 </template>
 
 <script>
