@@ -15,7 +15,7 @@ import {
   init_define_REVEAL_CONFIG,
   init_define_TOC_LOCALES,
   init_define_WALINE_LOCALES
-} from "./chunk-IEQQFMMC.js";
+} from "./chunk-NMQJRUFW.js";
 
 // node_modules/photoswipe/dist/photoswipe-ui-default.js
 var require_photoswipe_ui_default = __commonJS({

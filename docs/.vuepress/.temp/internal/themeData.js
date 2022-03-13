@@ -62,7 +62,7 @@ export const themeData = {
   "encrypt": {
     "config": {
       "/guide/encrypt.html": [
-        "$2a$10$KVpDYtteg7O6xP8gSMfhze46RfAxfmktx6gSLKWTEOICRXX1CCOw6"
+        "$2a$10$kUss0tzbk5GeXSFZNVslWe7LM6Qv44oxFM4r3qD7skl76a/i9U8Vy"
       ]
     },
     "global": false

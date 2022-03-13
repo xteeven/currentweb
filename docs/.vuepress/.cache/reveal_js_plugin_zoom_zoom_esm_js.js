@@ -14,7 +14,7 @@ import {
   init_define_REVEAL_CONFIG,
   init_define_TOC_LOCALES,
   init_define_WALINE_LOCALES
-} from "./chunk-IEQQFMMC.js";
+} from "./chunk-NMQJRUFW.js";
 
 // dep:reveal_js_plugin_zoom_zoom_esm_js
 init_define_ARTICLE_INFO_LOCALES();

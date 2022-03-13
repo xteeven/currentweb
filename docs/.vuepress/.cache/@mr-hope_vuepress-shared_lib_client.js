@@ -2,8 +2,8 @@ import {
   computed,
   defineComponent,
   h
-} from "./chunk-XZCSKEHD.js";
-import "./chunk-M7TCXUSM.js";
+} from "./chunk-JIIDDDZB.js";
+import "./chunk-QSBZU6SO.js";
 import {
   __spreadProps,
   __spreadValues,
@@ -22,7 +22,7 @@ import {
   init_define_REVEAL_CONFIG,
   init_define_TOC_LOCALES,
   init_define_WALINE_LOCALES
-} from "./chunk-IEQQFMMC.js";
+} from "./chunk-NMQJRUFW.js";
 
 // dep:@mr-hope_vuepress-shared_lib_client
 init_define_ARTICLE_INFO_LOCALES();

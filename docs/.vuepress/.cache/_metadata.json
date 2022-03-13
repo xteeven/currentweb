@@ -1,7 +1,12 @@
 {
   "hash": "6221ee35",
-  "browserHash": "5b13f937",
+  "browserHash": "640d559a",
   "optimized": {
+    "naive-ui": {
+      "file": "C:/Repositories/Web/docs/.vuepress/.cache/naive-ui.js",
+      "src": "C:/Repositories/Web/node_modules/naive-ui/es/index.js",
+      "needsInterop": false
+    },
     "vue": {
       "file": "C:/Repositories/Web/docs/.vuepress/.cache/vue.js",
       "src": "C:/Repositories/Web/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js",
