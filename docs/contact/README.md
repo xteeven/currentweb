@@ -1,11 +1,7 @@
 # Social
 
 
-<twitter>
-<a class="twitter-timeline" data-height="1024" data-tweet-limit=5 vdata-chrome="noheader noborders" data-link-color="#19CF86" href="https://twitter.com/steevenvs?ref_src=twsrc%5Etfw">Tweets by Xteeven</a> 
-</twitter>
-
-
+<Icons/>
 
 ## Other Networks
 

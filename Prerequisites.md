@@ -1,0 +1,4 @@
+- Vuepress 2
+- Hope Vuepress Theme
+- Auto-Register Components
+- Naive UI

@@ -1,7 +1,5 @@
 <template><h1 id="social" tabindex="-1"><a class="header-anchor" href="#social" aria-hidden="true">#</a> Social</h1>
-<twitter>
-<a class="twitter-timeline" data-height="1024" data-tweet-limit=5 vdata-chrome="noheader noborders" data-link-color="#19CF86" href="https://twitter.com/steevenvs?ref_src=twsrc%5Etfw">Tweets by Xteeven</a> 
-</twitter>
+<Icons/>
 <h2 id="other-networks" tabindex="-1"><a class="header-anchor" href="#other-networks" aria-hidden="true">#</a> Other Networks</h2>
 <h3 id="google-scholar" tabindex="-1"><a class="header-anchor" href="#google-scholar" aria-hidden="true">#</a> <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=j6rFI50AAAAJ&amp;gmla=AJsN-F43L6BhCs7R86McoSpAPqGiopQpO2t_vYJ_I-GUWEc7iR_AZAg7mxVGo5xDQC1jzEY_2Bpo9CJmSS06tZ-O2LlKheJ4ThLLXbbriDRQQtAdKGYP7UkxB6xRRBp6IRak3kOe9bGk" target="_blank" rel="noopener noreferrer">Google Scholar<ExternalLinkIcon/></a></h3>
 <h3 id="researchgate" tabindex="-1"><a class="header-anchor" href="#researchgate" aria-hidden="true">#</a> <a href="https://www.researchgate.net/profile/David_Villa_Salazar" target="_blank" rel="noopener noreferrer">Researchgate<ExternalLinkIcon/></a></h3>

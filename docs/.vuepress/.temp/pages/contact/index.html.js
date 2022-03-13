@@ -4,7 +4,7 @@ export const data = {
   "title": "Social",
   "lang": "en-US",
   "frontmatter": {
-    "summary": "Social Tweets by Xteeven Other Networks Google Scholar Researchgate Linkedin Github Instagram Contact Mail\r\" steeven.villa[at]ifi.lmu.de \"\r\" D.Villa[at]lmu.de\" Phones\r\" +33 7 6634 ",
+    "summary": "Social Other Networks Google Scholar Researchgate Linkedin Github Instagram Contact Mail\r\" steeven.villa[at]ifi.lmu.de \"\r\" D.Villa[at]lmu.de\" Phones\r\" +33 7 6634 9410 (Mobile) \"\r\" ",
     "head": [
       [
         "meta",
@@ -130,8 +130,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 0.32,
-    "words": 96
+    "minutes": 0.22,
+    "words": 65
   },
   "filePathRelative": "contact/README.md"
 }

@@ -10,6 +10,8 @@ export default defineThemeConfig({
     url: "https://posthci.com",
   },
 
+  darkmode: 'disable',
+
   iconPrefix: "iconfont icon-",
 
   logo: "/logo.svg",

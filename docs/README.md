@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: PostHCI
-heroImage: /logo.svg
+heroImage: /images/PostHCI.svg
 heroText: Steeven Villa
 tagline: HCI Researcher @ LMU Munich
 actions:

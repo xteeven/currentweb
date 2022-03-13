@@ -24,9 +24,11 @@ export default defineHopeConfig({
         rel: "stylesheet",
         href: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css",
       },
+      
     ],
+    
   ],
-
+  
   locales: {
     "/": {
       lang: "en-US",

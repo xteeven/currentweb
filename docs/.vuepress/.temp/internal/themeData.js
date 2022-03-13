@@ -4,6 +4,7 @@ export const themeData = {
     "name": "Steeven Villa",
     "url": "https://posthci.com"
   },
+  "darkmode": "disable",
   "iconPrefix": "iconfont icon-",
   "logo": "/logo.svg",
   "repo": "https://github.com/steevenvs",
@@ -62,7 +63,7 @@ export const themeData = {
   "encrypt": {
     "config": {
       "/guide/encrypt.html": [
-        "$2a$10$kUss0tzbk5GeXSFZNVslWe7LM6Qv44oxFM4r3qD7skl76a/i9U8Vy"
+        "$2a$10$BzjruxTvPnkHu/wN84KQNuIdoFqz9NEYsQ4lGMB2hYb3DYFwy1xv2"
       ]
     },
     "global": false
@@ -123,7 +124,6 @@ export const themeData = {
   "sidebarIcon": true,
   "headingDepth": 2,
   "pure": false,
-  "darkmode": "auto-switch",
   "themeColor": {
     "red": "#e74c3c",
     "blue": "#3498db",
