@@ -1,7 +1,18 @@
 import { defineHopeConfig } from "vuepress-theme-hope";
 import themeConfig from "./themeConfig";
+const { path } = require('@vuepress/utils')
 
 export default defineHopeConfig({
+
+  plugins: [
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components'),
+      },
+    ],
+  ],
+  
   base: "/",
 
   dest: "./dist",
