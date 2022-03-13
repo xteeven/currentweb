@@ -1,24 +1,26 @@
 <template>
-
-<i class="ai ai-google-scholar-square ai-3x"></i>
-
+<n-space horizontal>
+<n-image object-fit='scale-down' width="25" v-bind:src="icon" /> <a v-bind:href= "link" target="_blank">{{name}}</a>
+</n-space>
 </template>
 
 <script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"></link>
+import {
+  NImage,
+  NSpace,
+} from "naive-ui";
 
 export default {
   props: [
+    "icon",
     "name",
+    "link"
   ],
   components: {
-    i
+    NImage,
+    NSpace,
   },
 };
 
 </script>
-
-<style lang="scss">
-
-</style>

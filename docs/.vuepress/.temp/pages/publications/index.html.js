@@ -4,6 +4,8 @@ export const data = {
   "title": "Publications",
   "lang": "en-US",
   "frontmatter": {
+    "next": "/teaching",
+    "prev": "/bio",
     "summary": "Publications <Paper v-for=\"paper in posts\" :year=\"paper.year\" :title=\"paper.title\" :authors=\"paper.authors\" :venue=\"paper.venue\" :link=\"paper.link\" :abstract=\"paper.abstract\" :pict",
     "head": [
       [

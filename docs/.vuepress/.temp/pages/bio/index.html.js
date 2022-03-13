@@ -5,6 +5,8 @@ export const data = {
   "lang": "en-US",
   "frontmatter": {
     "sidebar": false,
+    "next": "/publications",
+    "prev": "/",
     "summary": "Bio Computer Scientist, Mechatronic Engineer, and Ph.D. Researcher in the Human-Centered Ubiquitous Media group at LMU Munich. My research field is human-computer interaction, part",
     "head": [
       [

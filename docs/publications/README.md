@@ -1,3 +1,7 @@
+---
+next: "/teaching"
+prev: "/bio"
+---
 # Publications
 
 <Paper 

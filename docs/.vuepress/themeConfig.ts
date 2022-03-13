@@ -14,11 +14,11 @@ export default defineThemeConfig({
 
   iconPrefix: "iconfont icon-",
 
-  logo: "/logo.svg",
+  logo: "/images/PostHCI.svg",
 
-  repo: "https://github.com/steevenvs",
+  //repo: "https://github.com/xteeven",
 
-  docsDir: "demo/src",
+  //docsDir: "demo/src",
 
   // navbar
   navbar: navbar,

@@ -33,6 +33,8 @@ export const pagesData = {
   "v-13c33eef": () => import(/* webpackChunkName: "v-13c33eef" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/publications/index.html.js").then(({ data }) => data),
   // path: /teaching/
   "v-393700ae": () => import(/* webpackChunkName: "v-393700ae" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/teaching/index.html.js").then(({ data }) => data),
+  // path: /theses/
+  "v-199562c6": () => import(/* webpackChunkName: "v-199562c6" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/theses/index.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /category/

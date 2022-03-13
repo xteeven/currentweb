@@ -35,6 +35,8 @@ export const pagesComponents = {
   "v-13c33eef": defineAsyncComponent(() => import(/* webpackChunkName: "v-13c33eef" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/publications/index.html.vue")),
   // path: /teaching/
   "v-393700ae": defineAsyncComponent(() => import(/* webpackChunkName: "v-393700ae" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/teaching/index.html.vue")),
+  // path: /theses/
+  "v-199562c6": defineAsyncComponent(() => import(/* webpackChunkName: "v-199562c6" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/theses/index.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"C:/Repositories/Web/docs/.vuepress/.temp/pages/404.html.vue")),
   // path: /category/

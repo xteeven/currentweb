@@ -1,3 +1,7 @@
+---
+next: "/contact"
+prev: "/publications"
+---
 # Teaching
 
 

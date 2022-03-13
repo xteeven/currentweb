@@ -1,5 +1,7 @@
 ---
 sidebar: false
+next: "/publications"
+prev: "/"
 ---
 
 # Bio

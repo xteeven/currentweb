@@ -1,10 +1,12 @@
 export const data = {
   "key": "v-96536bf0",
   "path": "/contact/",
-  "title": "Social",
+  "title": "Contact",
   "lang": "en-US",
   "frontmatter": {
-    "summary": "Social Other Networks Google Scholar Researchgate Linkedin Github Instagram Contact Mail\r\" steeven.villa[at]ifi.lmu.de \"\r\" D.Villa[at]lmu.de\" Phones\r\" +33 7 6634 9410 (Mobile) \"\r\" ",
+    "next": "/",
+    "prev": "/teaching",
+    "summary": "Contact Mail\r\" steeven.villa[at]ifi.lmu.de \"\r\" D.Villa[at]lmu.de\" Phones\r\" +33 7 6634 9410 (Mobile) \"\r\" +49 89 2180 75146 (Office)\" Address \r\" Room 453 - Frauenlobstraße 7a - 80337",
     "head": [
       [
         "meta",
@@ -24,7 +26,7 @@ export const data = {
         "meta",
         {
           "property": "og:title",
-          "content": "Social"
+          "content": "Contact"
         }
       ],
       [
@@ -67,71 +69,27 @@ export const data = {
   "excerpt": "",
   "headers": [
     {
-      "level": 2,
-      "title": "Other Networks",
-      "slug": "other-networks",
-      "children": [
-        {
-          "level": 3,
-          "title": "Google Scholar",
-          "slug": "google-scholar",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "Researchgate",
-          "slug": "researchgate",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "Linkedin",
-          "slug": "linkedin",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "Github",
-          "slug": "github",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "Instagram",
-          "slug": "instagram",
-          "children": []
-        }
-      ]
+      "level": 3,
+      "title": "Mail",
+      "slug": "mail",
+      "children": []
     },
     {
-      "level": 2,
-      "title": "Contact",
-      "slug": "contact",
-      "children": [
-        {
-          "level": 3,
-          "title": "Mail",
-          "slug": "mail",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "Phones",
-          "slug": "phones",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "Address",
-          "slug": "address",
-          "children": []
-        }
-      ]
+      "level": 3,
+      "title": "Phones",
+      "slug": "phones",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "Address",
+      "slug": "address",
+      "children": []
     }
   ],
   "readingTime": {
-    "minutes": 0.22,
-    "words": 65
+    "minutes": 0.31,
+    "words": 93
   },
   "filePathRelative": "contact/README.md"
 }

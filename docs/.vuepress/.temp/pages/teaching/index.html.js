@@ -4,6 +4,8 @@ export const data = {
   "title": "Teaching",
   "lang": "en-US",
   "frontmatter": {
+    "next": "/contact",
+    "prev": "/publications",
     "summary": "Teaching Lectures / Courses\rParctical Course SWH:Sketching with Hardware @LMU (SS2022) ; \rParctical Course SWH:Sketching with Hardware Basics @LMU (SS2022) ; \rPractical Course: VR ",
     "head": [
       [

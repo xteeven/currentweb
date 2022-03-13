@@ -6,9 +6,7 @@ export const themeData = {
   },
   "darkmode": "disable",
   "iconPrefix": "iconfont icon-",
-  "logo": "/logo.svg",
-  "repo": "https://github.com/steevenvs",
-  "docsDir": "demo/src",
+  "logo": "/images/PostHCI.svg",
   "navbar": [
     "/",
     {
@@ -63,7 +61,7 @@ export const themeData = {
   "encrypt": {
     "config": {
       "/guide/encrypt.html": [
-        "$2a$10$BzjruxTvPnkHu/wN84KQNuIdoFqz9NEYsQ4lGMB2hYb3DYFwy1xv2"
+        "$2a$10$dt92tlMJjgyntJ61IXWZ9eWUWbOpPFnaIO/LOJFaAFp2RQ0krm7Ki"
       ]
     },
     "global": false
