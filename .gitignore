@@ -3,3 +3,5 @@ docs/.vuepress/.cache
 docs/.vuepress/.temp
 .temp
 .cache
+node_modules/
+docs/.vuepress/.temp/
