@@ -1,6 +1,6 @@
 ---
 next: "/contact"
-prev: "/publications"
+prev: "/teaching"
 ---
 
 # Available Topics for thesis

@@ -4,7 +4,7 @@ prev: "/bio"
 ---
 # Publications
 
-<Paper 
+<PaperMobile 
 v-for="paper in posts"
 :year="paper.year"
 :title="paper.title"

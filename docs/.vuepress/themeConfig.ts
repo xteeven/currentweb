@@ -26,7 +26,7 @@ export default defineThemeConfig({
   // sidebar
   //sidebar: sidebar,
   sidebar: false,
-  footer: "Steeven @ 2022",
+  footer: "PostHCI @ 2022",
 
   displayFooter: true,
 
