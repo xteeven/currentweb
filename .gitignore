@@ -5,3 +5,4 @@ docs/.vuepress/.temp
 .cache
 node_modules/
 docs/.vuepress/.temp/
+dist/
