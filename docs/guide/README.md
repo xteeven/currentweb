@@ -1,4 +1,5 @@
 ---
+article: false
 index: false
 icon: creative
 category:

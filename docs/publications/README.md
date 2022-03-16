@@ -1,4 +1,5 @@
 ---
+article: false
 next: "/teaching"
 prev: "/bio"
 ---

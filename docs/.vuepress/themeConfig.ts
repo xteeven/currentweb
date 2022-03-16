@@ -34,14 +34,13 @@ export default defineThemeConfig({
 
   blog: {
     description: "HCI researcher",
-    intro: "/intro.html",
+    intro: "/bio",
     medias: {
-      Discord: "https://example.com",
-      Email: "https://example.com",
-      GitHub: "https://example.com",
-      Instagram: "https://example.com",
-      Linkedin: "https://example.com",
-      Twitter: "https://example.com",
+      Discord: "https://discordapp.com/users/405513843708788737",
+      GitHub: "https://github.com/xteeven",
+      Instagram: "https://www.instagram.com/xteevenv/",
+      Linkedin: "https://www.linkedin.com/in/steevenv/",
+      Twitter: "https://twitter.com/steevenvs",
     },
   },
 

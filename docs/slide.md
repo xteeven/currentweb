@@ -1,4 +1,5 @@
 ---
+article: false
 title: Slide page
 icon: slides
 layout: Slide

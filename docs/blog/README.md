@@ -1,4 +1,5 @@
 ---
+layout: Blog
 article: false
 home: false
 bgImage: /theses/augmentation.jpg

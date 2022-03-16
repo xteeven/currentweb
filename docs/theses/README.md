@@ -1,4 +1,5 @@
 ---
+article: false
 next: "/contact"
 prev: "/teaching"
 ---
