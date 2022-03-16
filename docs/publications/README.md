@@ -3,7 +3,7 @@ next: "/teaching"
 prev: "/bio"
 ---
 # Publications
-
+<ClientOnly>
 <PaperMobile 
 v-for="paper in posts"
 :year="paper.year"
@@ -14,6 +14,7 @@ v-for="paper in posts"
 :abstract="paper.abstract"
 :picture="paper.picture"
 />
+</ClientOnly>
 
 <script>
 
