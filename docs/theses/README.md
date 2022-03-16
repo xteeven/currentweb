@@ -38,7 +38,9 @@ picture="/images/Papers/altering.jpg">
 
 </Thesis>
 </ClientOnly>
+
 ---
+
 <ClientOnly>
 <Thesis 
 title="Encountered-type Mid-air Haptics" 
@@ -52,7 +54,9 @@ picture="/theses/UH.jpg">
 
 </Thesis>
 </ClientOnly>
+
 ---
+
 <ClientOnly>
 <Thesis 
 title="How do emotions feel?: Creating a vibrotactile encoding of emotions" 
@@ -65,7 +69,9 @@ picture="/theses/Vest.jpg">
 
 </Thesis>
 </ClientOnly>
+
 ---
+
 <ClientOnly>
 <Thesis 
 title="Human augmentation in VR: How cognitive augmentations shape us?" 
@@ -78,4 +84,5 @@ picture="/theses/Augm.jpg">
 
 </Thesis>
 </ClientOnly>
+
 ---
