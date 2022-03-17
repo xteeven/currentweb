@@ -17,6 +17,22 @@ v-for="paper in posts"
 />
 </ClientOnly>
 
+
+# Patents
+
+
+<ClientOnly>
+<PaperMobile 
+title='Intervention drive system comprising an umbilical'
+year="2021"
+venue="US Patent"
+link="https://patentimages.storage.googleapis.com/eb/9d/5a/5f26a1222bed8b/US20210396342A1.pdf"
+abstract="The present invention relates to an intervention drive pig comprising an umbilical. In this scenario, the present invention provides an intervention drive pig comprising an umbilical, wherein the umbilical (6) is manufactured from a low-density material, wherein the umbilical (6) comprises an external covering of material having a low coefficient of friction."
+picture="/images/Papers/Patent.jpg"
+/>
+</ClientOnly>
+
+
 <script>
 
         // Entry Model

@@ -13,11 +13,11 @@ Computer Scientist, Mechatronic Engineer, and Ph.D. Researcher in the Human-Cent
 
 ## Co-Chair of Scientific Events
 
-- ACM Symposium on User Interface Software and Technology UIST 2022 - Video Co-chair
-- Mensch und Computer MuC 2022 - Video Chair
-- Augmented Humans Conference 2022 - Web Chair
-- Symposium on Virtual and Augmented Reality SVR2021 - Publicity Chair
-- Neuroergonomics Conference 2021 - Public Relations
+- [ACM Symposium on User Interface Software and Technology UIST 2022 - Video Co-chair](https://uist.acm.org/uist2022/)
+- [Mensch und Computer MuC 2022 - Video Chair](https://muc2022.mensch-und-computer.de/en/conference/)
+- [Augmented Humans Conference 2022 - Web Chair](https://augmented-humans.org/)
+- [Symposium on Virtual and Augmented Reality SVR2021 - Publicity Chair](https://www.inf.ufrgs.br/svr2021/)
+- [Neuroergonomics Conference 2021 - Public Relations](https://www.neuroergonomicsconference.um.ifi.lmu.de/)
 
 ## Reviewing Duties
 

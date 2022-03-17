@@ -13,7 +13,7 @@
       </n-layout-sider>
 
       <n-layout-content content-style="padding: 24px;">
-        <h5>{{ title }}</h5>
+        <h4>{{ title }}</h4>
         <p>{{ authors }} {{ venue }} {{ year }}</p>
         <n-tabs :bar-width="28" type="line">
           <n-tab-pane name="Download" tab="Download Links">
@@ -35,7 +35,7 @@
 
     
     <n-layout h v-else>
-      <n-layout-sider
+      <n-layout-sider class="center"
         default-expanded
         collapse-mode="width"
         :collapsed-width="240"
@@ -44,11 +44,11 @@
         content-style="padding: 24px;"
 
       >
-        <n-image object-fit="scale-down" width="240" v-bind:src="picture" />
+        <n-image class="center" object-fit="scale-down" width="240" v-bind:src="picture" />
       </n-layout-sider>
 
       <n-layout-content content-style="padding: 24px;">
-        <h5>{{ title }}</h5>
+        <h4>{{ title }}</h4>
         <p>{{ authors }} {{ venue }} {{ year }}</p>
         <n-tabs :bar-width="28" type="line">
           <n-tab-pane name="Download" tab="Download Links">
@@ -122,3 +122,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
