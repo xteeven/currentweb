@@ -17,6 +17,7 @@ prev: "/teaching"
 
 <Icons icon="/icons/instagram.png" name="Instagram" link="https://www.instagram.com/xteevenv/"/>
 
+<Icons icon="/icons/orcid-square.svg" name="OrcID" link="https://orcid.org/0000-0002-4881-1350"/>
 
 
 ### Mail

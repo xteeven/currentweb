@@ -9,5 +9,4 @@ tag:
   - tag A
   - tag B
 ---
-
 # test
