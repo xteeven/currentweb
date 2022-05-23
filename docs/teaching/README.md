@@ -32,9 +32,13 @@ prev: "/publications"
 
 ## Advised Theses:
 
-- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> i2022: Bachelor Thesis, Christofer Parstorfer: Virtually Extending Room-Scale Mid-air Haptics Using Redirected Walking.
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2022: Bachelor thesis, Thuy-Duong Nguyen: Creating a Taxonomy of Emotions for Vibrotactile Feedback
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2022: Bachelor thesis, Robert Scholz: Detecting Implicit Bias Towards Augmented Humans
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2022: Master thesis, Felix Grelka: Measuring Impact of Human-Augmentation Self Perception in Risk Assessment
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2022: Master thesis, Vasil Lazarov: Detecting Psychopathy Traces Using in-game Mechanics
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2022: Master thesis, Carmen Schanderl: Standarized Assesment of Attitudes Towards Augmented Humans
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2022: Master thesis, Elisabeth Pangratz: Piano Proficiency Awareness Assessment Using Induced Errors and EEG
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Finished" vertical="middle" /> 2022: Bachelor Thesis, Christofer Parstorfer: Virtually Extending Room-Scale Mid-air Haptics Using Redirected Walking.
 - <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Finished" vertical="middle" /> 2021: Bachelor Thesis, Daniela K: Evaluating the impact of tangible objects in VR shopping
 - <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Finished" vertical="middle" /> 2021: Bachelor Thesis, Gizem Arpat: Using EEG to modulate VR enviroments in neuromarketing
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Finished" vertical="middle" /> 2020: Master thesis, Anna Hubert: Using EMS stimulation to support ready position in badminton
