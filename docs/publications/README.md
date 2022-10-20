@@ -1,9 +1,11 @@
 ---
 article: false
-next: "/teaching"
-prev: "/bio"
+next: '/teaching'
+prev: '/bio'
 ---
+
 # Publications
+
 <ClientOnly>
 <PaperMobile 
 v-for="paper in posts"
@@ -12,14 +14,14 @@ v-for="paper in posts"
 :authors="paper.authors"
 :venue="paper.venue"
 :link="paper.link"
+:alias="paper.alias"
 :abstract="paper.abstract"
 :picture="paper.picture"
+:pdf="paper.pdf"
 />
 </ClientOnly>
 
-
 # Patents
-
 
 <ClientOnly>
 <PaperMobile 
@@ -27,11 +29,11 @@ title='Intervention drive system comprising an umbilical'
 year="2021"
 venue="US Patent"
 link="https://patentimages.storage.googleapis.com/eb/9d/5a/5f26a1222bed8b/US20210396342A1.pdf"
+alias="patentimages"
 abstract="The present invention relates to an intervention drive pig comprising an umbilical. In this scenario, the present invention provides an intervention drive pig comprising an umbilical, wherein the umbilical (6) is manufactured from a low-density material, wherein the umbilical (6) comprises an external covering of material having a low coefficient of friction."
 picture="/images/Papers/Patent.jpg"
 />
 </ClientOnly>
-
 
 <script>
 
@@ -51,27 +53,94 @@ picture="/images/Papers/Patent.jpg"
   // ...
   data() {
     return {
-      posts: [          
+      posts: [ 
+        
+        {
+       title: 'Extended Mid-air Ultrasound Haptics for Virtual Reality', 
+       authors: "Steeven Villa; Sven Mayer; Jess Hartcher O’brien; Albrecht Schmidt; Tonja-Katrin Machulla", 
+       venue:"Proceedings of the ACM Humuman-Computer Interaction Journal" ,
+       year: 2022,
+       picture: "/images/Papers/extended.jpg",
+       link: "Not Available", 
+       abstract:"We present a novel approach to rendering mid-air haptic sensations in a large rendering volume by turning a static array into a dynamic array following the user’s hand. We used a 6DOF robot to drive a haptic ultrasound array over a large 3D space. Our system enables rendering room-scale mid-air experiences while preserving bare-hand interaction, thus, providing tangibility for virtual environments. To evaluate our approach, we performed three evaluations. First, we performed a technical system evaluation, showcasing the feasibility of such a system. Next, we conducted three psychophysical experiments, showing that the motion does not affect the user’s perception with high likelihood. Lastly, we explored seven use cases that showcase our system’s potential using a user study. We discuss challenges and opportunities in how large-scale mid-air haptics can contribute toward room-scale haptic feedback. Thus, with our system, we contribute to general haptic mid-air feedback on a large scale.",
+       bibtex:"",
+       pdf:"/Papers/_ISS_22__Mid_Air_in_motion__Robotic_guided_ultrasound_mid_air_haptics_for_VR.pdf",
+       alias: "Not Available",
+        },
+        
+        {
+       title: 'Cobity: A Plug-And-Play Toolbox to Deliver Haptics in Virtual Reality', 
+       authors: "Villa, Steeven and Mayer, Sven", 
+       venue:"Proceedings of Mensch und Computer 2022" ,
+       year: 2022,
+       picture: "/images/Papers/cobity.jpg",
+       link: "https://dl.acm.org/doi/fullHtml/10.1145/3543758.3543775",
+       alias: "dl.acm",
+       abstract:"Haptics increase the presence in virtual reality applications. However, providing room-scale haptics is an open challenge. Cobots (robotic systems that are safe for human use) are a promising approach, requiring in-depth engineering skills. Control is done on a low abstraction level and requires complex procedures and implementations. In contrast, 3D tools such as Unity allow to quickly prototype a wide range of environments for which cobots could deliver haptic feedback. To overcome this disconnect, we present Cobity, an open-source plug-and-play solution to control the cobot using the virtual environment, enabling fast prototyping of a wide range of haptic experiences. We present a Unity plugin that allows controlling the cobot using the end-effector’s target pose (cartesian position and angles); the values are then converted into velocities and streamed to the cobot inverse kinematic solver using a specially",
+       bibtex:"",
+       pdf:"/Papers/MUC_Cobity.pdf",
+        }, 
+        
+        {
+       title: 'Virtual Reality Adaptation Using Electrodermal Activity to Support the User Experience', 
+       authors: "Chiossi, Francesco; Welsch, Robin; Villa, Steeven; Chuang, Lewis L.; Mayer, Sven", 
+       venue:"Big Data and Cognitive Computing" ,
+       year: 2022,
+       picture: "/images/Papers/MDPIADAPT.jpg",
+       link: "https://www.mdpi.com/2504-2289/6/2/55", 
+       alias: "MDPI",
+       abstract:"Virtual reality is increasingly used for tasks such as work and education. Thus, rendering scenarios that do not interfere with such goals and deplete user experience are becoming progressively more relevant. We present a physiologically adaptive system that optimizes the virtual environment based on physiological arousal, i.e., electrodermal activity. We investigated the usability of the adaptive system in a simulated social virtual reality scenario. Participants completed an n-back task (primary) and a visual detection (secondary) task. Here, we adapted the visual complexity of the secondary task in the form of the number of non-player characters of the secondary task to accomplish the primary task. We show that an adaptive virtual reality can improve users’ comfort by adapting to physiological arousal regarding the task complexity. Our findings suggest that physiologically adaptive virtual reality systems can improve users’ experience in a wide range of scenarios.",
+       bibtex:"",
+       pdf:"/Papers/BDCC-06-00055.pdf",
+        },
+                {
+       title: 'Design of on-body tactile displays to enhance situation awareness in automated vehicles', 
+       authors: "Francesco Chiossi; Steeven Villa; Melanie Hauser; Robin Welsch; Lewis Chuang", 
+       venue:"CIVEMSA 2022" ,
+       year: 2022,
+       picture: "/images/Papers/onbody.jpg",
+       link: "https://ieeexplore.ieee.org/abstract/document/9853690", 
+       alias: "ieeexplore",
+       abstract: "Fatalities with semi-automated vehicles typically occur when users are engaged in non-driving related tasks (NDRTs) that compromise their situational awareness (SA). This work developed a tactile display for on-body notification to support situational awareness, thus enabling users to recognize vehicle automation failures and intervene if necessary. We investigated whether such tactile notifications support 'event detection' (SA-L1) or 'anticipation' (SA-L3). Using a simulated automated driving scenario, a between-groups study contrasted SA-L1 and SA-L3 tactile notifications that respectively displayed the spatial positions of surrounding traffic or future projection of the automated vehicle’s position. Our participants were engaged in an NDRT, i.e., an Operation Span Task that engaged visual working memory (WM) resources. They were instructed to intervene if the tactile display contradicted the driving scenario",
+       bibtex:"",
+       pdf:"/Papers/_IEEE_CIVEMSA__22__Vest_Paper___Final_Cut.pdf",
+        },
+     
              {
        title: 'Designing a Physiological Loop for the Adaptation of Virtual Human Characters in a Social VR Scenario', 
        authors: "Chiossi, Francesco; Welsch, Robin; Villa, Steeven; Chuang, Lewis L.; Mayer, Sven", 
        venue:"IEE VR 2022" ,
        year: 2022,
        picture: "/images/Papers/vr-adaptation.jpg",
-       link: "Not Available",
+       link: "https://ieeexplore.ieee.org/abstract/document/9757528", 
+       alias: "ieeexplore",
        abstract:"Social virtual reality is getting mainstream not only for entertainment purposes but also for productivity and education. This makes the design of social VR scenarios functional to support the operator's performance. We present a physiologically-adaptive system that optimizes for visual complexity in a dual-task scenario based on electrodermal activity. Specifically, we propose a system that adapts the amount of non-player characters while jointly performing an N-Back task (primary) and visual detection task (secondary). Our preliminary results show that when optimizing the complexity of the secondary task, users report an improved user experience.",
        bibtex:"",
+       pdf:"/Papers/chiossi2022designing.pdf",
         },
-
+          {
+       title: 'Designing a Wearable Sensor-Fusion Toolkit for Motor Skill Learning', 
+       authors: "Eska, Bettina; Villa, Steeven; Mayer, Sven; Niess, Jasmin", 
+       venue:"2022 Workshop on Toolkits & Wearables: Developing Toolkits for Exploring Wearable Designs, 2022." ,
+       year: 2022,
+       picture: "/images/Papers/eska2022designing-300x169.jpg",
+       link: "https://dl.acm.org/doi/10.1145/3490149.3505578", 
+       alias: "Not Available",
+       abstract:"User movement data is essential for providing feedback in the area of motor-skill learning. For instance, when learning a new sport such as dancing, people can benefit from meaningful technology-based feedback. However, movement tracking equipment for real-time feedback is costly and challenging to implement. In contrast, wearable devices tracking users' movements are accessible and lightweight. While their lower cost makes them available to a broader audience, several open issues include sensor placement, sensor count, and data synchronization. To address these issues, we propose a wearable sensor-fusion approach for motor skill learning that allows researchers and developers to use one or multiple body-worn sensors for motion tracking. The extracted motion can then be used to deliver real-time feedback on the user's performance, supporting positive learning experiences.",
+       bibtex:"",
+       pdf:"/Papers/eska2022designing.pdf",
+        },
                   {
        title: 'EMStriker: Potentials of Enhancing the Training Process of Racket-based Sports via Electrical Muscle Stimulation', 
        authors: "Faltaous, Sarah; Hubert, Anna; Karolus, Jakob; Villa, Steeven; Kosch, Thomas; Wozniak, Pawel", 
        venue:"Sixteenth International Conference on Tangible, Embedded, and Embodied Interaction" ,
        year: 2022,
        picture: "/images/Papers/emsstriker.jpg",
-       link: "https://dl.acm.org/doi/10.1145/3490149.3505578",
+       link: "https://dl.acm.org/doi/10.1145/3490149.3505578", 
+       alias: "dl.acm",
        abstract:"Racket sports offer an enjoyable form of physical activity and are fertile ground for interactive technologies supporting new players. Yet, current research has neglected its potential to support not only active players but also coaches in their training methods. To investigate how interactive technologies can support skill acquisition in training, we designed an Electrical Muscle Stimulation (EMS) system that helps maintain the ready position in crossminton. We compared the system with a vibrotactile solution in a user study, interviewing novice players and experienced coaches about their perception of the system. The system allowed coaches to effectively and immediately guide players to the ready position. An EMS-based feedback system for coaches can potentially reduce delay (physical and cognitive) for trainees, as stated by coaches. Our work contributes insights into designing systems that facilitate learning sports techniques using interactive feedback.",
        bibtex:"",
+       pdf:"/Papers/EMStriker.pdf",
         },
                      {
        title: 'Immediate Effects of Vibrotactile Biofeedback Instructions on Human Postural Control', 
@@ -79,9 +148,23 @@ picture="/images/Papers/Patent.jpg"
        venue:"43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)" ,
        year: 2021,
        picture: "/images/Papers/posture.jpg",
-       link: "https://ieeexplore.ieee.org/abstract/document/9630992",
+       link: "https://ieeexplore.ieee.org/abstract/document/9630992", 
+       alias: "ieeexplore",
        abstract:"Vibrotactile biofeedback can improve balance and consequently be helpful in fall prevention. However, it remains unclear how different types of stimulus presentations affect not only trunk tilt, but also Center of Pressure (CoP) displacements, and whether an instruction on how to move contributes to a better understanding of vibrotactile feedback.Based on lower back tilt angles (L5), we applied individualized multi-directional vibrotactile feedback to the upper torso by a haptic vest in 30 healthy young adults. Subjects were equally distributed to three instruction groups (attractive - move in the direction of feedback, repulsive - move in the opposite direction of feedback & no instruction - with attractive stimuli). We conducted four conditions with eyes closed (feedback on/off, Narrow Stance with head extended, Semi-Tandem stance), with seven trials of 45s each. For CoP and L5, we computed Root Mean Square (RMS) of position/angle and standard deviation (SD) of velocity, and for L5 additionally, the percentage in time above threshold. The analysis consisted of mixed model ANOVAs and t-tests (α-level: 0.05).In the attractive and repulsive groups feedback significantly decreased the percentage above threshold (p<0.05). Feedback decreased RMS of L5, whereas RMS of CoP and SD of velocity in L5 and COP increased (p<0.05). Finally, an instruction on how to move contributed to a better understanding of the vibrotactile biofeedback.",
        bibtex:"",
+       pdf:"/Papers/Immediate_Effects_of_Vibrotactile_Biofeedback_Instructions_on_Human_Postural_Control.pdf",
+        },
+                {
+       title: 'Body As Starting Point 4: Inbodied Interaction Design for Health Ownership.', 
+       authors: "mc schraefel; Josh Andrés; Aaron Tabor; Scott Bateman; Abby Wanyu Liu; Mike Jones; Kai Kunze; Elizabeth Murnane; Steeven Villa", 
+       venue:"CHI EA '21" ,
+       year: 2021,
+       picture: "/images/Papers/Inbodied.jpg",
+       link: "https://dl.acm.org/doi/abs/10.1145/3411763.3441335", 
+       alias: "dl.acm",
+       abstract:"This Fourth Body as a Starting Point workshop investigates how to design interactive health technologies that assist users in developing insourcing abilities and then assist users in letting go of the same technology—in other words, supporting a transition from health technology dependence to independence. By making explicit two inbodied design continua of (1) ownership, from “outsourcing” to “insourcing” and (2) engagement period, from “single”, to” cycle”, to “permanent”, to prototype and reflect on interactive technology that takes the body as a starting point.",
+       bibtex:"",
+       pdf:"/Papers/Inbodied.pdf",
         },
                   {
        title: 'Assisting Motor Skill Transfer for Dance Students Using Wearable Feedback', 
@@ -89,9 +172,11 @@ picture="/images/Papers/Patent.jpg"
        venue:"International Symposium on Wearable Computers" ,
        year: 2021,
        picture: "/images/Papers/assisting.jpg",
-       link: "https://dl.acm.org/doi/10.1145/3460421.3478817",
+       link: "https://dl.acm.org/doi/10.1145/3460421.3478817", 
+       alias: "dl.acm",
        abstract:"Dance plays a crucial role in human well-being and expression. To learn dance, transferring motor knowledge across humans is relevant. Several technologies have been proposed to support such knowledge transfer from teacher to student. However, most of such systems applied a pragmatic approach focused on the feedback and the quality of the feedback system and not necessarily on the human mechanisms behind the dance learning process. In contrast, we inquire about the teacher-to-student motor knowledge transfer from the neural perspective to design motor learning wearable systems. We conducted interviews with dance students and teachers using vignettes based on motor learning theory as a discussion base. We derived insights about dance learning and identified a series of requirements for motor skill transfer-focused wearable devices. Based on our results, we present a prototype that reflects the minimum functional setup for effectively supporting motor learning.",
        bibtex:"",
+       pdf:"/Papers/Assisting.pdf",
         },
         {
         title: 'Altering the Stiffness, Friction, and Shape Perception of Tangible Objects in Virtual Reality Using Wearable Haptics', 
@@ -99,9 +184,11 @@ picture="/images/Papers/Patent.jpg"
         venue:"IEEE Transactions on Haptics 2020. " ,
         picture: "/images/Papers/altering.jpg",
         year: 2020,
-        link: "https://ieeexplore.ieee.org/document/8961106",
-        abstract:"Tangible objects are used in virtual reality (VR) and augmented reality (AR) to enhance haptic information on the general shape of virtual objects. However, they are often passive or unable to simulate rich varying mechanical properties. This article studies the effect of combining simple passive tangible objects and wearable haptics for improving the display of varying stiffness, friction, and shape sensations in these environments. By providing timely cutaneous stimuli through a wearable finger device, we can make an object feel softer or more slippery than it really is, and we can also create the illusion of encountering virtual bumps and holes. We evaluate the proposed approach carrying out three experiments with human subjects. Results confirm that we can increase the compliance of a tangible object by varying the pressure applied through a wearable device. We are also able to simulate the presence of bumps and holes by providing timely pressure and skin stretch sensations. Altering the friction of a tangible surface showed recognition rates above the chance level, albeit lower than those registered in the other experiments. Finally, we show the potential of our techniques in an immersive medical palpation use case in VR. These results pave the way for novel and promising haptic interactions in VR, better exploiting the multiple ways of providing simple, unobtrusive, and inexpensive haptic displays.",
+        link: "https://ieeexplore.ieee.org/document/8961106", 
+ alias: "ieeexplore",
+ abstract:"Tangible objects are used in virtual reality (VR) and augmented reality (AR) to enhance haptic information on the general shape of virtual objects. However, they are often passive or unable to simulate rich varying mechanical properties. This article studies the effect of combining simple passive tangible objects and wearable haptics for improving the display of varying stiffness, friction, and shape sensations in these environments. By providing timely cutaneous stimuli through a wearable finger device, we can make an object feel softer or more slippery than it really is, and we can also create the illusion of encountering virtual bumps and holes. We evaluate the proposed approach carrying out three experiments with human subjects. Results confirm that we can increase the compliance of a tangible object by varying the pressure applied through a wearable device. We are also able to simulate the presence of bumps and holes by providing timely pressure and skin stretch sensations. Altering the friction of a tangible surface showed recognition rates above the chance level, albeit lower than those registered in the other experiments. Finally, we show the potential of our techniques in an immersive medical palpation use case in VR. These results pave the way for novel and promising haptic interactions in VR, better exploiting the multiple ways of providing simple, unobtrusive, and inexpensive haptic displays.",
         bibtex:"",
+        pdf:"/Papers/ToH2020.pdf",
          },
          {
         title: 'Touching is believing: exploring physics-based simulation and haptics to feel virtual worlds', 
@@ -109,9 +196,11 @@ picture="/images/Papers/Patent.jpg"
         venue:"LUME Digital Repository." ,
         year: 2019,
         picture: "/images/Papers/heat-based.jpg",
-        link: "https://www.lume.ufrgs.br/handle/10183/202057",
-        abstract:"Modeling the real world is a responsibility which different fields assumed through history, from philosophy to physics. Although the objective is similar, the strategies used to model real- world are different from field to field. Nowadays, the modeling of the world took a more tangible significance: Being in the modeled world, existing in the artificial world instead of the actual world. However, the path to get an artificial world equal to the real world is long and arduous. In this manuscript, we address this issue by exploring methods in computer graphics (Physics-based animation) and haptics to project a sensory represen- tation of the actual world into the artificial world. We report results on Position based dynamics for simulating phase-change phenomena and interaction in VR with physical objects. Also, Ultrasound phased arrays, as well as wearable haptics for stiffness and softness rendering are studied",
+        link: "https://www.lume.ufrgs.br/handle/10183/202057", 
+ alias: "lume.ufrgs",
+ abstract:"Modeling the real world is a responsibility which different fields assumed through history, from philosophy to physics. Although the objective is similar, the strategies used to model real- world are different from field to field. Nowadays, the modeling of the world took a more tangible significance: Being in the modeled world, existing in the artificial world instead of the actual world. However, the path to get an artificial world equal to the real world is long and arduous. In this manuscript, we address this issue by exploring methods in computer graphics (Physics-based animation) and haptics to project a sensory represen- tation of the actual world into the artificial world. We report results on Position based dynamics for simulating phase-change phenomena and interaction in VR with physical objects. Also, Ultrasound phased arrays, as well as wearable haptics for stiffness and softness rendering are studied",
         bibtex:"",
+        pdf:"/Papers/MsThesis.pdf",
          },
                   {
         title: 'Phys-Sketch: Sketching 3D Dynamic Objects in Immersive Virtual Reality', 
@@ -119,9 +208,11 @@ picture="/images/Papers/Patent.jpg"
         venue:"Computer Graphics International 2019." ,
         year: 2019,
         picture: "/images/Papers/phys-sketch.png",
-        link: "https://link.springer.com/chapter/10.1007/978-3-030-22514-8_10",
-        abstract:"Sketching was traditionally a 2D task. Even when the new generation of VR devices allowed to sketch in 3D, the drawn models remained essentially static representations. In this paper, we introduce a new physics-inspired sketching technique built on the top of Position-based Dynamics to enrich the 3D drawings with dynamic behaviors. A particle-based method allows interacting in real time with a wide range of materials including fluids, rigid bodies, soft bodies and clothes. Users can interact with the dynamic sketches and sculpt them while they move, deform and fall. We analyze the expressiveness of the system from the regard of two experienced artists. Thus, this paper also gives a starting point to move towards an improved generation of physics-enabled sketching applications. ",
+        link: "https://link.springer.com/chapter/10.1007/978-3-030-22514-8_10", 
+ alias: "link.springer",
+ abstract:"Sketching was traditionally a 2D task. Even when the new generation of VR devices allowed to sketch in 3D, the drawn models remained essentially static representations. In this paper, we introduce a new physics-inspired sketching technique built on the top of Position-based Dynamics to enrich the 3D drawings with dynamic behaviors. A particle-based method allows interacting in real time with a wide range of materials including fluids, rigid bodies, soft bodies and clothes. Users can interact with the dynamic sketches and sculpt them while they move, deform and fall. We analyze the expressiveness of the system from the regard of two experienced artists. Thus, this paper also gives a starting point to move towards an improved generation of physics-enabled sketching applications. ",
         bibtex:"",
+        pdf:"/Papers/Phy-Sketch.pdf",
          },
                   {
         title: 'Towards Moving Virtual Arms Using Brain-Computer Interface', 
@@ -129,9 +220,11 @@ picture="/images/Papers/Patent.jpg"
         venue:"Computer Graphics International 2019. " ,
         year: 2019,
         picture: "/images/Papers/towards.png",
-        link: "https://link.springer.com/chapter/10.1007/978-3-030-22514-8_43",
-        abstract:"Motor imagery Brain-Computer Interface (MI-BCI) is a paradigm widely used for controlling external devices by imagining bodily movements. This technology has inspired researchers to use it in several applications such as robotic prostheses, games, and virtual reality (VR) scenarios. We study the inclusion of an imaginary third arm as a part of the control commands for BCI. To this end, we analyze a set of open-close hand tasks (including a third arm that comes out from the chest) performed in two VR scenarios: the classical BCI Graz, with arrows as feedback; and a first-person view of a human-like avatar performing the corresponding tasks. This study purpose is to explore the influence of both time window of the trials and the frequency bands on the accuracy of the classifiers. Accordingly, we used a Filter Bank Common Spatial Patterns (FBCSP) algorithm for several time windows (100, 200, 400, 600, 800, 1000 and 2000 ms) for extracting features and evaluating the classification accuracy. The offline classification results show that a third arm can be effectively used as a control command (accuracy > 0.62%). Likewise, the human-like avatar condition (  67% ) outperforms the Graz condition (  63% ) significantly, suggesting that the realistic scenario can reduce the abstractness of the third arm. This study, thus, motivates the further inclusion of non-embodied motor imagery task in BCI systems.",
+        link: "https://link.springer.com/chapter/10.1007/978-3-030-22514-8_43", 
+ alias: "link.springer",
+ abstract:"Motor imagery Brain-Computer Interface (MI-BCI) is a paradigm widely used for controlling external devices by imagining bodily movements. This technology has inspired researchers to use it in several applications such as robotic prostheses, games, and virtual reality (VR) scenarios. We study the inclusion of an imaginary third arm as a part of the control commands for BCI. To this end, we analyze a set of open-close hand tasks (including a third arm that comes out from the chest) performed in two VR scenarios: the classical BCI Graz, with arrows as feedback; and a first-person view of a human-like avatar performing the corresponding tasks. This study purpose is to explore the influence of both time window of the trials and the frequency bands on the accuracy of the classifiers. Accordingly, we used a Filter Bank Common Spatial Patterns (FBCSP) algorithm for several time windows (100, 200, 400, 600, 800, 1000 and 2000 ms) for extracting features and evaluating the classification accuracy. The offline classification results show that a third arm can be effectively used as a control command (accuracy > 0.62%). Likewise, the human-like avatar condition (  67% ) outperforms the Graz condition (  63% ) significantly, suggesting that the realistic scenario can reduce the abstractness of the third arm. This study, thus, motivates the further inclusion of non-embodied motor imagery task in BCI systems.",
         bibtex:"",
+        pdf:"/Papers/Towards.pdf",
          },
                   {
         title: 'Heat-based Bidirectional Phase Shifting Simulation Using Position-based Dynamics', 
@@ -139,9 +232,11 @@ picture="/images/Papers/Patent.jpg"
         venue:"Computers & Graphics 2018. " ,
         year: 2018,
         picture: "/images/Papers/heat-based.jpg",
-        link: "https://www.sciencedirect.com/science/article/pii/S0097849318301389",
-        abstract:"Phase-change phenomena are present in our daily life. Examples are the evaporation of a fluid when it reaches its boiling temperature, the condensation of water vapor in air due to the pressure changes or due to the difference of temperature in boundaries, and the melting of snow when winter is ending. Current development in physics-based animation allows the simulation of these phenomena, but an integrated solution for modeling bidirectional phase-shifting objects is not available for games and other virtual environments. In this work we present a temperature-based method that drives phase transition phenomena based on latent heat of materials using position-based dynamics (PBD). Modifications to density, viscosity and distance PBD constraints are proposed to simulate the necessary thermal phenomena. Results show that melting, fusion, evaporation, condensation, dilation and even convection effects can be obtained by modifying the original PBD constraints in function of latent heat.",
+        link: "https://www.sciencedirect.com/science/article/pii/S0097849318301389", 
+ alias: "sciencedirect",
+ abstract:"Phase-change phenomena are present in our daily life. Examples are the evaporation of a fluid when it reaches its boiling temperature, the condensation of water vapor in air due to the pressure changes or due to the difference of temperature in boundaries, and the melting of snow when winter is ending. Current development in physics-based animation allows the simulation of these phenomena, but an integrated solution for modeling bidirectional phase-shifting objects is not available for games and other virtual environments. In this work we present a temperature-based method that drives phase transition phenomena based on latent heat of materials using position-based dynamics (PBD). Modifications to density, viscosity and distance PBD constraints are proposed to simulate the necessary thermal phenomena. Results show that melting, fusion, evaporation, condensation, dilation and even convection effects can be obtained by modifying the original PBD constraints in function of latent heat.",
         bibtex:"",
+        pdf:"/Papers/Heat-based bidirectional phase shifting simulation using.pdf",
          },
                   {
         title: '3dathlon: 3d Gestural Interfaces To Support A 3-stage Contest In Vr', 
@@ -149,9 +244,11 @@ picture="/images/Papers/Patent.jpg"
         venue:"Ieee Conference On Virtual Reality And 3d User Interfaces 2018. " ,
         year: 2018,
         picture: "/images/Papers/3dathlon.jpg",
-        link: "https://ieeexplore.ieee.org/document/8446286",
-        abstract:"In the context of the 3DUI Contest promoted by the IEEE VR 2018, we propose 3D interaction techniques that address three distinct tasks in a virtual environment setup: climbing a ladder, controlling a quadcopter in a first-person view flight, and building a tower by stacking a series of objects. The interaction techniques were developed so the player, our 3D-athlete, has control over the events in each task, following metaphors that facilitate the use of the interface, and having status and spatial awareness supported by clear feedback cues. Thus, the player should be able to execute the tasks with precision and agility.",
+        link: "https://ieeexplore.ieee.org/document/8446286", 
+ alias: "ieeexplore",
+ abstract:"In the context of the 3DUI Contest promoted by the IEEE VR 2018, we propose 3D interaction techniques that address three distinct tasks in a virtual environment setup: climbing a ladder, controlling a quadcopter in a first-person view flight, and building a tower by stacking a series of objects. The interaction techniques were developed so the player, our 3D-athlete, has control over the events in each task, following metaphors that facilitate the use of the interface, and having status and spatial awareness supported by clear feedback cues. Thus, the player should be able to execute the tasks with precision and agility.",
         bibtex:"",
+        pdf:"/Papers/3DAthlon-VR3DUI2018-paper.pdf",
          },
              // Entry Model
         {
@@ -160,13 +257,14 @@ picture="/images/Papers/Patent.jpg"
        venue:"20th Symposium On Virtual And Augmented Reality 2018  " ,
        year: 2018,
        picture: "/images/Papers/evaluating.jpg",
-       link: "https://ieeexplore.ieee.org/document/8802446",
-       abstract:"In teleoperation, particularly when controlling systems performing tasks that must be supervised for many hours, human users cannot keep a high level of attention all time. An open issue in the design of such interfaces is to help the user to maintain a situational awareness. In this paper, we compare three types of alert signals aiming to inform users about critical situations that require their full attention. Haptic, visual and auditory signals were assessed as pre-attention mechanisms for tasks in a camera-based supervisory interface scenario. Results show that haptic alerts, for long term supervision, are more effective than auditory and visual ones.",
+       link: "https://ieeexplore.ieee.org/document/8802446", 
+ alias: "ieeexplore",
+ abstract:"In teleoperation, particularly when controlling systems performing tasks that must be supervised for many hours, human users cannot keep a high level of attention all time. An open issue in the design of such interfaces is to help the user to maintain a situational awareness. In this paper, we compare three types of alert signals aiming to inform users about critical situations that require their full attention. Haptic, visual and auditory signals were assessed as pre-attention mechanisms for tasks in a camera-based supervisory interface scenario. Results show that haptic alerts, for long term supervision, are more effective than auditory and visual ones.",
        bibtex:"",
+       pdf:"/Papers/Evaluation_of_Visual_Auditory_and_Vibro_Tactile_Alerts_in_Supervised_Interfaces.pdf",
         }
       ]
     }
   }
 }
 </script>
-

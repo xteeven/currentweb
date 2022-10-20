@@ -21,10 +21,17 @@
               tag="a"
               dashed
               type="primary"
+              v-bind:href="pdf"
+              target="_blank"
+              >PDF</n-button>
+
+                          <n-button
+              tag="a"
+              dashed
+              type="primary"
               v-bind:href="link"
               target="_blank"
-              >{{ link }}</n-button
-            >
+              >{{ alias }}</n-button>
           </n-tab-pane>
           <n-tab-pane name="Abstract" tab="Abstract">
             {{ abstract }}
@@ -58,10 +65,16 @@
               type="primary"
               v-bind:href="link"
               target="_blank"
-              >{{ link }}</n-button
-            >
+              >{{ link }}</n-button>
+              <n-button
+              tag="b"
+              dashed
+              type="primary"
+              v-bind:href="link"
+              target="_blank"
+              >{ "PDF" }</n-button>
           </n-tab-pane>
-          <n-tab-pane name="Abstract" tab="Abstract">
+          <n-tab-pane name="Abstracta" tab="Abstract">
             {{ abstract }}
           </n-tab-pane>
         </n-tabs>
@@ -95,9 +108,11 @@ export default {
     "year",
     "venue",
     "link",
+    "alias",
     "abstract",
     "bibtex",
     "picture",
+    "pdf",
   ],
   components: {
     NButton,
