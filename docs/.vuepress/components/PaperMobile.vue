@@ -25,7 +25,7 @@
               target="_blank"
               >PDF</n-button>
 
-                          <n-button
+              <n-button
               tag="a"
               dashed
               type="primary"
@@ -63,16 +63,17 @@
               tag="a"
               dashed
               type="primary"
-              v-bind:href="link"
+              v-bind:href="pdf"
               target="_blank"
-              >{{ link }}</n-button>
-              <n-button
-              tag="b"
+              >PDF</n-button>
+            
+            <n-button
+              tag="a"
               dashed
               type="primary"
               v-bind:href="link"
               target="_blank"
-              >{ "PDF" }</n-button>
+              >{{ alias }}</n-button>
           </n-tab-pane>
           <n-tab-pane name="Abstracta" tab="Abstract">
             {{ abstract }}
