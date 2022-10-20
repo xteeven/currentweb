@@ -8,6 +8,8 @@ prev: "/publications"
 
 ## Lectures / Courses
 
+- <Badge type="tip" text="MMI2" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Mensch-Maschine-Interaktion 2 Tutorials @LMU (WS 2022/2023)  
+- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (WS 2022/2023) 
 - <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (SS2022) 
 - <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Parctical Course:Sketching with Hardware Basics @LMU (SS2022) 
 - <Badge type="tip" text="PVRU" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course: VR programming using Unity (SS 2022) 
