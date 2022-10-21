@@ -1,0 +1,21 @@
+@media screen and (max-width: 991.98px){
+.theme-container.sidebar-open .sidebar{
+
+    display: none;
+}
+
+.sidebar-mask{
+    display: none;
+}
+
+.navbar .toggle-sidebar-button::before, .navbar .toggle-sidebar-button::after, .navbar .toggle-sidebar-button{
+
+    display: none;
+}
+
+}
+
+.outlook-button{
+
+    display: none;
+}

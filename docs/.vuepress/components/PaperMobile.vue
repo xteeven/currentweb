@@ -14,24 +14,33 @@
 
       <n-layout-content content-style="padding: 24px;">
         <h4>{{ title }}</h4>
-        <p>{{ authors }} {{ venue }} {{ year }}</p>
+        <p>{{ authors }} </p>
+        <p>{{ venue }} <strong> {{ year }}</strong></p> 
         <n-tabs :bar-width="28" type="line">
           <n-tab-pane name="Download" tab="Download Links">
+
+
             <n-button
               tag="a"
-              dashed
-              type="primary"
+               strong secondary round type="primary"
               v-bind:href="pdf"
               target="_blank"
               >PDF</n-button>
 
-              <n-button
+            <n-button v-if="alias === 'None'"
               tag="a"
-              dashed
-              type="primary"
+              disabled strong secondary round
+              target="_blank"
+              >Publisher</n-button>
+
+              <n-button v-else
+              tag="a"
+               strong secondary round
               v-bind:href="link"
               target="_blank"
               >{{ alias }}</n-button>
+
+
           </n-tab-pane>
           <n-tab-pane name="Abstract" tab="Abstract">
             {{ abstract }}
@@ -41,7 +50,7 @@
     </n-layout>
 
     
-    <n-layout h v-else>
+    <n-layout h v-if="isMobile">
       <n-layout-sider class="center"
         default-expanded
         collapse-mode="width"
@@ -59,18 +68,23 @@
         <p>{{ authors }} {{ venue }} {{ year }}</p>
         <n-tabs :bar-width="28" type="line">
           <n-tab-pane name="Download" tab="Download Links">
+           
             <n-button
               tag="a"
-              dashed
-              type="primary"
+               strong secondary round type="primary"
               v-bind:href="pdf"
               target="_blank"
               >PDF</n-button>
-            
-            <n-button
+
+            <n-button v-if="alias === 'None'"
               tag="a"
-              dashed
-              type="primary"
+              disabled strong secondary round
+              target="_blank"
+              >Publisher</n-button>
+
+              <n-button v-else
+              tag="a"
+               strong secondary round
               v-bind:href="link"
               target="_blank"
               >{{ alias }}</n-button>

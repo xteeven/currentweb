@@ -2,6 +2,7 @@
   <n-space vertical size="large">
     <n-layout has-sider v-if="!isMobile">
       <n-layout-sider
+       default-collapsed
         collapse-mode="width"
         :collapsed-width="120"
         :width="240"

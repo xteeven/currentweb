@@ -6,9 +6,71 @@ prev: "/teaching"
 
 # Available Topics for thesis
 
-The following is a list of available topics for Bachelor's and Master's thesis. In addition, you will find a tentative title for your thesis, a short abstract, and the skill-set you will develop during the execution of your work. No previous experience in the topics, tools, or techniques described below is required to apply for a thesis with me. Yet, if you don't have any programming experience, you may consider one of the less coding-intensive projects. If you have any doubts, feel free to [contact me](/contact).
+Please find below a list of potential thesis topics for students pursuing a Bachelor's or Master's degree. You will also find a working thesis title, an abstract, and a list of the abilities you will hone as you complete the work. Applying to work on a thesis with me does not require any prior knowledge of the areas, resources, or methods listed below. But if you don't know how to code, you might want to look into one of the simpler projects. Don't hesitate to ask any questions you have, [contact me](/contact).
 
-PS: Any of these projects require you to read the related work and understand the state-of-the-art in the field you select.
+PS: Regardless of which option you choose, you'll need to familiarize yourself with the relevant literature and the current state of research in your chosen field.
+
+
+
+<ClientOnly>
+<Thesis 
+title="Communicating Emotions Using Haptic Stimulation on the Back" 
+abstract="As the body's largest organ, the skin is home to thousands of mechanoreceptors that detect changes in motion, pressure, temperature, and pain. But most interfaces for communication rely on some sort of visual or auditory feedback. To complete this thesis, you will develop a system to detect people's feelings and provide haptic feedback to convey those feelings remotely."
+picture="/theses/vest.jpg">
+
+<Badge type="tip" text="Python" vertical="middle" />
+<Badge type="tip" text="Emotion Recognition" vertical="middle" />
+<Badge type="tip" text="User Studies" vertical="middle" />
+<Badge type="tip" text="Haptics" vertical="middle" />
+
+</Thesis>
+</ClientOnly>
+
+---
+
+<ClientOnly>
+<Thesis 
+title="Augmenting Human Cognition Through AI Supported Triggers: The case of writting" 
+abstract="Recent advancements in artificial intelligence have resulted in the development of groundbreaking technologies like GPT-3 and Stable Difussion. Artificial intelligence systems can now almost effortlessly carry out tasks that were previously thought to be difficult for AI but not for humans because they required some degree of creativity. However, while it is undeniable that human cognition has advanced over the centuries, this change has occurred at a slower rate. Within the context of this thesis, you will investigate the emerging field of human enhancement and computer-human interaction. What triggers based on AI can do for human writers"
+picture="/theses/augmentation.jpg">
+
+<Badge type="tip" text="AI" vertical="middle" />
+<Badge type="tip" text="Augmented Reality" vertical="middle" />
+<Badge type="tip" text="Human Augmentation" vertical="middle" />
+<Badge type="tip" text="Natural Language Processing" vertical="middle" />
+
+</Thesis>
+</ClientOnly>
+
+<ClientOnly>
+<Thesis 
+title="Augmenting Human Cognition Using Transcranial Direct Stimulation: Placebo Or Reality" 
+abstract="The current state of the art of cognitive human-augmentations often relies on sensory inputs to support cognition (for example lifelogging technologies for increasing memory). This is not suprising giveng the few information we have about the human brain and its functions. However, Transcranial Stimulation stands out as the only technology that directly stimulates the human braing to alter it's functioning. In this thesis you will run a experiments comparing the effectivity of such technology"
+picture="/theses/tdcs.png">
+
+<Badge type="tip" text="Human Augmentation" vertical="middle" />
+<Badge type="tip" text="User Studies" vertical="middle" />
+<Badge type="tip" text="Neuroscience" vertical="middle" />
+<Badge type="tip" text="Tdcs" vertical="middle" />
+
+</Thesis>
+</ClientOnly>
+
+<!---
+
+<ClientOnly>
+<Thesis 
+title="" 
+abstract=""
+picture="/theses/">
+
+<Badge type="tip" text="" vertical="middle" />
+<Badge type="tip" text="" vertical="middle" />
+<Badge type="tip" text="" vertical="middle" />
+<Badge type="tip" text="" vertical="middle" />
+
+</Thesis>
+</ClientOnly>
 
 
 <ClientOnly>
@@ -57,4 +119,4 @@ picture="/theses/UH.jpg">
 </ClientOnly>
 
 ---
-
+-->

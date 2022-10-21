@@ -35,6 +35,20 @@ picture="/images/Papers/Patent.jpg"
 />
 </ClientOnly>
 
+<style>
+div.theme-hope-content:not(.custom) {
+    max-width: 60%;
+}
+
+@media (max-width: 991.98px) { 
+
+  div.theme-hope-content:not(.custom) {
+    max-width: 100%;
+}
+ }
+</style>
+
+
 <script>
 
         // Entry Model
@@ -61,17 +75,17 @@ picture="/images/Papers/Patent.jpg"
        venue:"Proceedings of the ACM Humuman-Computer Interaction Journal" ,
        year: 2022,
        picture: "/images/Papers/extended.jpg",
-       link: "Not Available", 
+       link: "None", 
        abstract:"We present a novel approach to rendering mid-air haptic sensations in a large rendering volume by turning a static array into a dynamic array following the user’s hand. We used a 6DOF robot to drive a haptic ultrasound array over a large 3D space. Our system enables rendering room-scale mid-air experiences while preserving bare-hand interaction, thus, providing tangibility for virtual environments. To evaluate our approach, we performed three evaluations. First, we performed a technical system evaluation, showcasing the feasibility of such a system. Next, we conducted three psychophysical experiments, showing that the motion does not affect the user’s perception with high likelihood. Lastly, we explored seven use cases that showcase our system’s potential using a user study. We discuss challenges and opportunities in how large-scale mid-air haptics can contribute toward room-scale haptic feedback. Thus, with our system, we contribute to general haptic mid-air feedback on a large scale.",
        bibtex:"",
        pdf:"/Papers/_ISS_22__Mid_Air_in_motion__Robotic_guided_ultrasound_mid_air_haptics_for_VR.pdf",
-       alias: "Not Available",
+       alias: "None",
         },
         
         {
        title: 'Cobity: A Plug-And-Play Toolbox to Deliver Haptics in Virtual Reality', 
        authors: "Villa, Steeven and Mayer, Sven", 
-       venue:"Proceedings of Mensch und Computer 2022" ,
+       venue:"Proceedings of Mensch und Computer" ,
        year: 2022,
        picture: "/images/Papers/cobity.jpg",
        link: "https://dl.acm.org/doi/fullHtml/10.1145/3543758.3543775",
@@ -96,7 +110,7 @@ picture="/images/Papers/Patent.jpg"
                 {
        title: 'Design of on-body tactile displays to enhance situation awareness in automated vehicles', 
        authors: "Francesco Chiossi; Steeven Villa; Melanie Hauser; Robin Welsch; Lewis Chuang", 
-       venue:"CIVEMSA 2022" ,
+       venue:"CIVEMSA" ,
        year: 2022,
        picture: "/images/Papers/onbody.jpg",
        link: "https://ieeexplore.ieee.org/abstract/document/9853690", 
@@ -109,7 +123,7 @@ picture="/images/Papers/Patent.jpg"
              {
        title: 'Designing a Physiological Loop for the Adaptation of Virtual Human Characters in a Social VR Scenario', 
        authors: "Chiossi, Francesco; Welsch, Robin; Villa, Steeven; Chuang, Lewis L.; Mayer, Sven", 
-       venue:"IEE VR 2022" ,
+       venue:"IEE VR" ,
        year: 2022,
        picture: "/images/Papers/vr-adaptation.jpg",
        link: "https://ieeexplore.ieee.org/abstract/document/9757528", 
@@ -121,7 +135,7 @@ picture="/images/Papers/Patent.jpg"
           {
        title: 'Designing a Wearable Sensor-Fusion Toolkit for Motor Skill Learning', 
        authors: "Eska, Bettina; Villa, Steeven; Mayer, Sven; Niess, Jasmin", 
-       venue:"2022 Workshop on Toolkits & Wearables: Developing Toolkits for Exploring Wearable Designs, 2022." ,
+       venue:"Workshop on Toolkits & Wearables: Developing Toolkits for Exploring Wearable Designs." ,
        year: 2022,
        picture: "/images/Papers/eska2022designing-300x169.jpg",
        link: "https://dl.acm.org/doi/10.1145/3490149.3505578", 
@@ -181,7 +195,7 @@ picture="/images/Papers/Patent.jpg"
         {
         title: 'Altering the Stiffness, Friction, and Shape Perception of Tangible Objects in Virtual Reality Using Wearable Haptics', 
         authors: "Villa, Steeven.; Pacchierotti, C; De Tinguy, Xavier.; Maciel, Anderson.; Marchal, Maud.", 
-        venue:"IEEE Transactions on Haptics 2020. " ,
+        venue:"IEEE Transactions on Haptics. " ,
         picture: "/images/Papers/altering.jpg",
         year: 2020,
         link: "https://ieeexplore.ieee.org/document/8961106", 
@@ -205,7 +219,7 @@ picture="/images/Papers/Patent.jpg"
                   {
         title: 'Phys-Sketch: Sketching 3D Dynamic Objects in Immersive Virtual Reality', 
         authors: "Ticona, Jose.; Villa, Steeven.; Torchelsen, Rafael; Maciel, Anderson.; Nedel, Luciana.", 
-        venue:"Computer Graphics International 2019." ,
+        venue:"Computer Graphics International ." ,
         year: 2019,
         picture: "/images/Papers/phys-sketch.png",
         link: "https://link.springer.com/chapter/10.1007/978-3-030-22514-8_10", 
@@ -217,7 +231,7 @@ picture="/images/Papers/Patent.jpg"
                   {
         title: 'Towards Moving Virtual Arms Using Brain-Computer Interface', 
         authors: "Salas, Jaime.; Villa, Steeven.; Maciel, Aanderson.; Nedel, Luciana.; Barone, Dante.", 
-        venue:"Computer Graphics International 2019. " ,
+        venue:"Computer Graphics International . " ,
         year: 2019,
         picture: "/images/Papers/towards.png",
         link: "https://link.springer.com/chapter/10.1007/978-3-030-22514-8_43", 
@@ -229,7 +243,7 @@ picture="/images/Papers/Patent.jpg"
                   {
         title: 'Heat-based Bidirectional Phase Shifting Simulation Using Position-based Dynamics', 
         authors: "Villa, Steeven. ; Ticona, Jose.; Torchelsen, R; Maciel, A.; Nedel, L.", 
-        venue:"Computers & Graphics 2018. " ,
+        venue:"Computers & Graphics . " ,
         year: 2018,
         picture: "/images/Papers/heat-based.jpg",
         link: "https://www.sciencedirect.com/science/article/pii/S0097849318301389", 
@@ -241,7 +255,7 @@ picture="/images/Papers/Patent.jpg"
                   {
         title: '3dathlon: 3d Gestural Interfaces To Support A 3-stage Contest In Vr', 
         authors: "Grandi, Jj; Debarba, H; Franz, J; Oliveira, V; Ticona, Jose; Souza, G; Berti, I; Villa, S. ; Maciel, A.; Nedel, L.", 
-        venue:"Ieee Conference On Virtual Reality And 3d User Interfaces 2018. " ,
+        venue:"Ieee Conference On Virtual Reality And 3d User Interfaces . " ,
         year: 2018,
         picture: "/images/Papers/3dathlon.jpg",
         link: "https://ieeexplore.ieee.org/document/8446286", 
@@ -254,7 +268,7 @@ picture="/images/Papers/Patent.jpg"
         {
        title: 'Evaluation Of Visual, Auditory And Vibro-tactile Alerts In Supervised Interfaces', 
        authors: "Souza, G.; Amaya, L.; Stein, V; Villa, S. ;ticona, J.; Maciel, A.; Nedel, L.", 
-       venue:"20th Symposium On Virtual And Augmented Reality 2018  " ,
+       venue:"20th Symposium On Virtual And Augmented Reality   " ,
        year: 2018,
        picture: "/images/Papers/evaluating.jpg",
        link: "https://ieeexplore.ieee.org/document/8802446", 

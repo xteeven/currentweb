@@ -15,6 +15,8 @@ export default defineHopeConfig({
   
   base: "/",
 
+
+
   dest: "./dist",
 
   head: [
@@ -38,4 +40,5 @@ export default defineHopeConfig({
   },
 
   themeConfig,
+  
 });

@@ -1,6 +1,6 @@
 import { defineThemeConfig } from "vuepress-theme-hope";
 import navbar from "./navbar";
-import sidebar from "./sidebar";
+//import sidebar from "./sidebar";
 
 export default defineThemeConfig({
   hostname: "https://posthci.com",
@@ -12,6 +12,8 @@ export default defineThemeConfig({
 
   darkmode: 'disable',
 
+  colorModeSwitch: false,
+  
   iconPrefix: "iconfont icon-",
 
   logo: "/images/PostHCI.svg",
