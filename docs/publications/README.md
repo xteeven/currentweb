@@ -2,6 +2,7 @@
 article: false
 next: '/teaching'
 prev: '/bio'
+pageClass: widepage
 ---
 
 # Publications
@@ -35,18 +36,6 @@ picture="/images/Papers/Patent.jpg"
 />
 </ClientOnly>
 
-<style>
-div.theme-hope-content:not(.custom) {
-    max-width: 60%;
-}
-
-@media (max-width: 991.98px) { 
-
-  div.theme-hope-content:not(.custom) {
-    max-width: 100%;
-}
- }
-</style>
 
 
 <script>
