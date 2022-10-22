@@ -2,8 +2,9 @@
   <n-space vertical size="large">
     <n-layout has-sider v-if="!isMobile">
       <n-layout-sider
+      default-collapsed
         collapse-mode="width"
-        :collapsed-width="240"
+        :collapsed-width="200"
         :width="300"
         show-trigger="round"
         content-style="padding: 24px;"
@@ -43,7 +44,9 @@
 
           </n-tab-pane>
           <n-tab-pane name="Abstract" tab="Abstract">
+            <n-scrollbar style="max-height: 120px" >
             {{ abstract }}
+             </n-scrollbar>
           </n-tab-pane>
         </n-tabs>
       </n-layout-content>
@@ -52,7 +55,7 @@
     
     <n-layout h v-if="isMobile">
       <n-layout-sider class="center"
-        default-expanded
+        default-collapsed
         collapse-mode="width"
         :collapsed-width="240"
         :width="300"
@@ -114,6 +117,7 @@ import {
   NImage,
   NTabs,
   NTabPane,
+  NScrollbar,
 } from "naive-ui";
 
 export default {
@@ -139,6 +143,7 @@ export default {
     NImage,
     NTabs,
     NTabPane,
+    NScrollbar,
   },
   data() {
     return {
