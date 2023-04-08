@@ -1,3 +1,7 @@
+---
+article: false
+icon: info
+---
 # CHI Workshop: Expectations and Placebos: Introducing Placebo Control as an Standard for Evaluating Technologies
 
 

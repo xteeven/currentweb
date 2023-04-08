@@ -58,6 +58,19 @@ picture="/images/Papers/Patent.jpg"
     return {
       posts: [ 
                 {
+       title: 'Using Pseudo-Stiffness to Enrich the Haptic Experience in Virtual Reality', 
+       authors: "Yannick Weiss; Steeven Villa; Albrecht Schmidt; Sven Mayer; Florian Müller", 
+       venue:"The ACM Conference on Human Factors in Computing Systems, CHI23" ,
+       year: 2023,
+       picture: "/images/Papers/pseudostiffness.png",
+       link: "None", 
+       abstract:"Providing users with a haptic sensation of the hardness and softness of objects in virtual reality is an open challenge. While physical props and haptic devices help, their haptic properties do not allow for dynamic adjustments. To overcome this limitation, we present a novel technique for changing the perceived stiffness of objects based on a visuo-haptic illusion. We achieved this by manipulating the hands' Control-to-Display (C/D) ratio in virtual reality while pressing down on an object with fixed stiffness. In the first study (N=12), we determine the detection thresholds of the illusion. Our results show that we can exploit a C/D ratio from 0.7 to 3.5 without user detection. In the second study (N=12), we analyze the illusion's impact on the perceived stiffness. Our results show that participants perceive the objects to be up to 28.1% softer and 8.9% stiffer, allowing for various haptic applications in virtual reality.",
+       bibtex:"",
+       pdf:"/Papers/weiss2023using.pdf",
+       alias: "None",
+        },
+        
+        {
        title: 'Understanding Perception of Human Augmentation: A Mixed-Method Study', 
        authors: "Steeven Villa; Jasmin Niess; Takuro Nakao; Jonathan Lazar; Albrecht Schmidt; Tonja-Katrin Machulla", 
        venue:"The ACM Conference on Human Factors in Computing Systems, CHI23" ,
