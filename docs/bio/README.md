@@ -29,7 +29,7 @@ Computer Scientist, Mechatronic Engineer, and Ph.D. Researcher in the Human-Cent
 - Frontiers In Computer Science 2022
 - Conference on Human Factors in Computing Systems (CHI) 2022, 2023
 - ACM Transactions on Computer-Human Interaction (ToCHI) 2022
-- ACM Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) 2022
+- ACM Interactive, Mobile, Wearablxe and Ubiquitous Technologies (IMWUT) 2022
 - Computer Suported Collaborative Work (CSCW) 2022
 - World Haptics Conference (WHC) 2021
 - Augmented humans Conference (AHs) 2021, 2022, 2023
