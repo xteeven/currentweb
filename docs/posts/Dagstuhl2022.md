@@ -18,7 +18,7 @@ The field of human augmentation is rapidly emerging, but there are many challeng
     >
   <img
       class="carousel-img"
-      src="/blog_content/Dagstuhl2022/2.JPG"
+      src="/blog_content/Dagstuhl2022/2.jpg"
     >
   <img
       class="carousel-img"
