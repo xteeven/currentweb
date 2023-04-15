@@ -13,7 +13,21 @@ Embarking on a thesis is a cool opportunity to explore new topics, acquire valua
 
 PS: Regardless of which option you choose, you'll need to familiarize yourself with the relevant literature and the current state of research in your chosen field.
 
+<ClientOnly>
+<Thesis 
+title="Electrical Muscle Stimulation for Motor Learning" 
+abstract="This thesis aims to explore the efficacy of Electromyostimulation (EMS) in facilitating the acquisition of new motor skills. Multiple feedback technologies, including vibrotactile bands, EMS devices, and haptic feedback robots, will be employed in this study. By conducting a user study, this research aims to determine the most effective technology and feedback type for enhancing motor skill learning."
+picture="">
 
+<Badge type="tip" text="Unity3d" vertical="middle" />
+<Badge type="tip" text="Hardware Integration" vertical="middle" />
+<Badge type="tip" text="User Studies" vertical="middle" />
+<Badge type="tip" text="Haptics" vertical="middle" />
+
+</Thesis>
+</ClientOnly>
+
+---
 
 <ClientOnly>
 <Thesis 

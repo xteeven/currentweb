@@ -22,12 +22,10 @@ prev: "/teaching"
 
 ### Mail
 
-> steeven.villa[at]ifi.lmu.de   
-> D.Villa[at]lmu.de
+> villa[at]posthci.com  
 
 ### Phones
 
-> +33 7 6634 9410 (Mobile)  
 > +49 89 2180 75146 (Office)
 
 ### Address 
