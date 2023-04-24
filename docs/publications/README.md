@@ -56,8 +56,20 @@ picture="/images/Papers/Patent.jpg"
   // ...
   data() {
     return {
-      posts: [ 
-                {
+      posts: [   
+          {
+       title: 'The Placebo Effect of Human Augmentation: Anticipating Cognitive Augmentation Increases Risk-Taking Behavior', 
+       authors: "Steeven Villa; Thomas Kosch; Felix Grelka Albrecht Schmidt; Robin Welsch", 
+       venue:"Journal: Computers in Human Behavior (CHB)" ,
+       year: 2023,
+       picture: "/images/Papers/CHB.jpg",
+       link: "None", 
+       abstract:"Human Augmentation Technologies improve human capabilities using technology. In this study, we investigate the placebo effect of Augmentation Technologies. Thirty naïve participants were told to be augmented with a cognitive augmentation technology or no augmentation system while conducting a Columbia Card Task. In this risk-taking measure, participants flip win and loss cards. The sham augmentation system consisted of a brain-computer interface allegedly coordinated to play non-audible sounds that increase cognitive functions. However, no sounds were played throughout all conditions. We show a placebo effect in human augmentation, where a sustained belief of improvement after using the sham system remains and an increase in risk-taking conditional on heightened expectancy using Bayesian statistical modeling. Furthermore, we identify differences in event-related potentials in the electroencephalogram that occur during the sham condition when flipping loss cards. Finally, we integrate our findings into theories of human augmentation and discuss implications for the future assessment of augmentation technologies.",
+       bibtex:"",
+       pdf:"/Papers/VillaCHB23.pdf",
+       alias: "None",
+        },   
+             {
        title: 'Using Pseudo-Stiffness to Enrich the Haptic Experience in Virtual Reality', 
        authors: "Yannick Weiss; Steeven Villa; Albrecht Schmidt; Sven Mayer; Florian Müller", 
        venue:"The ACM Conference on Human Factors in Computing Systems, CHI23" ,
