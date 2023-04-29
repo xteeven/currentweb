@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: PostHCI
+title: PostHCI - Steeven Villa
 heroImage: /images/PostHCI.svg
 heroText: Steeven Villa
 tagline: HCI Researcher @ LMU Munich
@@ -37,7 +37,7 @@ features:
 
 
 copyright: false
-footer: MIT Licensed | Copyright © 2022 Steeven Villa
+footer: MIT Licensed | Copyright © 2023 Steeven Villa
 ---
 
 
