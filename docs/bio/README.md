@@ -7,9 +7,9 @@ prev: "/"
 
 # Bio
 
-Computer Scientist, Mechatronic Engineer, and Ph.D. Researcher in the Human-Centered Ubiquitous Media group at LMU Munich. My research field is human-computer interaction, particularly human augmentation/Human-computer Integration/Human-computer symbiosis. I'm highly interested in creating technologies to help humans overcome their natural sensory, cognitive, and motor limitations.
+Computer Scientist, Mechatronic Engineer, and Ph.D. Researcher in the Human-Centered Ubiquitous Media group at LMU Munich. My research field is human-computer interaction, particularly human augmentation/Human-computer Integration/Human-computer symbiosis. I'm highly interested in creating and understanding technologies to help humans overcome their natural sensory, cognitive, and motor limitations.
 
-<Badge text="Member IEEE Technical Committee on Haptics" vertical="middle"/> <Badge text="Hive-lab" vertical="middle"/> 
+
 
 ## Co-Chair of Scientific Events
 
