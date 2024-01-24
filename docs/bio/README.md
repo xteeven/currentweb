@@ -13,6 +13,8 @@ Computer Scientist, Mechatronic Engineer, and Ph.D. Researcher in the Human-Cent
 
 ## Co-Chair of Scientific Events
 
+- [Augmented Humans Conference AHs 2023 - Proceedings Chair](https://augmented-humans.org/)
+- [ACM Symposium on User Interface Software and Technology UIST 2023 - Video chair](https://uist.acm.org/uist2022/)
 - [Augmented Humans Conference AHs 2023 - Poster chair](https://augmented-humans.org/)
 - [ACM Symposium on User Interface Software and Technology UIST 2022 - Video chair](https://uist.acm.org/uist2022/)
 - [Mensch und Computer MuC 2022 - Video Chair](https://muc2022.mensch-und-computer.de/en/conference/)
@@ -27,13 +29,16 @@ Computer Scientist, Mechatronic Engineer, and Ph.D. Researcher in the Human-Cent
 - Conference on Tangible, Embedded and Embodied Interaction (TEI) 2023
 - Designing Interactive Systems (DIS) 2023
 - Frontiers In Computer Science 2022
+- ACM Symposium on User Interface Software and Technology (UIST), 2023
 - Conference on Human Factors in Computing Systems (CHI) 2022, 2023
 - ACM Transactions on Computer-Human Interaction (ToCHI) 2022
 - ACM Interactive, Mobile, Wearablxe and Ubiquitous Technologies (IMWUT) 2022
 - Computer Suported Collaborative Work (CSCW) 2022
 - World Haptics Conference (WHC) 2021
 - Augmented humans Conference (AHs) 2021, 2022, 2023
-- Information Technology Journal 2020
+- Mensch und Computer Conference (MuC) 2022, 2023
+- Information Technology Journal 2022
+- ACM SIGGRAPH 2023
 - International Symposium on Mixed and Augmented (ISMAR) 2020, 2022
 - IEEE Virtual Reality (IEEEVR) 2020, 2021, 2022, 2023
 
