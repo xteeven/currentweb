@@ -45,18 +45,30 @@ prev: "/publications"
 
 ## Advised Theses:
 
-
-
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2023: Master thesis, Niklas Hirsh: Detecting the Boundaries of Ultrasound Haptics for Rendering Material Properties
-- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2023: Bachelor thesis, Aylin Aldemir: Transcranial Stimulation as Augmentation Technology - Placebo or Reality?
-- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2023: Bachelor thesis, Marlene Eder: Evaluating Temperature Illussions in Virtual Reality
-- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2023: Bachelor thesis, Yasin: Propioceptive Illussion in Virtual Reality for Enhanced Privacy
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2023: Master thesis, Bilel Ayech: Stretch haptic feedback for smartphone interaction.
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Bachelor thesis, Finn Krammer: Contributions of EMS to Motor Learning
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Bachelor thesis, Florian: Using Neurotechnologies for Enhanced Inhibition Control
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Bachelor thesis, Kenji Ishihara: Invesigating Thermal-Enabled Encountered-type Haptics
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Master thesis, Sarita Sridharan: Exploring the Impact of a GPT-4o Powered Dialogue System on Player Experience: A Comparative Analysis
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Master thesis, Ziyang Zhou: Exploring Sounds to Trick Our Haptic Perception
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Master thesis, Zihan Kong: Designing Continuous Glucose Monitoring (CGM) Feedback for Augmentation
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Marion Chariklia Botsivali: Investigating Human Behavior Changes in Human-AI Interaction through LLM-based Conversational AI Assistance in a Modified Multi-Round Trust Game
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Selin Bekcekaral: UX Evaluation of Pronto: A Rapid AR Prototyping Tool Compared With Traditional Paper-Based Method
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Selin Bekcekaral: UX Evaluation of Pronto: A Rapid AR Prototyping Tool Compared With Traditional Paper-Based Method
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Gabriel Udo Lindner: Studying the Sense of Ownership in Joint Human-AI Co-Creation in a Museum Context
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Burak Berberoglu: System Curiosity Scale: Assessing Curiosity in Physical Interactive Systems
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Aylin Aldemir: Augmenting Human Cognition Using Transcranial Direct Stimulation: Placebo Or Reality
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Mei Yi Lu: Outsourcing Cognition: Exploring Joint Human-AI Intelligence
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Tuan Khang Huynh: Comparison of Empirical Methods to Evaluate Human-Robot Interactions Approaches
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2023: Master thesis, Niklas Hirsh: Detecting the Boundaries of Ultrasound Haptics for Rendering Material Properties
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2023: Bachelor thesis, Aylin Aldemir: Transcranial Stimulation as Augmentation Technology - Placebo or Reality?
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2023: Bachelor thesis, Marlene Eder: Evaluating Temperature Illussions in Virtual Reality
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2023: Bachelor thesis, Yasin: Propioceptive Illussion in Virtual Reality for Enhanced Privacy
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2023: Master thesis, Bilel Ayech: Stretch haptic feedback for smartphone interaction.
 - <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2022: Bachelor thesis, Thuy-Duong Nguyen: Creating a Taxonomy of Emotions for Vibrotactile Feedback
 - <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2022: Bachelor thesis, Robert Scholz: Detecting Implicit Bias Towards Augmented Humans
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2022: Master thesis, Felix Grelka: Measuring Impact of Human-Augmentation Self Perception in Risk Assessment
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2022: Master thesis, Vasil Lazarov: Detecting Psychopathy Traces Using in-game Mechanics
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Running" vertical="middle" /> 2022: Master thesis, Carmen Schanderl: Standarized Assesment of Attitudes Towards Augmented Humans
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2022: Master thesis, Carmen Schanderl: Standarized Assesment of Attitudes Towards Augmented Humans
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2022: Master thesis, Elisabeth Pangratz: Piano Proficiency Awareness Assessment Using Induced Errors and EEG
 - <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2022: Bachelor Thesis, Christofer Parstorfer: Virtually Extending Room-Scale Mid-air Haptics Using Redirected Walking.
 - <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2021: Bachelor Thesis, Daniela K: Evaluating the impact of tangible objects in VR shopping
