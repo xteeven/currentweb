@@ -8,6 +8,10 @@ prev: "/publications"
 
 ## Lectures / Courses
 
+- <Badge type="tip" text="UX1" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> User Experience 1 @LMU (WS 2024/2025) 
+- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (WS 2024/2025) 
+- <Badge type="tip" text="PVRU" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course: VR programming using Unity (SS 2024) 
+- <Badge type="tip" text="CG1" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Computer Graphics @LMU (SS 2024) 
 - <Badge type="tip" text="UX3" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course:User Experience 3 @LMU (SS2023)  
 - <Badge type="tip" text="PVRU" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course: VR programming using Unity (SS 2023) 
 - <Badge type="tip" text="CG1" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Computer Graphics @LMU (SS 2023) 
@@ -31,6 +35,7 @@ prev: "/publications"
 
 ## Workshop / Tutorial
 
+- <Badge type="tip" text="CHI" vertical="middle" />EvalAI @CHI (2024)
 - <Badge type="tip" text="Dagstuhl" vertical="middle" />Human Augmentation- Immediate Issues @BMBF Cognitive Augmentation Seminar (2022)
 - <Badge type="tip" text="BMBF" vertical="middle" /> Haptic Perception @BMBF Social XR (2022)
 - <Badge type="tip" text="AVI" vertical="middle" /> Haptic Perception @AVI22 (2022)
