@@ -34,7 +34,7 @@ export default defineHopeConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Steeven Villa - PostHCI",
+      title: "Steeven Villa · Human-AI Interaction & UX Research",
       description: "HCI researcher - Steeven Villa",
     },
   },

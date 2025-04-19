@@ -4,40 +4,40 @@ icon: home
 title: PostHCI
 heroImage: /images/PostHCI.svg
 heroText: Steeven Villa
-tagline: HCI Researcher @ LMU Munich
+tagline: UX Researcher @ LMU Munich
 actions:
-  - text: Bio 👤
-    link: /bio/
+  - text: Industry CV 👤
+    link: /CV/UX_Research.pdf
 
-  - text: Updates 📝
-    link: /blog/
+  - text: Academic CV 📝
+    link: /CV/Academic_Research.pdf
     type: secondary
 
 features:
   - title: Publications
     icon: article
-    details: A compilation of my recent publications in the field of HCI
+    details: Peer‑reviewed papers & conference talks
     link: /publications/
 
-  - title: Teaching
+  - title: Mentoring
     icon: creative
-    details: A Summary of my teaching activities, including courses, tutorials, workshops and adviced thesis
+    details: Courses, workshops & 20+ supervised theses
     link: /teaching/
 
-  - title: Available Theses
+  - title: Available Projects
     icon: read
-    details: A list of currently available Masters and Bachelors theses
+    details: Open topics for Master’s & Bachelor’s theses
     link: /theses/
 
   - title: Contact
     icon: quote
-    details: Email, Phone, and social networks to get in touch
+    details: Let’s talk → email, phone, LinkedIn
     link: /contact/
 
 
 
 copyright: false
-footer: MIT Licensed | Copyright © 2023 Steeven Villa
+footer: MIT Licensed | Copyright © 2025 Steeven Villa
 ---
 
 

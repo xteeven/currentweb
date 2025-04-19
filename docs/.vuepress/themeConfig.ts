@@ -28,7 +28,7 @@ export default defineThemeConfig({
   // sidebar
   //sidebar: sidebar,
   sidebar: false,
-  footer: "PostHCI @ 2022",
+  footer: "PostHCI @ 2025",
 
   displayFooter: true,
 
