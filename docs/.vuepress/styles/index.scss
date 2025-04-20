@@ -35,4 +35,9 @@
      }
   }
 
-  $theme-color: #a71e1e;
+  .paper-thumb {
+    width: 240px;           /* column width */
+    aspect-ratio: 3 / 2;    /* = 240 × 160  */
+    border-radius: 8px;
+    overflow: hidden;       /* hide overflow when cropping */
+  }

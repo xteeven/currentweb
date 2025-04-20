@@ -7,8 +7,8 @@ prev: '/bio'
 
 # Publications
 
-<ClientOnly>
-<PaperMobile 
+
+<Paper 
 v-for="paper in posts"
 :year="paper.year"
 :title="paper.title"
@@ -20,7 +20,7 @@ v-for="paper in posts"
 :picture="paper.picture"
 :pdf="paper.pdf"
 />
-</ClientOnly>
+
 
 # Patents
 
@@ -64,12 +64,12 @@ picture="/images/Papers/Patent.jpg"
   authors: "Steeven Villa, Finn Jacob Eliyah, Yannick Weiss, Robin Welsch, Thomas Kosch",
   venue: "CHI Conference on Human Factors in Computing Systems (CHI'25)",
   year: 2025,
-  picture: "/images/Papers/ems_motor_learning_2025.jpg",
+  picture: "/images/Papers/ems.png",
   link: "None",
   alias: "None",
   abstract: "Electrical Muscle Stimulation (EMS) induces movement via external currents and has emerged as a promising modality for motor‑skill acquisition. In a two‑session study, EMS feedback was compared with electrotactile feedback and a no‑feedback control to examine rapid learning, consolidation, and transfer. While electrotactile feedback yielded the steepest learning curve, EMS produced the highest learning plateau, supporting its suitability for motor augmentation and skill transfer. Results contribute empirical evidence clarifying EMS effects in motor‑learning models.",
   bibtex: "",
-  pdf: "/Papers/ems_motor_learning_2025.pdf"
+  pdf: "/Papers/villa2025understanding.pdf"
 },
 
 {
@@ -77,12 +77,12 @@ picture="/images/Papers/Patent.jpg"
   authors: "Jan Leusmann, Steeven Villa, Burak Berberoglu, Chao Wang, Sven Mayer",
   venue: "CHI Conference on Human Factors in Computing Systems (CHI'25)",
   year: 2025,
-  picture: "/images/Papers/psc_scale_2025.jpg",
+  picture: "/images/Papers/leusmann2025developing.webp",
   link: "None",
   alias: "None",
   abstract: "Curiosity is a human‑like trait increasingly embedded in AI and robotic systems, yet no metric exists to assess how users perceive such system curiosity. Following a standard scale‑development pipeline, the authors created and validated the 12‑item Perceived System Curiosity (PSC) scale, comprising explorative, investigative, and social sub‑scales. Across two crowdsourced studies (N=734), the PSC demonstrated internal reliability and convergent and construct validity, offering researchers a tool to systematically investigate the role of system‑expressed curiosity in interaction.",
   bibtex: "",
-  pdf: "/Papers/psc_scale_2025.pdf"
+  pdf: "/Papers/leusmann2025developing.pdf"
 },
 
 {
@@ -90,24 +90,24 @@ picture="/images/Papers/Patent.jpg"
   authors: "Chenxinran Shen, Jurgis Karpus, Thomas Kosch, Daniela Fernandes, Beatriz Mello, Robin Welsch, Steeven Villa",
   venue: "Augmented Humans International Conference (AHs'25)",
   year: 2025,
-  picture: "/images/Papers/asymmetric_ai_social_dilemmas_2025.jpg",
+  picture: "/images/Papers/trust.png",
   link: "None",
   alias: "None",
   abstract: "Unequal access to AI augmentation may influence cooperation. Using the Trust Game and Prisoner’s Dilemma, this study examined how asymmetric AI assistance shapes trust, cooperation, and fairness perceptions between augmented and non‑augmented players. Overall cooperation rates were unchanged, but non‑augmented players perceived augmented counterparts as more competitive and less warm, anticipating lower trust. These findings underscore the importance of equitable AI access to prevent emergent social divides in AI‑augmented societies.",
   bibtex: "",
-  pdf: "/Papers/asymmetric_ai_social_dilemmas_2025.pdf"
+  pdf: "/Papers/shen2025the.pdf"
 },
 {
   title: 'Exploring Virtual Reality as a Platform for Early‑Stage Design for Human Augmentation Technologies',
   authors: "Steeven Villa, Robin Neuhaus, Yannick Weiss, Marc Hassenzahl",
   venue: "International Conference on Mobile and Ubiquitous Multimedia (MUM'24)",
   year: 2024,
-  picture: "/images/Papers/vr_hat_2024.jpg",
+  picture: "/images/Papers/VRaugmentation.jpg",
   link: "None",
   alias: "None",
   abstract: "Human‑Augmentation Technologies (HATs) aim to enhance human capabilities and transform our interactions with the environment and with one another, yet prototyping such technologies is complex. This study investigates Virtual Reality (VR) as a platform for early‑stage HAT design in an educational setting. Over a semester, students created virtual augmentations inside a VR environment; three of these applications are showcased and four students were interviewed. Findings underline the need for design guidelines for virtual augmentations, and reveal current VR limitations—simulator sickness and lack of haptic feedback—while highlighting the positive reception of the resulting prototypes.",
   bibtex: "",
-  pdf: "/Papers/vr_hat_2024.pdf"
+  pdf: "/Papers/_DIS_Poster__VR_Augmentation.pdf"
 },
        {
        title: 'Envisioning Futures: How the Modality of AI Recommendations Impacts Conversation Flow in AR-enhanced Dialogue', 

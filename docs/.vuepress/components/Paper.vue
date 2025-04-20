@@ -1,87 +1,159 @@
 <template>
-  <n-space vertical size="large">
-    <n-layout has-sider>
-      
-      <n-layout-sider default-collapsed
-        collapse-mode="width"
-        :collapsed-width="240"
-        :width="300"
-        show-trigger="bar"
-        content-style="padding: 24px;"
-        bordered
-      >
-        <n-image object-fit='scale-down' width="240" v-bind:src="picture" />
+  <n-card
+    :segmented="{ content: true }"
+    :content-style="{ padding: '24px' }"
+  >
+    <!-- responsive two‑column layout -->
+    <n-grid
+      :cols="isMobile ? 1 : 9"
+      :x-gap="24"
+      item-responsive
+      class="paper-card-grid"
+    >
+      <!-- picture column -->
+      <n-gi :span="isMobile ? 1 : 3">
+        <n-image
+          class="paper-thumb"
+          :src="picture"
+          object-fit="cover"
+          width="240"
+          height="160"         
+          preview-disabled
+        />
+      </n-gi>
 
-      </n-layout-sider>
+      <!-- text / actions column -->
+      <n-gi :span="isMobile ? 1 : 6">
+        <h4 class="paper-title">{{ title }}</h4>
+        <p class="paper-meta">{{ authors }}</p>
+        <p class="paper-meta">
+          {{ venue }}
+          <strong>{{ year }}</strong>
+        </p>
 
-      <n-layout-content content-style="padding: 24px;">
-        <h5>{{ title }}</h5>
-        <p>{{ authors }} {{ venue }} {{ year }}</p>
-        <n-tabs :bar-width="28" type="line">
-          <n-tab-pane name="Download" tab="Download Links">
-            <n-button
-              tag="a"
-              dashed
-              type="primary"
-              v-bind:href= "link"
-              target="_blank"
-              >{{ link }}</n-button
-            >
+        <n-tabs size="small" :bar-width="28">
+          <n-tab-pane name="download" tab="Download Links">
+            <n-space wrap align="center">
+              <n-button
+                v-if="pdf"
+                tag="a"
+                type="primary"
+                round
+                secondary
+                :href="pdf"
+                target="_blank"
+              >
+                PDF
+              </n-button>
+
+              <n-button
+                v-if="alias !== 'None' && link"
+                tag="a"
+                round
+                secondary
+                :href="link"
+                target="_blank"
+              >
+                {{ alias || 'Publisher' }}
+              </n-button>
+
+              <n-button
+                v-else
+                disabled
+                round
+                secondary
+              >
+                Publisher
+              </n-button>
+            </n-space>
           </n-tab-pane>
-          <n-tab-pane name="Abstract" tab="Abstract">
-            {{ abstract }}
+
+          <n-tab-pane name="abstract" tab="Abstract">
+            <n-scrollbar style="max-height: 140px">
+              {{ abstract }}
+            </n-scrollbar>
           </n-tab-pane>
         </n-tabs>
-      </n-layout-content>
-    </n-layout>
-  </n-space>
+      </n-gi>
+    </n-grid>
+  </n-card>
 </template>
 
-
-<style scoped>
-
-</style>
-
-
-
-
-<script>
+<script setup>
 import {
   NButton,
-  NSpace,
-  NLayout,
-  NLayoutContent,
-  NLayoutSider,
-  NH2,
+  NCard,
+  NGrid,
+  NGi,
   NImage,
-  NTabs,
+  NScrollbar as NScrollbar,
+  NSpace,
   NTabPane,
-} from "naive-ui";
+  NTabs
+} from 'naive-ui'
+import { computed } from 'vue'
+import { useWindowSize } from '@vueuse/core'
 
-export default {
-  props: [
-    "title",
-    "authors",
-    "year",
-    "venue",
-    "link",
-    "abstract",
-    "bibtex",
-    "picture",
-  ],
-  components: {
-    NButton,
-    NSpace,
-    NLayout,
-    NLayoutContent,
-    NLayoutSider,
-    NH2,
-    NImage,
-    NTabs,
-    NTabPane,
-  },
-};
+const props = defineProps({
+  title: String,
+  authors: String,
+  year: [String, Number],
+  venue: String,
+  link: String,
+  alias: String,
+  abstract: String,
+  picture: String,
+  pdf: String
+})
+
+/* reactive breakpoint:  ≤600 px → mobile layout */
+const { width } = useWindowSize()
+const isMobile = computed(() => width.value < 600)
 </script>
 
-<style>
+<style scoped>
+.paper-card-grid {
+  /* optional visual tweak on very wide screens */
+  max-width: 100%;
+}
+
+.paper-title {
+  margin: 0 0 4px 0;
+}
+
+.paper-meta {
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+  font-size: 0.95rem;
+}
+
+
+/* smooth animation */
+.paper-thumb img {
+  transition: transform 0.2s ease;
+}
+
+/* zoom on hover / focus */
+.paper-thumb:hover img,
+.paper-thumb:focus-visible img {
+  transform: scale(1.05);
+}
+
+/* optional: subtle shadow while zoomed */
+.paper-thumb:hover img,
+.paper-thumb:focus-visible img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* mobile / touch devices: turn off hover zoom */
+@media (hover: none) {
+  .paper-thumb img {
+    transition: none;
+  }
+  .paper-thumb:hover img,
+  .paper-thumb:focus-visible img {
+    transform: none;
+    box-shadow: none;
+  }
+}
 </style>
