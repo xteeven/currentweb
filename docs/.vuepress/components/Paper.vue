@@ -1,98 +1,107 @@
+<!-- docs/.vuepress/components/PaperCard.vue -->
 <template>
-  <n-card
-    :segmented="{ content: true }"
-    :content-style="{ padding: '24px' }"
-  >
-    <!-- responsive two‑column layout -->
-    <n-grid
-      :cols="isMobile ? 1 : 9"
-      :x-gap="24"
-      item-responsive
-      class="paper-card-grid"
+  <n-config-provider :theme="isDark ? darkTheme : lightTheme">
+    <n-global-style />
+    <n-card
+      :segmented="{ content: true }"
+      :content-style="{ padding: '24px' }"
     >
-      <!-- picture column -->
-      <n-gi :span="isMobile ? 1 : 3">
-        <n-image
-          class="paper-thumb"
-          :src="picture"
-          object-fit="cover"
-          width="240"
-          height="160"         
-          preview-disabled
-        />
-      </n-gi>
+      <!-- responsive two‑column layout -->
+      <n-grid
+        :cols="isMobile ? 1 : 9"
+        :x-gap="24"
+        item-responsive
+        class="paper-card-grid"
+      >
+        <!-- picture column -->
+        <n-gi :span="isMobile ? 1 : 3">
+          <n-image
+            class="paper-thumb"
+            :src="picture"
+            object-fit="cover"
+            width="240"
+            height="160"         
+            preview-disabled
+          />
+        </n-gi>
 
-      <!-- text / actions column -->
-      <n-gi :span="isMobile ? 1 : 6">
-        <h4 class="paper-title">{{ title }}</h4>
-        <p class="paper-meta">{{ authors }}</p>
-        <p class="paper-meta">
-          {{ venue }}
-          <strong>{{ year }}</strong>
-        </p>
+        <!-- text / actions column -->
+        <n-gi :span="isMobile ? 1 : 6">
+          <h4 class="paper-title">{{ title }}</h4>
+          <p class="paper-meta">{{ authors }}</p>
+          <p class="paper-meta">
+            {{ venue }}
+            <strong>{{ year }}</strong>
+          </p>
 
-        <n-tabs size="small" :bar-width="28">
-          <n-tab-pane name="download" tab="Download Links">
-            <n-space wrap align="center">
-              <n-button
-                v-if="pdf"
-                tag="a"
-                type="primary"
-                round
-                secondary
-                :href="pdf"
-                target="_blank"
-              >
-                PDF
-              </n-button>
+          <n-tabs size="small" :bar-width="28">
+            <n-tab-pane name="download" tab="Download Links">
+              <n-space wrap align="center">
+                <n-button
+                  v-if="pdf"
+                  tag="a"
+                  type="primary"
+                  round
+                  secondary
+                  :href="pdf"
+                  target="_blank"
+                >
+                  PDF
+                </n-button>
 
-              <n-button
-                v-if="alias !== 'None' && link"
-                tag="a"
-                round
-                secondary
-                :href="link"
-                target="_blank"
-              >
-                {{ alias || 'Publisher' }}
-              </n-button>
+                <n-button
+                  v-if="alias !== 'None' && link"
+                  tag="a"
+                  round
+                  secondary
+                  :href="link"
+                  target="_blank"
+                >
+                  {{ alias || 'Publisher' }}
+                </n-button>
 
-              <n-button
-                v-else
-                disabled
-                round
-                secondary
-              >
-                Publisher
-              </n-button>
-            </n-space>
-          </n-tab-pane>
+                <n-button
+                  v-else
+                  disabled
+                  round
+                  secondary
+                >
+                  Publisher
+                </n-button>
+              </n-space>
+            </n-tab-pane>
 
-          <n-tab-pane name="abstract" tab="Abstract">
-            <n-scrollbar style="max-height: 140px">
-              {{ abstract }}
-            </n-scrollbar>
-          </n-tab-pane>
-        </n-tabs>
-      </n-gi>
-    </n-grid>
-  </n-card>
+            <n-tab-pane name="abstract" tab="Abstract">
+              <n-scrollbar style="max-height: 140px">
+                {{ abstract }}
+              </n-scrollbar>
+            </n-tab-pane>
+          </n-tabs>
+        </n-gi>
+      </n-grid>
+    </n-card>
+  </n-config-provider>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useWindowSize } from '@vueuse/core'
+import { useDarkMode } from '@vuepress/helper/client'
 import {
+  NConfigProvider,
+  NGlobalStyle,
+  lightTheme,
+  darkTheme,
   NButton,
   NCard,
   NGrid,
   NGi,
   NImage,
-  NScrollbar as NScrollbar,
+  NScrollbar,
   NSpace,
   NTabPane,
   NTabs
 } from 'naive-ui'
-import { computed } from 'vue'
-import { useWindowSize } from '@vueuse/core'
 
 const props = defineProps({
   title: String,
@@ -109,6 +118,9 @@ const props = defineProps({
 /* reactive breakpoint:  ≤600 px → mobile layout */
 const { width } = useWindowSize()
 const isMobile = computed(() => width.value < 600)
+
+/* dark‑mode reactive flag */
+const isDark = useDarkMode()
 </script>
 
 <style scoped>

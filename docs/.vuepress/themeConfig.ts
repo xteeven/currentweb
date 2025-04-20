@@ -3,7 +3,7 @@ import type { HopeThemeConfig } from "vuepress-theme-hope";
 // simple array, no defineNavbarConfig()
 
 export const navbarConfig = [
-  { text: "Home", icon: "article", link: "/" }, 
+  { text: "Home", icon: "home", link: "/" }, 
 
 
 ];
@@ -11,8 +11,8 @@ export const navbarConfig = [
 
 const themeConfig: HopeThemeConfig = {
   hostname: "https://posthci.com",  // required
-  author: { name: "Steeven Villa", url: "https://github.com/xteeven" },
-  repo: "xteeven/currentweb",
+  //author: { name: "Steeven Villa", url: "https://github.com/xteeven" },
+  //repo: "xteeven/currentweb",
 
   // ← use the plain array here
   navbar: navbarConfig,

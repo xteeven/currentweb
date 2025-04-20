@@ -1,7 +1,7 @@
 ---
 article: false
 next: "/"
-prev: "/teaching"
+prev: "/teaching/"
 ---
 # Contact
 

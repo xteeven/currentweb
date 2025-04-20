@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-DlAUqK2U.js";import{c as o,o as r}from"./app-CXKPdMHI.js";const t={},c={style:{padding:"6px",border:"1px dashed"}};function s(n,_){return r(),o("div",c,"Hello ✅")}const l=e(t,[["render",s]]);export{l as default};

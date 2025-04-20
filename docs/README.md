@@ -8,6 +8,7 @@ tagline: UX Researcher specializing in Human-AI Interaction
 actions:
   - text: Industry CV 👤
     link: https://posthci.com/CV/UX_Research.pdf
+    type: primary
     target: _blank  
 
   - text: Academic CV 📝
@@ -15,6 +16,10 @@ actions:
     type: secondary
     target: _blank  
 
+  - text: Bio
+    link: /bio/
+    type: secondary
+    target: _blank  
 features:
   - title: Publications
     icon: article

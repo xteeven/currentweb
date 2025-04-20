@@ -1,7 +1,7 @@
 ---
 article: false
-next: "/contact"
-prev: "/publications"
+next: "/contact/"
+prev: "/publications/"
 ---
 # Mentoring
 

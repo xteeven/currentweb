@@ -1,7 +1,7 @@
 ---
 article: false
 sidebar: false
-next: "/publications"
+next: "/publications/"
 prev: "/"
 ---
 

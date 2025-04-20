@@ -1,10 +1,10 @@
 ---
 article: false
-next: "/contact"
-prev: "/teaching"
+next: "/contact/"
+prev: "/teaching/"
 ---
 
-# Available Topics for thesis
+# Available Projects
 
 
 Dear Bachelor's or Master's degree student, I've curated an exciting list of potential thesis topics for you to consider, which includes a working thesis title, abstract, and a list of skills you'll develop as you complete your work. Even if you have no prior experience with the areas, resources, or methods listed, you can still apply to work on a thesis with us. However, if you're not proficient in coding, you might want to consider one of the less technical projects (That consequently would require you to focus more in other aspects of the project). I'm [available](/contact) to answer any questions or concerns you might have.
@@ -12,6 +12,10 @@ Dear Bachelor's or Master's degree student, I've curated an exciting list of pot
 Embarking on a thesis is a cool opportunity to explore new topics, acquire valuable knowledge, and acquire essential skills for Academia/Industry.
 
 PS: Regardless of which option you choose, you'll need to familiarize yourself with the relevant literature and the current state of research in your chosen field.
+
+
+
+<!---
 
 <ClientOnly>
 <Thesis 
@@ -76,8 +80,6 @@ picture="/theses/">
 
 </Thesis>
 </ClientOnly>
-
-<!---
 
 <ClientOnly>
 <Thesis 

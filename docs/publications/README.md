@@ -1,8 +1,8 @@
 ---
 article: false
 pageClass: custom-page-class
-next: '/teaching'
-prev: '/bio'
+next: '/teaching/'
+prev: '/'
 ---
 
 # Publications
