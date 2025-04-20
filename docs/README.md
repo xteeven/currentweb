@@ -4,7 +4,7 @@ icon: home
 title: PostHCI
 heroImage: /images/PostHCI.svg
 heroText: Steeven Villa
-tagline: UX Researcher @ LMU Munich
+tagline: UX Researcher specializing in Human-AI Interaction
 actions:
   - text: Industry CV 👤
     link: https://posthci.com/CV/UX_Research.pdf
@@ -43,3 +43,6 @@ footer: MIT Licensed | Copyright © 2025 Steeven Villa
 ---
 
 
+## About Me # (Optional Heading)
+
+**Passionate UX Researcher specializing in Human-AI Interaction, usability testing, and user-centered design. Seeking to leverage my research skills to create impactful user experiences in innovative tech environments. My work focuses on [mention a key area or goal briefly].**
