@@ -41,3 +41,37 @@
     border-radius: 8px;
     overflow: hidden;       /* hide overflow when cropping */
   }
+
+  /* remove the thick built‑in card border so it blends in */
+.teaching-card {
+    --n-border-color: var(--n-neutral-color-3); /* hair‑line */
+  }
+  
+  /* dotted row separator, now that header is gone */
+  .course-row:not(:last-child) td {
+    border-bottom: 1px dotted var(--n-border-color);
+  }
+  
+  /* slight vertical padding and hover highlight */
+  .course-row td {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    transition: background-color .2s;
+  }
+  .course-row:hover td {
+    background: var(--n-fill-color-hover);
+  }
+  
+  /* space between the two badges */
+  .badge-stack .n-tag + .n-tag {
+    margin-left: 6px;
+  }
+  
+  /* clearer course name */
+  .course-title {
+    font-size: 1.06rem;
+    font-weight: 500;
+  }
+  
+
+  

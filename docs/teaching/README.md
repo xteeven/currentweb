@@ -3,54 +3,35 @@ article: false
 next: "/contact"
 prev: "/publications"
 ---
-# Teaching
+# Mentoring
+
+
+
 
 
 ## Lectures / Courses
 
-- <Badge type="tip" text="UX1" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> User Experience 1 @LMU (WS 2024/2025) 
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (WS 2024/2025) 
-- <Badge type="tip" text="PVRU" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course: VR programming using Unity (SS 2024) 
-- <Badge type="tip" text="CG1" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Computer Graphics @LMU (SS 2024) 
-- <Badge type="tip" text="UX3" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course:User Experience 3 @LMU (SS2023)  
-- <Badge type="tip" text="PVRU" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course: VR programming using Unity (SS 2023) 
-- <Badge type="tip" text="CG1" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Computer Graphics @LMU (SS 2023) 
-- <Badge type="tip" text="MMI2" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Mensch-Maschine-Interaktion 2 Tutorials @LMU (WS 2022/2023)  
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (WS 2022/2023) 
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (SS2022) 
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Parctical Course:Sketching with Hardware Basics @LMU (SS2022) 
-- <Badge type="tip" text="UX3" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course:User Experience 3 @LMU (SS2022)  
-- <Badge type="tip" text="PVRU" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course: VR programming using Unity (SS 2022) 
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (WS 2021/2022)
-- <Badge type="tip" text="MMI2" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Mensch-Maschine-Interaktion 2 Tutorials @LMU (WS 2021/2022)  
-- <Badge type="tip" text="PVRU" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course:VR programming using Unity (SS 2021)  
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (SS2021)  
-- <Badge type="tip" text="UX3" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course:User Experience 3 @LMU (SS2021)  
-- <Badge type="tip" text="MMI2" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Mensch-Maschine-Interaktion 2 Tutorials @LMU (WS 2020/2021)  
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (WS 2020/2021)  
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Parctical Course:Sketching with Hardware @LMU (SS2020)  
-- <Badge type="tip" text="SWH" vertical="middle" /> <Badge type="warning" text="SS" vertical="middle" /> Practical Course:User Experience 3 @LMU (SS2020)  
-- <Badge type="tip" text="MMI2" vertical="middle" /> <Badge type="warning" text="WS" vertical="middle" /> Mensch-Maschine-Interaktion 2 Tutorials @LMU (WS 2019/2020)  
+ <ClientOnly>
+<TeachingList :entries="lectures" />
+</ClientOnly>
 
 
 ## Workshop / Tutorial
 
-- <Badge type="tip" text="CHI" vertical="middle" />EvalAI @CHI (2024)
-- <Badge type="tip" text="Dagstuhl" vertical="middle" />Human Augmentation- Immediate Issues @BMBF Cognitive Augmentation Seminar (2022)
-- <Badge type="tip" text="BMBF" vertical="middle" /> Haptic Perception @BMBF Social XR (2022)
-- <Badge type="tip" text="AVI" vertical="middle" /> Haptic Perception @AVI22 (2022)
-- <Badge type="tip" text="CHI" vertical="middle" /> Body as starting point @CHI21 (2021)
-- <Badge type="tip" text="HIVE" vertical="middle" /> Engaging with the arts in XR @Hive-Lab (2021)
-- <Badge type="tip" text="HIVE" vertical="middle" /> Conversations in Mixed Reality @Hive-lab @Amplify (2020/2021)
+<ClientOnly>
+  <TeachingList :entries="workshops" />
+</ClientOnly>
+
 
 ## Advised Theses:
 
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Bachelor thesis, Finn Krammer: Contributions of EMS to Motor Learning
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Bachelor thesis, Florian: Using Neurotechnologies for Enhanced Inhibition Control
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Bachelor thesis, Kenji Ishihara: Invesigating Thermal-Enabled Encountered-type Haptics
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Master thesis, Sarita Sridharan: Exploring the Impact of a GPT-4o Powered Dialogue System on Player Experience: A Comparative Analysis
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Master thesis, Ziyang Zhou: Exploring Sounds to Trick Our Haptic Perception
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="warning" text="Running" vertical="middle" /> 2024: Master thesis, Zihan Kong: Designing Continuous Glucose Monitoring (CGM) Feedback for Augmentation
+
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Finn Krammer: Contributions of EMS to Motor Learning
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Florian: Using Neurotechnologies for Enhanced Inhibition Control
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Kenji Ishihara: Invesigating Thermal-Enabled Encountered-type Haptics
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Sarita Sridharan: Exploring the Impact of a GPT-4o Powered Dialogue System on Player Experience: A Comparative Analysis
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Ziyang Zhou: Exploring Sounds to Trick Our Haptic Perception
+- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Zihan Kong: Designing Continuous Glucose Monitoring (CGM) Feedback for Augmentation
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Marion Chariklia Botsivali: Investigating Human Behavior Changes in Human-AI Interaction through LLM-based Conversational AI Assistance in a Modified Multi-Round Trust Game
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Selin Bekcekaral: UX Evaluation of Pronto: A Rapid AR Prototyping Tool Compared With Traditional Paper-Based Method
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Selin Bekcekaral: UX Evaluation of Pronto: A Rapid AR Prototyping Tool Compared With Traditional Paper-Based Method
@@ -81,15 +62,80 @@ prev: "/publications"
 
 <n-button strong secondary tag="a" href="/theses" type="primary">Go to topics</n-button>
 
-<script>
 
-import {
-  NButton,
-} from "naive-ui";
 
-export default {
-  components: {
-    NButton,
-  },
-};
+<script setup>
+import { NButton } from 'naive-ui'
+
+const lectures = [
+  /* 2024 / 2025 -------------------------------------------------------- */
+  { code: 'UX1',  term: 'WS', title: 'User Experience 1 @ LMU',                              year: '2024/2025' },
+  { code: 'SWH',  term: 'WS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2024/2025' },
+
+  /* 2024 --------------------------------------------------------------- */
+  { code: 'PVRU', term: 'SS', title: 'Practical Course: VR programming using Unity',         year: '2024' },
+  { code: 'CG1',  term: 'SS', title: 'Computer Graphics @ LMU',                              year: '2024' },
+
+  /* 2023 --------------------------------------------------------------- */
+  { code: 'UX3',  term: 'SS', title: 'Practical Course: User Experience 3 @ LMU',            year: '2023' },
+  { code: 'PVRU', term: 'SS', title: 'Practical Course: VR programming using Unity',         year: '2023' },
+  { code: 'CG1',  term: 'SS', title: 'Computer Graphics @ LMU',                              year: '2023' },
+
+  /* 2022 / 2023 -------------------------------------------------------- */
+  { code: 'MMI2', term: 'WS', title: 'Mensch‑Maschine‑Interaktion 2 Tutorials @ LMU',        year: '2022/2023' },
+  { code: 'SWH',  term: 'WS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2022/2023' },
+
+  /* 2022 --------------------------------------------------------------- */
+  { code: 'SWH',  term: 'SS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2022' },
+  { code: 'SWH',  term: 'SS', title: 'Practical Course: Sketching with Hardware Basics @ LMU',year: '2022' },
+  { code: 'UX3',  term: 'SS', title: 'Practical Course: User Experience 3 @ LMU',            year: '2022' },
+  { code: 'PVRU', term: 'SS', title: 'Practical Course: VR programming using Unity',         year: '2022' },
+
+  /* 2021 / 2022 -------------------------------------------------------- */
+  { code: 'SWH',  term: 'WS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2021/2022' },
+  { code: 'MMI2', term: 'WS', title: 'Mensch‑Maschine‑Interaktion 2 Tutorials @ LMU',        year: '2021/2022' },
+
+  /* 2021 --------------------------------------------------------------- */
+  { code: 'PVRU', term: 'SS', title: 'Practical Course: VR programming using Unity',         year: '2021' },
+  { code: 'SWH',  term: 'SS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2021' },
+  { code: 'UX3',  term: 'SS', title: 'Practical Course: User Experience 3 @ LMU',            year: '2021' },
+
+  /* 2020 / 2021 -------------------------------------------------------- */
+  { code: 'MMI2', term: 'WS', title: 'Mensch‑Maschine‑Interaktion 2 Tutorials @ LMU',        year: '2020/2021' },
+  { code: 'SWH',  term: 'WS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2020/2021' },
+
+  /* 2020 --------------------------------------------------------------- */
+  { code: 'SWH',  term: 'SS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2020' },
+  { code: 'SWH',  term: 'SS', title: 'Practical Course: User Experience 3 @ LMU',            year: '2020' },
+
+  /* 2019 / 2020 -------------------------------------------------------- */
+  { code: 'MMI2', term: 'WS', title: 'Mensch‑Maschine‑Interaktion 2 Tutorials @ LMU',        year: '2019/2020' }
+]
+
+const workshops = [
+  /* 2024 --------------------------------------------------------------- */
+  { code: 'CHI',      term: 'Ws', title: 'EvalAI @ CHI',                                                                    year: '2024' },
+
+  /* 2022 --------------------------------------------------------------- */
+  { code: 'Dagstuhl', term: 'Ws', title: 'Human Augmentation – Immediate Issues @ BMBF Cognitive Augmentation Seminar',      year: '2022' },
+  { code: 'BMBF',     term: 'Tut', title: 'Haptic Perception @ BMBF Social XR',                                              year: '2022' },
+  { code: 'AVI',      term: 'Tut', title: 'Haptic Perception @ AVI 22',                                                      year: '2022' },
+
+  /* 2021 --------------------------------------------------------------- */
+  { code: 'CHI',      term: 'Ws', title: 'Body as Starting Point @ CHI 21',                                                 year: '2021' },
+  { code: 'HIVE',     term: 'Ws', title: 'Engaging with the Arts in XR @ HIVE‑Lab',                                         year: '2021' },
+
+  /* 2020 / 2021 -------------------------------------------------------- */
+  { code: 'HIVE',     term: 'Talks', title: 'Conversations in Mixed Reality @ HIVE‑Lab @ Amplify',                             year: '2020/2021' }
+]
+
+const theses = [
+  { type: 'MT', status: 'Finished', year: 2024,  title: 'Bachelor thesis, Finn Krammer — Contributions of EMS to Motor Learning' },
+  { type: 'MT', status: 'Finished', year: 2024,  title: 'Bachelor thesis, Florian — Using Neurotechnologies for Enhanced Inhibition Control' },
+  { type: 'MT', status: 'Finished', year: 2024,  title: 'Bachelor thesis, Kenji Ishihara — Investigating Thermal‑Enabled Encountered‑type Haptics' },
+  { type: 'MT', status: 'Finished', year: 2024,  title: 'Master thesis, Sarita Sridharan — GPT‑4o Dialogue System & Player Experience' },
+  /* … keep adding in same pattern … */
+  { type: 'MT', status: 'Finished', year: 2019,  title: 'Master thesis, Melanie Hauser — Supporting Situational Awareness Using a Vibrotactile Vest' }
+]
 </script>
+

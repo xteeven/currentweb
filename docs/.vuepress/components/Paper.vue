@@ -127,33 +127,13 @@ const isMobile = computed(() => width.value < 600)
   font-size: 0.95rem;
 }
 
-
-/* smooth animation */
-.paper-thumb img {
-  transition: transform 0.2s ease;
+.paper-thumb::v-deep img {
+  transition: transform .2s ease;
 }
 
-/* zoom on hover / focus */
-.paper-thumb:hover img,
-.paper-thumb:focus-visible img {
-  transform: scale(1.05);
-}
-
-/* optional: subtle shadow while zoomed */
-.paper-thumb:hover img,
-.paper-thumb:focus-visible img {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* mobile / touch devices: turn off hover zoom */
-@media (hover: none) {
-  .paper-thumb img {
-    transition: none;
-  }
-  .paper-thumb:hover img,
-  .paper-thumb:focus-visible img {
-    transform: none;
-    box-shadow: none;
-  }
+.paper-thumb:hover::v-deep img,
+.paper-thumb:focus-visible::v-deep img {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 </style>

@@ -8,6 +8,7 @@ prev: '/bio'
 # Publications
 
 
+<ClientOnly>
 <Paper 
 v-for="paper in posts"
 :year="paper.year"
@@ -20,7 +21,7 @@ v-for="paper in posts"
 :picture="paper.picture"
 :pdf="paper.pdf"
 />
-
+</ClientOnly> 
 
 # Patents
 
