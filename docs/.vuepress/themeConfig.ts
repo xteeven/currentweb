@@ -32,7 +32,8 @@ export default defineThemeConfig({
 
   displayFooter: true,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  //pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: [],
 
   blog: {
     description: "HCI researcher",
