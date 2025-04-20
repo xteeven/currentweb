@@ -23,7 +23,7 @@ prev: "/publications"
 </ClientOnly>
 
 
-## Advised Theses:
+## Advised Junior Researchers:
 
 
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Finn Krammer: Contributions of EMS to Motor Learning
