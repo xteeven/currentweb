@@ -1,70 +1,33 @@
-import { defineThemeConfig } from "vuepress-theme-hope";
-import navbar from "./navbar";
-//import sidebar from "./sidebar";
+import type { HopeThemeConfig } from "vuepress-theme-hope";
 
-export default defineThemeConfig({
-  hostname: "https://posthci.com",
+// simple array, no defineNavbarConfig()
+export const navbarConfig = [
+  { text: "Home", icon: "home", link: "/" },
+  { text: "About", icon: "info", link: "/about/" },
+  {
+    text: "Projects",
+    icon: "rocket",
+    children: [
+      { text: "Current", link: "/projects/current/" },
+      { text: "Archive", link: "/projects/archive/" },
+    ],
+  },
+];
 
-  author: {
-    name: "Steeven Villa",
-    url: "https://posthci.com",
+const themeConfig: HopeThemeConfig = {
+  hostname: "https://your-domain.com",  // required
+  author: { name: "Steeven Villa", url: "https://github.com/xteeven" },
+  repo: "xteeven/currentweb",
+
+  // ← use the plain array here
+  navbar: navbarConfig,
+
+  // likewise, if you had defineSidebarConfig(), just use object/array directly:
+  sidebar: {
+    "/guide/": ["", "getting-started", "advanced"],
   },
 
-  darkmode: 'disable',
+  // …any other theme options
+};
 
-  colorModeSwitch: false,
-  
-  iconPrefix: "iconfont icon-",
-
-  logo: "/images/PostHCI.svg",
-
-  //repo: "https://github.com/xteeven",
-
-  //docsDir: "demo/src",
-
-  // navbar
-  navbar: navbar,
-
-  // sidebar
-  //sidebar: sidebar,
-  sidebar: false,
-  footer: "PostHCI @ 2025",
-
-  displayFooter: true,
-
-  //pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-  pageInfo: ["ReadingTime"],
-
-  blog: {
-    description: "HCI researcher",
-    intro: "/bio",
-    medias: {
-      Discord: "https://discordapp.com/users/405513843708788737",
-      GitHub: "https://github.com/xteeven",
-      Instagram: "https://www.instagram.com/xteevenv/",
-      Linkedin: "https://www.linkedin.com/in/steevenv/",
-      Twitter: "https://twitter.com/steevenvs",
-    },
-  },
-
-  encrypt: {
-    config: {
-      "/guide/encrypt.html": ["1234"],
-    },
-  },
-
-  plugins: {
-    blog: {
-      autoExcerpt: true,
-    },
-
-
-
-    mdEnhance: {
-      enableAll: true,
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
-    },
-  },
-});
+export default themeConfig;
