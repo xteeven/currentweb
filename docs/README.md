@@ -7,11 +7,13 @@ heroText: Steeven Villa
 tagline: UX Researcher @ LMU Munich
 actions:
   - text: Industry CV 👤
-    link: /CV/UX_Research.pdf
+    link: https://posthci.com/CV/UX_Research.pdf
+    target: _blank  
 
   - text: Academic CV 📝
-    link: /CV/Academic_Research.pdf
+    link: https://posthci.com/CV/Academic_Research.pdf
     type: secondary
+    target: _blank  
 
 features:
   - title: Publications
