@@ -11,7 +11,7 @@ export default defineUserConfig({
   // --- existing options ---
   base: "/",
   lang: "en-US",
-  title: "Steeven Villa · HCI & UX Research",
+  title: "",
   description: "HCI researcher - Steeven Villa",
   head: [
     [

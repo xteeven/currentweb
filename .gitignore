@@ -6,3 +6,4 @@ docs/.vuepress/.temp
 node_modules/
 docs/.vuepress/.temp/
 /dist
+/docs/.vuepress/dist
