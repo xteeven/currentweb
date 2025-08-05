@@ -1,15 +1,33 @@
 import type { hopeTheme } from "vuepress-theme-hope";
-import type { HopeThemeConfig } from "vuepress-theme-hope";
+import type { ThemeOptions } from "vuepress-theme-hope";
 // simple array, no defineNavbarConfig()
 
 export const navbarConfig = [
-  { text: "Home", icon: "home", link: "/" }, 
-
-
+  { text: "Home", icon: "home", link: "/" },
+  {
+    text: "Publications",
+    icon: "article", // You can choose an appropriate icon
+    link: "/publications/", // Make sure this is the correct path
+  },
+  {
+    text: "Projects",
+    icon: "read", // You can choose an appropriate icon
+    link: "/theses/", // You used this link in your features, assuming it's correct
+  },
+  {
+    text: "Mentoring",
+    icon: "creative", // You can choose an appropriate icon
+    link: "/teaching/", // You used this link in your features, assuming it's correct
+  },
+  {
+    text: "Contact",
+    icon: "quote", // You can choose an appropriate icon
+    link: "/contact/", // Make sure this is the correct path
+  },
 ];
 
 
-const themeConfig: HopeThemeConfig = {
+const themeConfig: ThemeOptions = {
   hostname: "https://posthci.com",  // required
   //author: { name: "Steeven Villa", url: "https://github.com/xteeven" },
   //repo: "xteeven/currentweb",
