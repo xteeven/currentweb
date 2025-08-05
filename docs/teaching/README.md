@@ -76,6 +76,8 @@ const lectures = [
   { code: 'PVRU', term: 'SS', title: 'Practical Course: VR programming using Unity',         year: '2024' },
   { code: 'CG1',  term: 'SS', title: 'Computer Graphics @ LMU',                              year: '2024' },
 
+  { code: 'HRI',  term: 'WS', title: 'Practical Course: Human-Robot Interaction @ LMU',                              year: '2023/2024' },
+
   /* 2023 --------------------------------------------------------------- */
   { code: 'UX3',  term: 'SS', title: 'Practical Course: User Experience 3 @ LMU',            year: '2023' },
   { code: 'PVRU', term: 'SS', title: 'Practical Course: VR programming using Unity',         year: '2023' },

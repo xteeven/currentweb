@@ -1,10 +1,10 @@
 ---
 home: true
 icon: home
-title: PostHCI
+title: Steeven Villa, PhD | Senior HCI Researcher
 heroImage: /images/Posthci-min.png
-heroText: Steeven Villa
-tagline: UX Researcher specializing in Human-AI Interaction
+heroText: Steeven Villa, PhD
+tagline: Senior HCI/UX Researcher specializing in Human-AI interaction, Robotics & Haptics
 actions:
   - text: Industry CV 👤
     link: https://posthci.com/CV/UX_Research.pdf
