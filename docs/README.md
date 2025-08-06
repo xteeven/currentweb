@@ -6,7 +6,7 @@ heroImage: /images/Posthci-min.png
 heroText: Steeven Villa, PhD
 tagline: Senior HCI/UX Researcher specializing in Human-AI interaction, Robotics & Haptics
 actions:
-  - text: View My Work
+  - text: Explore All Publications
     link: /publications/
     type: primary
 
@@ -23,8 +23,8 @@ highlights:
 
   - header: Featured Research
     image: /images/Posthci-min.png
-    bgImage: /images/3-light.svg
-    bgImageDark: /images/3-light.svg
+    bgImage: /images/waves-dark.svg
+    bgImageDark: /images/waves-dark.svg
     features:
       - title: The Placebo Effect of Human Augmentation
         image: /images/Posthci-min.png
@@ -44,10 +44,11 @@ highlights:
       - title: 📝 <b>Go to publications</b> 📝
         link: /bio/
 
+
   - header: Featured Prototypes
     image: /images/Posthci-min.png
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    bgImage: /images/layered-waves.svg
+    bgImageDark: /images/layered-waves.svg
     highlights:
       - title: AI and Me Exhibition
         icon: 
@@ -76,42 +77,71 @@ highlights:
 
   - header: Have co-chaired
     description:
-    image: /assets/image/markdown.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    image: /images/Posthci-min.png
+    bgImage: /images/wavey-fingerprint.svg
+    bgImageDark: /images/wavey-fingerprint.svg
     bgImageStyle:
       background-repeat: repeat
       background-size: initial
-    highlights:
-      - title: Augmented Humans Conference 2025
+    features:
+      - title: Augmented Humans Conference (AHs)
         icon: 
-        details: Proceedings Chair
-      - title: Augmented Humans Conference 2025
+        details: 2025 Proceedings Chair, 2025 ad hoc Proceedings Chair, 2024 Proceedings Chair, 2023 Poster Chair, 2022 Web Chair
+      - title: ACM Symposium on User Interface Software and Technology (UIST)
         icon: 
-        details: Proceedings Chair
-      - title: Augmented Humans Conference 2025
+        details: 2023 Video Chair, 2022 Video Chair
+      - title: Symposium on Virtual and Augmented Reality (SVR)
         icon: 
-        details: Proceedings Chair
+        details: 2021 Publicity Chair
+      - title: Mensch und Computer (MuC)
+        icon: 
+        details: 2022 Video Chair
+      - title: Neuroergonomics Conference
+        icon: 
+        details: 2021 Public Relations
 
 
   - header: Have Reviewed for
     description: 
-    image: /assets/image/markdown.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/9-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/9-dark.svg
+    image: /images/Posthci-min.png
+    bgImage: /images/low-poly.svg
+    bgImageDark: /images/low-poly.svg
+    bgImageStyle:
+      background-repeat: repeat
+      background-size: initial
     features:
       - title: Conferences
-        details: CHI25, CHI23, AHs23
+        details: 
+          - <b> CHI</b> 2022, 2023, 2024, 2025 
+          - <b> UIST</b> 2023 
+          - <b> TEI</b> 2023 
+          - <b> DIS</b> 2023 
+          - <b> AHs</b> 2021, 2022, 2023, 2024, 2025 
+          - <b> MuC</b> 2022, 2023, 2024, 2025 
+          - <b> WHC</b> 2021 
+          - <b> ISMAR</b> 2020, 2022, 2024 
+          - <b> IEEE VR</b> 2020, 2021, 2022, 2023, 2024 
+          - <b> CSCW</b> 2022 
+          - <b> EICS</b> 2023 
+          - <b> MobileHCI</b> 2024 
+          - <b> SIGGRAPH</b> 2023 
 
       - title: Journals
         icon: 
-        details: CHB, ToC
+        details: 
+          - <b> Computers in Human Behavior</b> 
+          - <b> Transactions on CHI</b> 2022, 2024 
+          - <b> Transactions on Haptics</b> 2023, 2024, 2025 
+          - <b> IMWUT</b> 2022 
+          - <b> Frontiers in Computer Science</b> 2022 
+          - <b> Behaviour & Information Technology</b> 2024, 2025 
+          - <b> Information Technology Journal</b> 2022 
 
   - header: Steeven's Now
     description: A snapshot of what I'm doing and working on NOW 
-    image: /assets/image/markdown.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
+    image: /images/Posthci-min.png
+    bgImage: /images/endless-constellation.svg
+    bgImageDark: /images/endless-constellation.svg
     bgImageStyle:
       background-repeat: repeat
       background-size: initial
