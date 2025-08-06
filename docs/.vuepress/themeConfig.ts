@@ -31,12 +31,15 @@ const themeConfig: ThemeOptions = {
   hostname: "https://posthci.com",  // required
   //author: { name: "Steeven Villa", url: "https://github.com/xteeven" },
   //repo: "xteeven/currentweb",
+  
 
   // ← use the plain array here
   navbar: navbarConfig,
   sidebar: false,
 
+
   plugins: {
+    
     icon: {
       // point at your Alibaba iconfont stylesheet
       assets: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css", 

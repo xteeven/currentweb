@@ -19,65 +19,133 @@ actions:
 
 highlights:
   - header: 
-    description: 💼 Senior UX Researcher  |  🎓 CHI Presenter  |  🧠 Human Augmentation
+    description: 💼 Senior UX Researcher  |  🕶️ Virtual Reality  |  🧠 Human-AI interaction | 🤏 Haptics
 
   - header: Featured Research
-    image: /images/Posthci-min.png
+    image: /images/icons/research.png
     bgImage: /images/waves-dark.svg
     bgImageDark: /images/waves-dark.svg
     features:
-      - title: The Placebo Effect of Human Augmentation
+      - title: |
+          <div style="text-align: center;">
+            <img src="/images/tumbnails/CHB.jpg" style="max-width: 50%; border-radius: 8px;">
+          </div>
+          <br>
+          The Placebo Effect of Human Augmentation
         image: /images/Posthci-min.png
         details: High expectations of system functionality alters human behavior. <br><i> in Computers in Human Behavior </i>
-        link: /bio/
+        link: https://www.sciencedirect.com/science/article/pii/S0747563223001383
       
-      - title: EEG Correlates of Haptic Illusions
+      - title: |
+          <div style="text-align: center;">
+            <img src="/images/tumbnails/TOH.jpg" style="max-width: 50%; border-radius: 8px;">
+          </div>
+          <br>
+          EEG Correlates of Haptic Illusions
         icon: 
         details: We can trace when people detects haptic illusions in VR. <br><i> in IEEE Transactions on Haptics</i>
-        link: /bio/
+        link: https://ieeexplore.ieee.org/document/11028875
 
-      - title: The Nocebo Effect of Human Augmentation
+      - title: |
+          <div style="text-align: center;">
+            <img src="/images/tumbnails/CHI24.jpg" style="max-width: 50%; border-radius: 8px;">
+          </div>
+          <br>
+          The Nocebo Effect of Human Augmentation
         icon: 
         details: The placebo effect is resistant to negative descriptions of AI <br><i> in ACM CHI24 </i>
-        link: /bio/
+        link: https://dl.acm.org/doi/10.1145/3613904.3642633
 
-      - title: 📝 <b>Go to publications</b> 📝
-        link: /bio/
 
 
   - header: Featured Prototypes
-    image: /images/Posthci-min.png
+    image: /images/icons/proto.png
     bgImage: /images/layered-waves.svg
     bgImageDark: /images/layered-waves.svg
-    highlights:
-      - title: AI and Me Exhibition
-        icon: 
-        details: An exhibition presented at the Alte Pinakothek Munich as part of the Rachel Rusch exhibition
-        link: /bio/
+    features:
 
       - title: AI conversation enhancer in AR
         icon: 
-        details: An AR system that captures conversational context and suggest ways to continue the conversations to the user
-        link: /bio/
+        details: |
+          A AI powered augmented reality interface that continuosly record the conversation context to provide relevant cues on how to continue the conversation
+          <br> <br>
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="max-width: 100%; border-radius: 8px;"
+              >
+                <source src="/videos/Media1.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+              </video>
       
       - title: Extended Ultrasound Haptics for VR
         icon: 
-        details: A 6DoF robotic actuator that drives an ultrasound haptics array enabling room-scale ultrasonic haptic feedback in VR
-        link: /bio/
+        details: |
+          A 6DoF robotic actuator that drives an ultrasound haptics array enabling room-scale ultrasonic haptic feedback in VR
+          <br> <br>
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="max-width: 100%; border-radius: 8px;"
+              >
+                <source src="/videos/Media2.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+              </video>
 
       - title: A thermal-enabled Encountered-type Haptics end-effector
         icon: 
-        details: An attachment for serial robots, enabling thermal rendering for VR applications
-        link: /bio/
+        details: | 
+          An attachment for serial robots, enabling thermal rendering for VR applications
+          <br><br>
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="max-width: 100%; border-radius: 8px;"
+              >
+                <source src="/videos/Media4.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+
+      - title: AI and Me Exhibition
+        icon: 
+        details: | 
+          An exhibition presented at the Alte Pinakothek Munich as part of the Rachel Rusch exhibition <br> <br>
+          <img src="/images/AIandMe.jpg" style="max-width: 100%; border-radius: 8px;">
+
+
+      - title: Thermal Haptic Illusions in VR
+        icon: 
+        details: | 
+          A VR Environment that combines ultrasound haptics and visual illusions implementing hue-temperature associatons and material phases
+          <br><br>
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="max-width: 100%; border-radius: 8px;"
+              >
+                <source src="/videos/Media3.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+              </video>
 
       - title: A haptic vest for sensory augmentation and substitution
         icon: 
-        details: I've used this haptic vest now for a number of prototypes for human augmentation
-        link: /bio/
+        details: |
+          I've used this haptic vest now for a number of prototypes for human augmentation
+          <br><br>
+          <img src="/images/Papers/vest.png" style="max-width: 100%; border-radius: 8px;">
+
 
   - header: Have co-chaired
     description:
-    image: /images/Posthci-min.png
+    image: /images/icons/chair.png
     bgImage: /images/wavey-fingerprint.svg
     bgImageDark: /images/wavey-fingerprint.svg
     bgImageStyle:
@@ -103,7 +171,7 @@ highlights:
 
   - header: Have Reviewed for
     description: 
-    image: /images/Posthci-min.png
+    image: /images/icons/review.png
     bgImage: /images/low-poly.svg
     bgImageDark: /images/low-poly.svg
     bgImageStyle:
@@ -139,7 +207,7 @@ highlights:
 
   - header: Steeven's Now
     description: A snapshot of what I'm doing and working on NOW 
-    image: /images/Posthci-min.png
+    image: /images/icons/now.png
     bgImage: /images/endless-constellation.svg
     bgImageDark: /images/endless-constellation.svg
     bgImageStyle:
