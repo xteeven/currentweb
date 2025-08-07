@@ -36,7 +36,8 @@ const themeConfig: ThemeOptions = {
   // ← use the plain array here
   navbar: navbarConfig,
   sidebar: false,
-
+  darkmode: "enable",
+  pageInfo: false,
 
   plugins: {
     

@@ -58,9 +58,7 @@ prev: "/publications/"
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2020: Master thesis, Bettina Eska: Assisting Motor Skill Transfer for dance students
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2019: Master thesis, Melanie Hauser: Supporting Situational Awarenes using a Vibrotactile Vest
 
-## Available Theses
 
-<n-button strong secondary tag="a" href="/theses" type="primary">Go to topics</n-button>
 
 
 
