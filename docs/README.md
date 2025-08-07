@@ -215,13 +215,13 @@ highlights:
       background-repeat: repeat
       background-size: initial
     features:
-      - title: 🧪 Running and supervising projects for CHI 2026
+      - title: 🌱 Leading Research for CHI 2026
         icon: 
-        details: As a tradition every summer, me and my research teams are conducting studies, analysing data and sysntesizing our results into papers for our TOP HCI conference CHI
+        details: Each summer, I lead my research teams in a focused cycle of study design, data analysis, and synthesis. Our work is developed into papers for CHI, the premier international conference for Human-Computer Interaction.
 
-      - title: ✍️ Writting meta-hci articles
+      - title: ✍️ Writing on the Philosophy of HCI
         icon: 
-        details: Since a while I have been an avid reader of phylosophy of science and there are many insights that I want to bring to the HCI as a science discussion
+        details: I am currently exploring the philosophy of science to examine the foundations of our field. My goal is to author articles that bring these insights to the HCI community, sparking new discussions on how we can advance our discipline as a more rigorous science.
         
 
 
