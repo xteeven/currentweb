@@ -9,11 +9,11 @@ export const navbarConfig = [
     icon: "book-open", // You can choose an appropriate icon
     link: "/publications/", // Make sure this is the correct path
   },
-  {
-    text: "Projects",
-    icon: "flask", // You can choose an appropriate icon
-    link: "/theses/", // You used this link in your features, assuming it's correct
-  },
+ // {
+ //   text: "Projects",
+ //   icon: "flask", // You can choose an appropriate icon
+ //   link: "/theses/", // You used this link in your features, assuming it's correct
+ // },
   {
     text: "Mentoring",
     icon: "graduation-cap", // You can choose an appropriate icon
