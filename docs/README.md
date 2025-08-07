@@ -221,7 +221,7 @@ highlights:
 
       - title: ✍️ Writing on the Philosophy of HCI
         icon: 
-        details: I am currently exploring the philosophy of science to examine the foundations of our field. My goal is to author articles that bring these insights to the HCI community, sparking new discussions on how we can advance our discipline as a more rigorous science.
+        details: My current intellectual project involves a deep dive into the philosophy of science. I'm authoring a series of meta-HCI articles that challenge our foundational methods and propose new frameworks to elevate the scientific discourse and rigor within the HCI community.
         
 
 
