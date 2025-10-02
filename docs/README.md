@@ -181,7 +181,7 @@ highlights:
     features:
       - title: Conferences
         details: 
-          - <b> CHI</b> 2022, 2023, 2024, 2025 
+          - <b> CHI</b> 2022, 2023, 2024, 2025, 2026 
           - <b> UIST</b> 2023 
           - <b> TEI</b> 2023 
           - <b> DIS</b> 2023 
@@ -205,6 +205,7 @@ highlights:
           - <b> Frontiers in Computer Science</b> 2022 
           - <b> Behaviour & Information Technology</b> 2024, 2025 
           - <b> Information Technology Journal</b> 2022 
+          - <b> Computers & Graphics </b> 2025
 
   - header: Steeven's Now
     description: A snapshot of what I'm doing and working on NOW 
@@ -215,13 +216,13 @@ highlights:
       background-repeat: repeat
       background-size: initial
     features:
-      - title: 🌱 Leading Research for CHI 2026
+      - title: 📊 Strengthening Quantitative HCI Methods
         icon: 
-        details: Each summer, I lead my research teams in a focused cycle of study design, data analysis, and synthesis. Our work is developed into papers for CHI, the premier international conference for Human-Computer Interaction.
+        details: My current focus is a series of meta-HCI papers aimed at improving how we conduct quantitative research. I’m tackling foundational topics, including best practices for questionnaire development and the the evolution od effect sizes in HCI, to provide our community with clearer frameworks that increase the rigor and impact of our work.
 
-      - title: ✍️ Writing on the Philosophy of HCI
+      - title: 🎓 Leading Research & Community Building
         icon: 
-        details: My current intellectual project involves a deep dive into the philosophy of science. I'm authoring a series of meta-HCI articles that challenge our foundational methods and propose new frameworks to elevate the scientific discourse and rigor within the HCI community.
+        details: Alongside my writing, I am leading new research for the Augmented Humans conference 2026 (in Okinawa). I'm also dedicated to giving back to the community by serving as an Associate Chair (AC) for CHI 2026 and teaching courses in User Experience and hardware prototyping. Currently, I'm also developing a grant proposal to fund the next wave of my research.
         
 
 

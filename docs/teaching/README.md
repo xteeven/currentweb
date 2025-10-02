@@ -26,7 +26,7 @@ prev: "/publications/"
 ## Advised Junior Researchers:
 
 
-- <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Finn Krammer: Contributions of EMS to Motor Learning
+- <Badge type="tip" text="BT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Finn Krammer: Contributions of EMS to Motor Learning
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Florian: Using Neurotechnologies for Enhanced Inhibition Control
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Bachelor thesis, Kenji Ishihara: Invesigating Thermal-Enabled Encountered-type Haptics
 - <Badge type="tip" text="MT" vertical="middle" /> <Badge type="info" text="Finished" vertical="middle" /> 2024: Master thesis, Sarita Sridharan: Exploring the Impact of a GPT-4o Powered Dialogue System on Player Experience: A Comparative Analysis
@@ -66,7 +66,10 @@ prev: "/publications/"
 import { NButton } from 'naive-ui'
 
 const lectures = [
-  /* 2024 / 2025 -------------------------------------------------------- */
+   /* 2025 / 2026 -------------------------------------------------------- */
+  { code: 'UX1',  term: 'WS', title: 'User Experience 1 @ LMU',                              year: '2025/2026' },
+  { code: 'SWH',  term: 'WS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2025/2026' },
+  /* 2025 / 2026 -------------------------------------------------------- */
   { code: 'UX1',  term: 'WS', title: 'User Experience 1 @ LMU',                              year: '2024/2025' },
   { code: 'SWH',  term: 'WS', title: 'Practical Course: Sketching with Hardware @ LMU',      year: '2024/2025' },
 

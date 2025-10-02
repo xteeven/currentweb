@@ -51,14 +51,68 @@ picture="/images/Papers/Patent.jpg"
        // link: "",
        // abstract:"",
        // bibtex:"",
-       //  },
+       // pdf:"" },
 
     export default {
   // ...
   data() {
     return {
       posts: [  
+
+   {
+       title: 'Manipulating Stiffness Perception of Compliant Objects While Pinching in Virtual Reality', 
+       authors: "Yannick Weiss, Steeven Villa, Moritz Ziarko, Florian Müller", 
+       venue:"VRST" ,
+       year: 2025,
+       picture: "/images/Papers/manipulating.jpg",
+       link: "",
+       abstract:"Providing users with realistic sensations of object stiffness in virtual environments remains challenging due to the intricacies of our haptic sense. We investigate the use of a visuo-haptic illusion to alter the perceived stiffness of hand-held objects in virtual reality. We manipulate the Control-to-Display ratio of the index finger and thumb movements during pinching to make virtual objects feel softer or harder. We evaluated this approach on a variety of haptic representations and visualizations we selected through a pre-study survey (N=24). Results of our user study (N=20) demonstrate that this method effectively and reliably modifies stiffness perception, bridging gaps of 50% in physical stiffness without adversely affecting the visuo-haptic experience. Our findings offer insights into how different visual and haptic presentations impact stiffness perception, contributing to more effective and adaptable future haptic feedback systems.",
+       bibtex:"",
+       pdf:"" },
+
+         {
+       title: 'Quantifying the Effect of Thermal Illusions in Virtual Reality', 
+       authors: "Yannick Weiss, Marlene Eder, Oguzhan Cesur, Steeven Villa", 
+       venue:"VRST" ,
+       year: 2025,
+       picture: "/images/Papers/quantifying.jpg",
+       link: "",
+       abstract:"",
+       bibtex:"",
+       pdf:"/Papers/quantifying.pdf" },
+                {
+       title: 'Exploring the (Placebo) Effect of an AI-Powered Dialogue System on Player Experience', 
+       authors: "Sarita Sridharan, Steeven Villa, Alena Denisova, Johanna Pirker", 
+       venue:"2025 IEEE Conference on Games (CoG)" ,
+       year: 2025,
+       picture: "/images/Papers/placebogame.png",
+       link: "https://ieeexplore.ieee.org/abstract/document/11114156",
+       abstract:"This paper examines the impact of AI-generated versus human-written dialogue in a murder-mystery game on player experience. We manipulated both the game dialogue type (AI-generated vs. human-written dialogue) and the game type description (AI-labelled vs human-written-labelled) to assess effects on overall player experience (PX), immersion, and perceived autonomy. Results show that player expectations, modulated by the game type description, had a greater impact on overall PX than the actual game type. Players who thought that they played a game with a human-written narrative reported more positive overall PX, higher immersion and perceived autonomy regardless of which version they actually played. However, interacting with the AI-generated dialogue version led to higher perceived autonomy, suggesting that AI-driven dialogue can enhance perceived freedom without necessarily improving the overall PX. These findings show that player expectations, in response to game descriptions, play a central role in the experiences of players. This work contributes to understanding the influence of narratives and the extent to which AI features increase player engagement.",
+       bibtex:"",
+       pdf:"/Papers/placebogame.pdf" },
+
+         {
+       title: 'Electrophysiological Correlates for the Detection of Haptic Illusions', 
+       authors: "Yannick Weiss, Albrecht Schmidt, Steeven Villa", 
+       venue: "IEEE Transactions on Haptics" ,
+       year: 2025,
+       picture: "/images/Papers/toh-gagraphic.jpg",
+       link: "https://ieeexplore.ieee.org/abstract/document/11028875",
+       abstract:"Haptic Illusions (HIs) have emerged as a versatile method to enrich haptic experiences for computing systems, especially in virtual reality scenarios. Unlike traditional haptic rendering, HIs do not rely on complex hardware. Instead, HIs leverage multisensory interactions, which can be elicited through audio-visual channels. However, the intensity at which HIs can be effectively applied is highly subject-dependent, and typical measures only estimate generalized boundaries based on small samples. Consequently, resulting techniques compromise the experience for some users and fail to fully exploit an HI for others. We propose adapting HI intensity to the physiological responses of individual users to optimize their haptic experiences. Specifically, we investigate electroencephalographic (EEG) correlates associated with the detection of an HI’s manipulations. For this, we integrated EEG with an established psychophysical protocol. Our user study (N = 32) revealed distinct and separable EEG markers between detected and undetected HI manipulations. We identified contrasts in oscillatory activity between the central and parietal, as well as in frontal regions, as reliable markers for detection. Further, we trained machine learning models with simple averaged signals, which demonstrated potential for future in situ HI detection. These discoveries pave the way for adaptive HI systems that tailor elicitation to individual and contextual factors, enabling HIs to produce more convincing and reliable haptic feedback.",
+       bibtex:"",
+       pdf:"/Papers/toh.pdf" },
       
+{
+       title: "Whose mind is it anyway? A systematic review and exploration on agency in cognitive augmentation", 
+       authors: "Steeven Villa, Lisa Barth, Francesco Chiossi, Robin Welsch, Thomas Kosch",
+       venue:"Computers in Human Behavior: Artificial Humans" ,
+       year: 2025,
+       picture: "/images/Papers/whose.jpg",
+       link: "https://www.sciencedirect.com/science/article/pii/S2949882125000428",
+       abstract:"Technologies for human augmentation aim to enhance sensory, motor, and cognitive abilities. Despite the growing interest in cognitive augmentation, the sense of agency and the feeling of control over one’s actions and outcomes remained underexplored. We conducted a systematic literature review, screening 434 human–computer Interaction articles, and identified 27 papers examining agency in cognitive augmentation. Our analysis revealed a lack of objective methods to measure the sense of agency. We analyzed Electroencephalography (EEG) data of a dataset from 27 participants performing a Columbia Card Task with and without perceived AI assistance to address this research gap. We observed changes in EEG data for alpha and low-beta power, demonstrating EEG as a measure of perceived cognitive agency. These findings demonstrate how EEG can quantify perceived agency, presenting a method to evaluate the impact of cognitive augmentation technologies on the sense of agency. This study not only provides a novel neurophysiological approach for assessing the impact of cognitive augmentation technologies on agency but also leads the way to designing interfaces that create user awareness regarding their sense of agency.",
+       bibtex:"",
+       pdf: "/Papers/whose.pdf"
+  },
 
 {
   title: 'Understanding the Influence of Electrical Muscle Stimulation on Motor Learning: Enhancing Motor Learning or Disrupting Natural Progression?',
