@@ -20,6 +20,14 @@ export default defineUserConfig({
         href: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css",
       },
     ],
+    ["meta", { charset: "utf-8" }],
+    [
+      "meta",
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0",
+      },
+    ],
   ],
 
   // ← tell VuePress which bundler to use:

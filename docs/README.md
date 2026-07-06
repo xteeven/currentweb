@@ -3,22 +3,20 @@ home: true
 icon: home
 title: Steeven Villa, PhD | Senior HCI Researcher
 heroImage: /images/Posthci-min.png
+heroImageDark: /images/Posthci-min.png
 heroText: Steeven Villa, PhD
 tagline: Senior HCI/UX Researcher specializing in Human-AI interaction, Robotics & Haptics
 actions:
   - text: Explore All Publications
     link: /publications/
     type: primary
-
   - text: Download CV 📝
     link: https://posthci.com/cv/steeven-villa-cv.pdf
     type: secondary
-    target: _blank  
-
-
+    target: _blank
 
 highlights:
-  - header: 
+  - header:
     description: 💼 Senior UX Researcher  |  🕶️ Virtual Reality  |  🧠 Human-AI interaction | 🤏 Haptics
 
   - header: Featured Research
@@ -26,45 +24,29 @@ highlights:
     bgImage: /images/waves-dark.svg
     bgImageDark: /images/waves-dark.svg
     features:
-      - title: |
-          <div style="text-align: center;">
-            <img src="/images/thumbnails/CHB.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
-          </div>
-          <br>
-          The Power of Expectation
-        image: /images/Posthci-min.png
+      - title: The Power of Expectation
+        image: /images/thumbnails/CHB.jpg
         icon: arrow-up-right-dots
         details: High expectations alone can significantly alter user behavior in augmented systems. This finding is key for designing AI that adapts to user mental-model and belief. <br><i> in Computers in Human Behavior </i>
         link: https://www.sciencedirect.com/science/article/pii/S0747563223001383
-      
-      - title: |
-          <div style="text-align: center;">
-            <img src="/images/thumbnails/TOH.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
-          </div>
-          <br>
-          Decoding Haptic Illusions
-        details: Using EEG, we can pinpoint the precise neural markers that signal a user's detection of a haptic illusion, offering a direct window into sensory processing in VR. <br><i> in IEEE Transactions on Haptics</i>
+
+      - title: Decoding Haptic Illusions
+        image: /images/thumbnails/TOH.jpg
         icon: wave-square
+        details: Using EEG, we can pinpoint the precise neural markers that signal a user's detection of a haptic illusion, offering a direct window into sensory processing in VR. <br><i> in IEEE Transactions on Haptics</i>
         link: https://ieeexplore.ieee.org/document/11028875
 
-      - title: |
-          <div style="text-align: center;">
-            <img src="/images/thumbnails/CHI24.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
-          </div>
-          <br>
-          Bias vs. AI Performance
-        details: Can negative descriptions harm AI effectiveness? Our research shows that performance benefits from augmentation are surprisingly resistant to this "nocebo" effect. <br><i> in ACM CHI24 </i>
+      - title: Bias vs. AI Performance
+        image: /images/thumbnails/CHI24.jpg
         icon: balance-scale-left
+        details: Can negative descriptions harm AI effectiveness? Our research shows that performance benefits from augmentation are surprisingly resistant to this "nocebo" effect. <br><i> in ACM CHI24 </i>
         link: https://dl.acm.org/doi/10.1145/3613904.3642633
-
-
 
   - header: Featured Prototypes
     image: /images/icons/proto.png
     bgImage: /images/layered-waves.svg
     bgImageDark: /images/layered-waves.svg
     features:
-
       - title: AR Conversational Co-pilot
         icon: brain
         details: |
@@ -76,12 +58,13 @@ highlights:
                 muted
                 playsinline
                 preload="metadata"
+                poster="/videos/ar-conversational-copilot-poster.jpg"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/ar-conversational-copilot.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
-      
+
       - title: Room-Scale Ultrasonic Haptics
         icon: hand-sparkles
         details: |
@@ -93,6 +76,7 @@ highlights:
                 muted
                 playsinline
                 preload="metadata"
+                poster="/videos/room-scale-ultrasonic-haptics-poster.jpg"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/room-scale-ultrasonic-haptics.mp4" type="video/mp4">
@@ -101,15 +85,16 @@ highlights:
 
       - title: Virtual Temperature Rendering
         icon: fire-flame-curved
-        details: | 
+        details: |
           This robotic end-effector renders realistic temperature changes, allowing users to feel the warmth of a virtual fire or the chill of ice in VR applications.
-          <br><br>
+          <br> <br>
               <video
                 autoplay
                 loop
                 muted
                 playsinline
                 preload="metadata"
+                poster="/videos/virtual-temperature-rendering-poster.jpg"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/virtual-temperature-rendering.mp4" type="video/mp4">
@@ -118,14 +103,13 @@ highlights:
 
       - title: AI and Me, An Interactive Art Exhibition
         icon: landmark
-        details: | 
+        details: |
           An interactive art installation exploring human-AI collaboration. Visitors' inputs dynamically shaped the evolving artwork, presented at the Alte Pinakothek Munich. <br> <br>
-          <img src="/images/AIandMe.jpg" loading="lazy" decoding="async" style="max-width: 100%; border-radius: 8px;">
-
+          <img src="/images/AIandMe.jpg" loading="lazy" decoding="async" width="720" height="405" style="max-width: 100%; border-radius: 8px;">
 
       - title: Thermal Haptic Illusions
         icon: low-vision
-        details: | 
+        details: |
           Can the color of a virtual object change how hot or cold it feels? This VR experience uses visual cues to create powerful thermal illusions with ultrasound haptics.
           <br><br>
               <video
@@ -134,6 +118,7 @@ highlights:
                 muted
                 playsinline
                 preload="metadata"
+                poster="/videos/thermal-haptic-illusions-poster.jpg"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/thermal-haptic-illusions.mp4" type="video/mp4">
@@ -145,11 +130,9 @@ highlights:
         details: |
           A wearable haptic system that translates complex data into distinct tactile patterns on the torso. A flexible platform for sensory substitution and human augmentation research.
           <br><br>
-          <img src="/images/papers/vest.png" loading="lazy" decoding="async" style="max-width: 100%; border-radius: 8px;">
-
+          <img src="/images/papers/vest.png" loading="lazy" decoding="async" width="720" height="405" style="max-width: 100%; border-radius: 8px;">
 
   - header: Conference Chairing & Leadership
-    description:
     image: /images/icons/chair.png
     bgImage: /images/wavey-fingerprint.svg
     bgImageDark: /images/wavey-fingerprint.svg
@@ -158,24 +141,22 @@ highlights:
       background-size: initial
     features:
       - title: Augmented <br> Humans <br> Conference (AHs)
-        icon: 
+        icon:
         details: 2025 Proceedings Chair, 2025 ad hoc Proceedings Chair, 2024 Proceedings Chair, 2023 Poster Chair, 2022 Web Chair
       - title: ACM Symposium on User Interface Software and Technology (UIST)
-        icon: 
+        icon:
         details: 2023 Video Chair, 2022 Video Chair
       - title: Symposium <br> on Virtual and<br> Augmented Reality (SVR)
-        icon: 
+        icon:
         details: 2021 Publicity Chair
       - title: Mensch und Computer (MuC)
-        icon: 
+        icon:
         details: 2022 Video Chair
       - title: Neuroergonomics Conference
-        icon: 
+        icon:
         details: 2021 Public Relations
 
-
   - header: Have Reviewed for
-    description: 
     image: /images/icons/review.png
     bgImage: /images/low-poly.svg
     bgImageDark: /images/low-poly.svg
@@ -184,35 +165,35 @@ highlights:
       background-size: initial
     features:
       - title: Conferences
-        details: 
-          - <b> CHI</b> 2022, 2023, 2024, 2025, 2026 
-          - <b> UIST</b> 2023 
-          - <b> TEI</b> 2023 
-          - <b> DIS</b> 2023 
-          - <b> AHs</b> 2021, 2022, 2023, 2024, 2025 
-          - <b> MuC</b> 2022, 2023, 2024, 2025 
-          - <b> WHC</b> 2021 
-          - <b> ISMAR</b> 2020, 2022, 2024 
-          - <b> IEEE VR</b> 2020, 2021, 2022, 2023, 2024 
-          - <b> CSCW</b> 2022 
-          - <b> EICS</b> 2023 
-          - <b> MobileHCI</b> 2024 
-          - <b> SIGGRAPH</b> 2023 
+        details:
+          - <b> CHI</b> 2022, 2023, 2024, 2025, 2026
+          - <b> UIST</b> 2023
+          - <b> TEI</b> 2023
+          - <b> DIS</b> 2023
+          - <b> AHs</b> 2021, 2022, 2023, 2024, 2025
+          - <b> MuC</b> 2022, 2023, 2024, 2025
+          - <b> WHC</b> 2021
+          - <b> ISMAR</b> 2020, 2022, 2024
+          - <b> IEEE VR</b> 2020, 2021, 2022, 2023, 2024
+          - <b> CSCW</b> 2022
+          - <b> EICS</b> 2023
+          - <b> MobileHCI</b> 2024
+          - <b> SIGGRAPH</b> 2023
 
       - title: Journals
-        icon: 
-        details: 
-          - <b> Computers in Human Behavior</b> 
-          - <b> Transactions on CHI</b> 2022, 2024 
-          - <b> Transactions on Haptics</b> 2023, 2024, 2025 
-          - <b> IMWUT</b> 2022 
-          - <b> Frontiers in Computer Science</b> 2022 
-          - <b> Behaviour & Information Technology</b> 2024, 2025 
-          - <b> Information Technology Journal</b> 2022 
+        icon:
+        details:
+          - <b> Computers in Human Behavior</b>
+          - <b> Transactions on CHI</b> 2022, 2024
+          - <b> Transactions on Haptics</b> 2023, 2024, 2025
+          - <b> IMWUT</b> 2022
+          - <b> Frontiers in Computer Science</b> 2022
+          - <b> Behaviour & Information Technology</b> 2024, 2025
+          - <b> Information Technology Journal</b> 2022
           - <b> Computers & Graphics </b> 2025
 
   - header: Steeven's Now
-    description: A snapshot of what I'm doing and working on NOW 
+    description: A snapshot of what I'm doing and working on NOW
     image: /images/icons/now.png
     bgImage: /images/endless-constellation.svg
     bgImageDark: /images/endless-constellation.svg
@@ -221,16 +202,34 @@ highlights:
       background-size: initial
     features:
       - title: 📊 Strengthening Quantitative HCI Methods
-        icon: 
-        details: My current focus is a series of meta-HCI papers aimed at improving how we conduct quantitative research. I’m tackling foundational topics, including best practices for questionnaire development and the the evolution od effect sizes in HCI, to provide our community with clearer frameworks that increase the rigor and impact of our work.
+        icon:
+        details: My current focus is a series of meta-HCI papers aimed at improving how we conduct quantitative research. I’m tackling foundational topics, including best practices for questionnaire development and the evolution of effect sizes in HCI, to provide our community with clearer frameworks that increase the rigor and impact of our work.
 
       - title: 🎓 Leading Research & Community Building
-        icon: 
+        icon:
         details: Alongside my writing, I am leading new research for the Augmented Humans conference 2026 (in Okinawa). I'm also dedicated to giving back to the community by serving as an Associate Chair (AC) for CHI 2026 and teaching courses in User Experience and hardware prototyping. Currently, I'm also developing a grant proposal to fund the next wave of my research.
-        
-
-
 
 copyright: false
 footer: MIT Licensed | Copyright © 2025 Steeven Villa
 ---
+
+<!-- Scroll-down cue injected via DOM; harmless if theme ignores it -->
+<script setup>
+if (typeof window !== 'undefined') {
+  const hero = document.querySelector('.vp-hero-info-wrapper, .vp-hero-info')
+  if (hero && !hero.querySelector('.hero-scroll-down')) {
+    const cue = document.createElement('a')
+    cue.className = 'hero-scroll-down'
+    cue.href = '#main-content'
+    cue.setAttribute('aria-label', 'Scroll down')
+    cue.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+      <span style="font-size:0.75rem">Scroll</span>
+    `
+    hero.style.position = 'relative'
+    hero.appendChild(cue)
+  }
+}
+</script>

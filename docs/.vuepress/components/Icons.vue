@@ -1,26 +1,18 @@
 <template>
-<n-space horizontal>
-<n-image object-fit='scale-down' width="25" v-bind:src="icon" lazy :img-props="{ decoding: 'async' }" /> <a v-bind:href= "link" target="_blank">{{name}}</a>
-</n-space>
+  <a
+    :href="link"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="social-link"
+    :aria-label="name"
+  >
+    <img :src="icon" :alt="name" width="22" height="22" loading="lazy" decoding="async" />
+    <span>{{ name }}</span>
+  </a>
 </template>
 
 <script>
-
-import {
-  NImage,
-  NSpace,
-} from "naive-ui";
-
 export default {
-  props: [
-    "icon",
-    "name",
-    "link"
-  ],
-  components: {
-    NImage,
-    NSpace,
-  },
-};
-
+  props: ['icon', 'name', 'link']
+}
 </script>

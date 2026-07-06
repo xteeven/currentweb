@@ -1,82 +1,50 @@
 <template>
-  <n-layout embedded content-style="padding: 12px;">
-    <n-card>
-      <n-space justify="space-between">
-        <n-h2>
-      Title
-    </n-h2>
-    <n-button strong secondary round>
-      Paper
-    </n-button>
-  </n-space>
-
-<iframe width="100%" height="450px" src="https://www.youtube.com/embed/Nc_YeJMSCDE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      All you need to do to look to those clouds,<br>
-      and every day be in a good mood.
-
-    </n-card>
-  </n-layout>
+  <article class="portfolio-card">
+    <div class="media">
+      <video
+        v-if="video"
+        :src="video"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="metadata"
+        :poster="poster"
+      ></video>
+      <img
+        v-else-if="image"
+        :src="image"
+        :alt="title"
+        loading="lazy"
+        decoding="async"
+      />
+      <iframe
+        v-else-if="youtube"
+        :src="`https://www.youtube.com/embed/${youtube}?controls=0&rel=0`"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div class="body">
+      <h3>{{ title }}</h3>
+      <p v-if="description">{{ description }}</p>
+      <slot />
+    </div>
+  </article>
 </template>
 
-
-
-
-
 <script>
-import {
-  NTag,
-  NButton,
-  NSpace,
-  NLayout,
-  NLayoutContent,
-  NLayoutSider,
-  NH2,
-  NImage,
-  NTabs,
-  NTabPane,
-  NScrollbar,
-  NCard,
-  NIcon,
-  NThing,
-} from "naive-ui";
-
 export default {
-  props: [
-    "title",
-  ],
-  components: {
-    NTag,
-    NButton,
-    NSpace,
-    NLayout,
-    NLayoutContent,
-    NLayoutSider,
-    NH2,
-    NImage,
-    NTabs,
-    NTabPane,
-    NScrollbar,
-    NCard,
-    NIcon,
-    NThing,
-  },
-  data() {
-    return {
-      isMobile: window.innerWidth < 600,
-    };
-  },
-  mounted() {
-    window.onresize = () => {
-      this.windowWidth = window.innerWidth;
-    };
-  },
-};
-</script>
-
-<style>
-.center {
-  margin-left: auto;
-  margin-right: auto;
+  props: {
+    title: { type: String, default: '' },
+    description: { type: String, default: '' },
+    video: { type: String, default: '' },
+    image: { type: String, default: '' },
+    youtube: { type: String, default: '' },
+    poster: { type: String, default: '' }
+  }
 }
-</style>
+</script>

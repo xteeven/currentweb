@@ -11,7 +11,7 @@
           collapse-mode="width"
           :collapsed-width="200"
           :width="300"
-          show-trigger="round"
+          show-trigger="arrow-circle"
           content-style="padding: 24px;"
           bordered
         >
@@ -20,7 +20,7 @@
             width="240"
             :src="picture"
             lazy
-            :img-props="{ decoding: 'async' }"
+            :img-props="{ decoding: 'async', loading: 'lazy' }"
           />
         </n-layout-sider>
 
@@ -32,6 +32,7 @@
           <n-tabs :bar-width="28" type="line">
             <n-tab-pane name="Download" tab="Download Links">
               <n-button
+                v-if="pdf"
                 tag="a"
                 strong
                 secondary
@@ -44,7 +45,19 @@
               </n-button>
 
               <n-button
-                v-if="alias === 'None'"
+                v-if="alias !== 'None' && link"
+                tag="a"
+                strong
+                secondary
+                round
+                :href="link"
+                target="_blank"
+              >
+                {{ alias || 'Publisher' }}
+              </n-button>
+
+              <n-button
+                v-else
                 disabled
                 strong
                 secondary
@@ -54,21 +67,19 @@
               </n-button>
 
               <n-button
-                v-else
-                tag="a"
+                v-if="bibtex"
                 strong
                 secondary
                 round
-                :href="link"
-                target="_blank"
+                @click="copyBibtex"
               >
-                {{ alias }}
+                {{ copied ? 'Copied!' : 'BibTeX' }}
               </n-button>
             </n-tab-pane>
 
             <n-tab-pane name="Abstract" tab="Abstract">
               <n-scrollbar style="max-height: 120px">
-                {{ abstract }}
+                {{ abstract || 'Abstract not available.' }}
               </n-scrollbar>
             </n-tab-pane>
           </n-tabs>
@@ -91,7 +102,7 @@
             width="240"
             :src="picture"
             lazy
-            :img-props="{ decoding: 'async' }"
+            :img-props="{ decoding: 'async', loading: 'lazy' }"
           />
         </n-layout-sider>
 
@@ -102,6 +113,7 @@
           <n-tabs :bar-width="28" type="line">
             <n-tab-pane name="Download" tab="Download Links">
               <n-button
+                v-if="pdf"
                 tag="a"
                 strong
                 secondary
@@ -114,7 +126,19 @@
               </n-button>
 
               <n-button
-                v-if="alias === 'None'"
+                v-if="alias !== 'None' && link"
+                tag="a"
+                strong
+                secondary
+                round
+                :href="link"
+                target="_blank"
+              >
+                {{ alias || 'Publisher' }}
+              </n-button>
+
+              <n-button
+                v-else
                 disabled
                 strong
                 secondary
@@ -124,20 +148,18 @@
               </n-button>
 
               <n-button
-                v-else
-                tag="a"
+                v-if="bibtex"
                 strong
                 secondary
                 round
-                :href="link"
-                target="_blank"
+                @click="copyBibtex"
               >
-                {{ alias }}
+                {{ copied ? 'Copied!' : 'BibTeX' }}
               </n-button>
             </n-tab-pane>
 
             <n-tab-pane name="Abstract" tab="Abstract">
-              {{ abstract }}
+              {{ abstract || 'Abstract not available.' }}
             </n-tab-pane>
           </n-tabs>
         </n-layout-content>
@@ -148,7 +170,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { useWindowSize } from '@vueuse/core'
 import { useDarkMode } from '@vuepress/helper/client'
 import {
   NConfigProvider,
@@ -176,22 +197,31 @@ const props = defineProps<{
   abstract: string
   picture: string
   pdf: string
+  bibtex: string
 }>()
 
-// track dark‑mode from the site
 const isDark = useDarkMode()
 
-// track mobile breakpoint
-const isMobile = ref(window.innerWidth < 600)
+const isMobile = ref(false)
 function onResize() {
-  isMobile.value = window.innerWidth < 600
+  isMobile.value = typeof window !== 'undefined' && window.innerWidth < 600
 }
 onMounted(() => {
+  onResize()
   window.addEventListener('resize', onResize)
 })
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize)
 })
+
+const copied = ref(false)
+function copyBibtex() {
+  if (!props.bibtex) return
+  navigator.clipboard?.writeText(props.bibtex).then(() => {
+    copied.value = true
+    setTimeout(() => (copied.value = false), 1500)
+  })
+}
 </script>
 
 <style scoped>

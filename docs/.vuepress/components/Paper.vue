@@ -5,6 +5,7 @@
     <n-card
       :segmented="{ content: true }"
       :content-style="{ padding: '24px' }"
+      class="hover-lift"
     >
       <!-- responsive two‑column layout -->
       <n-grid
@@ -20,9 +21,9 @@
             :src="picture"
             object-fit="cover"
             width="240"
-            height="160"         
+            height="160"
             lazy
-            :img-props="{ decoding: 'async' }"
+            :img-props="{ decoding: 'async', loading: 'lazy' }"
             preview-disabled
           />
         </n-gi>
@@ -63,19 +64,28 @@
                 </n-button>
 
                 <n-button
-                  v-else
+                  v-else-if="alias === 'None' || !link"
                   disabled
                   round
                   secondary
                 >
                   Publisher
                 </n-button>
+
+                <n-button
+                  v-if="bibtex"
+                  round
+                  secondary
+                  @click="copyBibtex"
+                >
+                  {{ copied ? 'Copied!' : 'Copy BibTeX' }}
+                </n-button>
               </n-space>
             </n-tab-pane>
 
             <n-tab-pane name="abstract" tab="Abstract">
               <n-scrollbar style="max-height: 140px">
-                {{ abstract }}
+                {{ abstract || 'Abstract not available.' }}
               </n-scrollbar>
             </n-tab-pane>
           </n-tabs>
@@ -86,7 +96,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useWindowSize } from '@vueuse/core'
 import { useDarkMode } from '@vuepress/helper/client'
 import {
@@ -114,20 +124,30 @@ const props = defineProps({
   alias: String,
   abstract: String,
   picture: String,
-  pdf: String
+  pdf: String,
+  bibtex: String
 })
 
-/* reactive breakpoint:  ≤600 px → mobile layout */
+/* reactive breakpoint:  ≤600 px → mobile layout */
 const { width } = useWindowSize()
 const isMobile = computed(() => width.value < 600)
 
 /* dark‑mode reactive flag */
 const isDark = useDarkMode()
+
+/* copy bibtex */
+const copied = ref(false)
+function copyBibtex() {
+  if (!props.bibtex) return
+  navigator.clipboard?.writeText(props.bibtex).then(() => {
+    copied.value = true
+    setTimeout(() => (copied.value = false), 1500)
+  })
+}
 </script>
 
 <style scoped>
 .paper-card-grid {
-  /* optional visual tweak on very wide screens */
   max-width: 100%;
 }
 
@@ -142,12 +162,12 @@ const isDark = useDarkMode()
 }
 
 .paper-thumb :deep(img) {
-  transition: transform .2s ease;
+  transition: transform .3s ease;
 }
 
 .paper-thumb:hover :deep(img),
 .paper-thumb:focus-visible :deep(img) {
-  transform: scale(1.2);
+  transform: scale(1.08);
   box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 </style>

@@ -1,77 +1,356 @@
-@media screen and (max-width: 991.98px){
-.theme-container.sidebar-open .sidebar{
+@use "sass:math";
 
+/* ------------------------------------------------------------------
+   Shared animation & aesthetic utilities
+   ------------------------------------------------------------------ */
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reusable keyframes */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
+}
+
+/* Utility classes applied by JS observer */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96);
+  transition:
+    opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger children when a parent has [data-stagger] */
+[data-stagger] > .reveal,
+[data-stagger] > .reveal-scale {
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+
+/* Hero scroll-down cue */
+.hero-scroll-down {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-color);
+  opacity: 0.75;
+  animation: fade-in 1s ease 0.8s both, pulse-soft 2s ease-in-out 1.5s infinite;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hero-scroll-down svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Hover lift for cards / images */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover,
+.hover-lift:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Consistent image treatment */
+.img-rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Section dividers */
+.section-divider {
+  border: 0;
+  height: 1px;
+  margin: 2.5rem 0;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
+/* ------------------------------------------------------------------
+   Mobile sidebar tweaks (existing)
+   ------------------------------------------------------------------ */
+@media screen and (max-width: 991.98px) {
+  .theme-container.sidebar-open .sidebar {
     display: none;
-}
+  }
 
-.sidebar-mask{
+  .sidebar-mask {
     display: none;
-}
+  }
 
-.navbar .toggle-sidebar-button::before, .navbar .toggle-sidebar-button::after, .navbar .toggle-sidebar-button{
-
+  .navbar .toggle-sidebar-button::before,
+  .navbar .toggle-sidebar-button::after,
+  .navbar .toggle-sidebar-button {
     display: none;
+  }
 }
 
+.outlook-button {
+  display: none;
 }
 
-.outlook-button{
-
-    display: none;
-}
-
-
+/* ------------------------------------------------------------------
+   Publications page width
+   ------------------------------------------------------------------ */
 .theme-container.custom-page-class {
-    /* page-specific rules */
+  div.theme-hope-content:not(.custom) {
+    max-width: 70%;
+  }
+
+  @media (max-width: 991.98px) {
     div.theme-hope-content:not(.custom) {
-        max-width: 60%;
+      max-width: 100%;
     }
-    
-    @media (max-width: 991.98px) { 
-    
-      div.theme-hope-content:not(.custom) {
-        max-width: 100%;
-    }
-     }
   }
+}
 
-  .paper-thumb {
-    width: 240px;           /* column width */
-    aspect-ratio: 3 / 2;    /* = 240 × 160  */
-    border-radius: 8px;
-    overflow: hidden;       /* hide overflow when cropping */
-  }
+/* ------------------------------------------------------------------
+   Paper card polish
+   ------------------------------------------------------------------ */
+.paper-thumb {
+  width: 240px;
+  aspect-ratio: 3 / 2;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-  /* remove the thick built‑in card border so it blends in */
+.paper-card-grid {
+  max-width: 100%;
+}
+
+.paper-title {
+  margin: 0 0 4px 0;
+}
+
+.paper-meta {
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+  font-size: 0.95rem;
+}
+
+.paper-thumb img {
+  transition: transform 0.3s ease;
+}
+
+.paper-thumb:hover img,
+.paper-thumb:focus-visible img {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------------------------------------------------------
+   Portfolio grid
+   ------------------------------------------------------------------ */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.portfolio-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-color-secondary, #fff);
+  border: 1px solid var(--border-color);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card .media {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  overflow: hidden;
+}
+
+.portfolio-card .media iframe,
+.portfolio-card .media img,
+.portfolio-card .media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.portfolio-card:hover .media img,
+.portfolio-card:hover .media video {
+  transform: scale(1.04);
+}
+
+.portfolio-card .body {
+  padding: 18px 20px;
+}
+
+.portfolio-card .body h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.portfolio-card .body p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  opacity: 0.9;
+}
+
+/* ------------------------------------------------------------------
+   Contact page social bar
+   ------------------------------------------------------------------ */
+.social-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin: 24px 0 32px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--theme-color);
+}
+
+.social-link img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.contact-card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px 24px;
+  max-width: 520px;
+  margin: 0 auto 24px;
+  background: var(--bg-color-secondary, #fff);
+}
+
+.contact-card p {
+  margin: 6px 0;
+}
+
+/* ------------------------------------------------------------------
+   Bio / lists polish
+   ------------------------------------------------------------------ */
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 18px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: var(--bg-color-secondary, #f5f5f5);
+  border: 1px solid var(--border-color);
+}
+
+/* ------------------------------------------------------------------
+   Legacy teaching helpers (kept for compatibility)
+   ------------------------------------------------------------------ */
 .teaching-card {
-    --n-border-color: var(--n-neutral-color-3); /* hair‑line */
-  }
-  
-  /* dotted row separator, now that header is gone */
-  .course-row:not(:last-child) td {
-    border-bottom: 1px dotted var(--n-border-color);
-  }
-  
-  /* slight vertical padding and hover highlight */
-  .course-row td {
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
-    transition: background-color .2s;
-  }
-  .course-row:hover td {
-    background: var(--n-fill-color-hover);
-  }
-  
-  /* space between the two badges */
-  .badge-stack .n-tag + .n-tag {
-    margin-left: 6px;
-  }
-  
-  /* clearer course name */
-  .course-title {
-    font-size: 1.06rem;
-    font-weight: 500;
-  }
-  
+  --n-border-color: var(--n-neutral-color-3);
+}
 
-  
+.course-row:not(:last-child) td {
+  border-bottom: 1px dotted var(--n-border-color);
+}
+
+.course-row td {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  transition: background-color 0.2s;
+}
+
+.course-row:hover td {
+  background: var(--n-fill-color-hover);
+}
+
+.badge-stack .n-tag + .n-tag {
+  margin-left: 6px;
+}
+
+.course-title {
+  font-size: 1.06rem;
+  font-weight: 500;
+}
