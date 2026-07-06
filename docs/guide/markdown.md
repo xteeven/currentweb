@@ -1,6 +1,6 @@
 ---
 article: false
-index: 2
+index: true
 icon: markdown
 title: Markdown Enhance
 category:

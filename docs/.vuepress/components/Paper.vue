@@ -21,6 +21,8 @@
             object-fit="cover"
             width="240"
             height="160"         
+            lazy
+            :img-props="{ decoding: 'async' }"
             preview-disabled
           />
         </n-gi>
@@ -139,12 +141,12 @@ const isDark = useDarkMode()
   font-size: 0.95rem;
 }
 
-.paper-thumb::v-deep img {
+.paper-thumb :deep(img) {
   transition: transform .2s ease;
 }
 
-.paper-thumb:hover::v-deep img,
-.paper-thumb:focus-visible::v-deep img {
+.paper-thumb:hover :deep(img),
+.paper-thumb:focus-visible :deep(img) {
   transform: scale(1.2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }

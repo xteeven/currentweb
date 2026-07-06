@@ -19,6 +19,8 @@
             object-fit="scale-down"
             width="240"
             :src="picture"
+            lazy
+            :img-props="{ decoding: 'async' }"
           />
         </n-layout-sider>
 
@@ -88,6 +90,8 @@
             object-fit="scale-down"
             width="240"
             :src="picture"
+            lazy
+            :img-props="{ decoding: 'async' }"
           />
         </n-layout-sider>
 

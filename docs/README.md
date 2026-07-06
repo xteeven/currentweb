@@ -28,7 +28,7 @@ highlights:
     features:
       - title: |
           <div style="text-align: center;">
-            <img src="/images/tumbnails/CHB.jpg" style="max-width: 50%; border-radius: 8px;">
+            <img src="/images/tumbnails/CHB.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
           </div>
           <br>
           The Power of Expectation
@@ -39,7 +39,7 @@ highlights:
       
       - title: |
           <div style="text-align: center;">
-            <img src="/images/tumbnails/TOH.jpg" style="max-width: 50%; border-radius: 8px;">
+            <img src="/images/tumbnails/TOH.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
           </div>
           <br>
           Decoding Haptic Illusions
@@ -49,7 +49,7 @@ highlights:
 
       - title: |
           <div style="text-align: center;">
-            <img src="/images/tumbnails/CHI24.jpg" style="max-width: 50%; border-radius: 8px;">
+            <img src="/images/tumbnails/CHI24.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
           </div>
           <br>
           Bias vs. AI Performance
@@ -75,6 +75,7 @@ highlights:
                 loop
                 muted
                 playsinline
+                preload="metadata"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/ar-conversational-copilot.mp4" type="video/mp4">
@@ -91,6 +92,7 @@ highlights:
                 loop
                 muted
                 playsinline
+                preload="metadata"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/room-scale-ultrasonic-haptics.mp4" type="video/mp4">
@@ -107,6 +109,7 @@ highlights:
                 loop
                 muted
                 playsinline
+                preload="metadata"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/virtual-temperature-rendering.mp4" type="video/mp4">
@@ -117,7 +120,7 @@ highlights:
         icon: landmark
         details: | 
           An interactive art installation exploring human-AI collaboration. Visitors' inputs dynamically shaped the evolving artwork, presented at the Alte Pinakothek Munich. <br> <br>
-          <img src="/images/AIandMe.jpg" style="max-width: 100%; border-radius: 8px;">
+          <img src="/images/AIandMe.jpg" loading="lazy" decoding="async" style="max-width: 100%; border-radius: 8px;">
 
 
       - title: Thermal Haptic Illusions
@@ -130,6 +133,7 @@ highlights:
                 loop
                 muted
                 playsinline
+                preload="metadata"
                 style="max-width: 100%; border-radius: 8px;"
               >
                 <source src="/videos/thermal-haptic-illusions.mp4" type="video/mp4">
@@ -141,7 +145,7 @@ highlights:
         details: |
           A wearable haptic system that translates complex data into distinct tactile patterns on the torso. A flexible platform for sensory substitution and human augmentation research.
           <br><br>
-          <img src="/images/Papers/vest.png" style="max-width: 100%; border-radius: 8px;">
+          <img src="/images/Papers/vest.png" loading="lazy" decoding="async" style="max-width: 100%; border-radius: 8px;">
 
 
   - header: Conference Chairing & Leadership

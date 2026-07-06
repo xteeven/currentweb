@@ -3,7 +3,6 @@ import { defineUserConfig }        from "vuepress";
 import { hopeTheme }               from "vuepress-theme-hope";
 import { viteBundler }             from "@vuepress/bundler-vite";             // ← add this
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
-//import { searchPlugin }            from "@vuepress/plugin-search";
 import { path }                    from "@vuepress/utils";
 import themeConfig                 from "./themeConfig";
 

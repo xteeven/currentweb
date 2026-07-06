@@ -1,6 +1,6 @@
 ---
 article: false
-index: 3
+index: true
 title: Component disabled
 icon: config
 category:

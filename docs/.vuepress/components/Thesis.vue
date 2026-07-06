@@ -18,6 +18,8 @@
            class="detail-image"
            object-fit="scale-down"
            :src="picture"
+           lazy
+           :img-props="{ decoding: 'async' }"
         />
         </n-layout-sider>
         <n-layout-content content-style="padding: 24px;">
@@ -42,6 +44,8 @@
            class="detail-image"
            object-fit="scale-down"
           :src="picture"
+          lazy
+          :img-props="{ decoding: 'async' }"
          />
         </n-layout-sider>
         <n-layout-content content-style="padding: 24px;">
