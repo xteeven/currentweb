@@ -11,7 +11,7 @@ actions:
     type: primary
 
   - text: Download CV 📝
-    link: https://posthci.com/CV/Steeven_Villa_CV.pdf
+    link: https://posthci.com/CV/steeven-villa-cv.pdf
     type: secondary
     target: _blank  
 
