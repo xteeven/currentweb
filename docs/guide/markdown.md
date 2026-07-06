@@ -236,11 +236,11 @@ You can mark ==important words== .
 
 :::
 
-- [View Detail](<[chart.md](https://vuepress-theme-hope.github.io/v2/guide/markdown/chart.html)>)
+- [View Detail](https://vuepress-theme-hope.github.io/v2/guide/markdown/chart.html)
 
 ### Flowchart
 
-```flow
+```text
 cond=>condition: Process?
 process=>operation: Process
 e=>end: End
