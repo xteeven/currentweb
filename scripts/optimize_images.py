@@ -23,8 +23,6 @@ def max_dimension_for(path: Path) -> int:
     parts = set(path.parts)
     if "icons" in parts:
         return 512
-    if "blog_content" in parts:
-        return 1920
     return 1600
 
 

@@ -11,7 +11,7 @@ actions:
     type: primary
 
   - text: Download CV 📝
-    link: https://posthci.com/CV/steeven-villa-cv.pdf
+    link: https://posthci.com/cv/steeven-villa-cv.pdf
     type: secondary
     target: _blank  
 
@@ -28,7 +28,7 @@ highlights:
     features:
       - title: |
           <div style="text-align: center;">
-            <img src="/images/tumbnails/CHB.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
+            <img src="/images/thumbnails/CHB.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
           </div>
           <br>
           The Power of Expectation
@@ -39,7 +39,7 @@ highlights:
       
       - title: |
           <div style="text-align: center;">
-            <img src="/images/tumbnails/TOH.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
+            <img src="/images/thumbnails/TOH.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
           </div>
           <br>
           Decoding Haptic Illusions
@@ -49,7 +49,7 @@ highlights:
 
       - title: |
           <div style="text-align: center;">
-            <img src="/images/tumbnails/CHI24.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
+            <img src="/images/thumbnails/CHI24.jpg" loading="lazy" decoding="async" style="max-width: 50%; border-radius: 8px;">
           </div>
           <br>
           Bias vs. AI Performance
@@ -145,7 +145,7 @@ highlights:
         details: |
           A wearable haptic system that translates complex data into distinct tactile patterns on the torso. A flexible platform for sensory substitution and human augmentation research.
           <br><br>
-          <img src="/images/Papers/vest.png" loading="lazy" decoding="async" style="max-width: 100%; border-radius: 8px;">
+          <img src="/images/papers/vest.png" loading="lazy" decoding="async" style="max-width: 100%; border-radius: 8px;">
 
 
   - header: Conference Chairing & Leadership

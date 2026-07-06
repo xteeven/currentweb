@@ -159,7 +159,7 @@ picture="/theses/Kinova.jpg">
 <Thesis 
 title="Finger-mounted Haptic Feedback for Topological Surface Rendering" 
 abstract="Imagine how you interact with google maps; How can you know the altitude on the map?. Now imagine that you can feel the peaks of the mountains with your fingertips, the heigh difference between two spots with the deformation in your fingers. This thesis will replicate a state-of-the-art finger-mounted haptic device and test it in mobile interactions."
-picture="/images/Papers/altering.jpg">
+picture="/images/papers/altering.jpg">
 
 <Badge type="tip" text="ESP32/RPi/Arduino" vertical="middle" /> 
 <Badge type="tip" text="Python/C++" vertical="middle" /> 
