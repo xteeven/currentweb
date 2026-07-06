@@ -77,7 +77,7 @@ highlights:
                 playsinline
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/Media1.mp4" type="video/mp4">
+                <source src="/videos/ar-conversational-copilot.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
       
@@ -93,7 +93,7 @@ highlights:
                 playsinline
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/Media2.mp4" type="video/mp4">
+                <source src="/videos/room-scale-ultrasonic-haptics.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
 
@@ -109,7 +109,7 @@ highlights:
                 playsinline
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/Media4.mp4" type="video/mp4">
+                <source src="/videos/virtual-temperature-rendering.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
 
@@ -132,7 +132,7 @@ highlights:
                 playsinline
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/Media3.mp4" type="video/mp4">
+                <source src="/videos/thermal-haptic-illusions.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
 
