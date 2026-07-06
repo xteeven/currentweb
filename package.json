@@ -19,18 +19,19 @@
   },
   "homepage": "https://github.com/xteeven/currentweb#readme",
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.0",
-    "@vuepress/plugin-register-components": "^2.0.0-rc.0",
-    "@vuepress/plugin-search": "^2.0.0-rc.0",
-    "sass-embedded": "^1.86.3",
-    "vuepress": "^2.0.0-rc.0",
-    "vuepress-theme-hope": "^2.0.0-rc.0"
+    "@vuepress/bundler-vite": "^2.0.0-rc.30",
+    "@vuepress/plugin-register-components": "^2.0.0-rc.130",
+    "@vuepress/plugin-search": "^2.0.0-rc.130",
+    "sass-embedded": "^1.100.0",
+    "vuepress": "^2.0.0-rc.30",
+    "vuepress-theme-hope": "^2.0.0-rc.107"
   },
   "dependencies": {
-    "naive-ui": "^2.33.5"
+    "naive-ui": "^2.44.1"
   },
   "allowScripts": {
-    "esbuild@0.25.8": true,
+    "@parcel/watcher@2.5.6": true,
+    "esbuild@0.28.1": true,
     "fsevents@2.3.3": true
   }
 }
