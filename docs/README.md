@@ -3,23 +3,48 @@ home: true
 icon: home
 title: Steeven Villa, PhD | HCI/UX Researcher
 shortTitle: Steeven Villa
-description: Senior HCI/UX researcher working on Human-AI interaction, haptics, virtual reality, neurophysiology, robotics, and UX research.
+description: Senior HCI/UX researcher translating rigorous human-centered research into product-relevant insights for Human-AI interaction, haptics, XR, robotics, and emerging interfaces.
 heroImage: /images/Posthci-min.png
 heroImageDark: /images/Posthci-min.png
 heroText: Steeven Villa, PhD
-tagline: Senior HCI/UX Researcher specializing in Human-AI interaction, Robotics & Haptics
+tagline: I study how people perceive, trust, and adapt to emerging interactive systems.
 actions:
-  - text: Explore All Publications
-    link: /publications/
+  - text: Contact
+    link: /contact/
     type: primary
-  - text: Download CV 📝
+  - text: Download CV
     link: https://posthci.com/cv/steeven-villa-cv.pdf
     type: secondary
     target: _blank
+  - text: View Publications
+    link: /publications/
+    type: secondary
 
 highlights:
-  - header:
-    description: 💼 Senior UX Researcher  |  🕶️ Virtual Reality  |  🧠 Human-AI interaction | 🤏 Haptics
+  - header: Research Impact
+    description: I translate experimental HCI research into insight for teams building human-AI systems, embodied interfaces, XR experiences, and emerging interaction technologies.
+    image: /images/icons/research-impact.png
+    bgImage: /images/low-poly.svg
+    bgImageDark: /images/low-poly.svg
+    bgImageStyle:
+      background-repeat: repeat
+      background-size: initial
+    features:
+      - title: Human-AI Interaction
+        icon: brain
+        details: Evaluating how AI explanations, framing, feedback, and automation shape human decisions, trust, performance, and perceived value.
+
+      - title: Embodied & Multisensory UX
+        icon: hand-sparkles
+        details: Designing and studying haptic, thermal, wearable, and XR experiences that make digital systems feel more tangible, intuitive, and trustworthy.
+
+      - title: Research Strategy & Evaluation
+        icon: chart-line
+        details: Turning ambiguous questions into prototypes, behavioral studies, mixed-method evaluations, and practical recommendations decisions.
+
+      - title: Evidence for Emerging Interfaces
+        icon: microscope
+        details: Combining controlled experiments, neurophysiology, UX methods to understand what new interfaces actually do for people.
 
   - header: Featured Research
     image: /images/icons/research.png
@@ -211,7 +236,7 @@ highlights:
 
   - header: Recognition
     description: Selected awards and community recognition
-    image: /images/icons/chair.png
+    image: /images/icons/recognition.png
     bgImage: /images/low-poly.svg
     bgImageDark: /images/low-poly.svg
     bgImageStyle:
