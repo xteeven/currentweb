@@ -142,7 +142,7 @@ highlights:
     features:
       - title: Augmented <br> Humans <br> Conference (AHs)
         icon:
-        details: 2025 Proceedings Chair, 2025 ad hoc Proceedings Chair, 2024 Proceedings Chair, 2023 Poster Chair, 2022 Web Chair
+        details: 2026 Proceedings Chair, 2025 ad hoc Proceedings Chair, 2024 Proceedings Chair, 2023 Poster Chair, 2022 Web Chair
       - title: ACM Symposium on User Interface Software and Technology (UIST)
         icon:
         details: 2023 Video Chair, 2022 Video Chair
@@ -167,14 +167,14 @@ highlights:
       - title: Conferences
         details:
           - <b> CHI</b> 2022, 2023, 2024, 2025, 2026
-          - <b> UIST</b> 2023
+          - <b> UIST</b> 2023, 2024, 2025, 2026
           - <b> TEI</b> 2023
           - <b> DIS</b> 2023
-          - <b> AHs</b> 2021, 2022, 2023, 2024, 2025
-          - <b> MuC</b> 2022, 2023, 2024, 2025
+          - <b> AHs</b> 2021, 2022, 2023, 2024, 2025, 2026
+          - <b> MuC</b> 2022, 2023, 2024, 2025, 2026
           - <b> WHC</b> 2021
-          - <b> ISMAR</b> 2020, 2022, 2024
-          - <b> IEEE VR</b> 2020, 2021, 2022, 2023, 2024
+          - <b> ISMAR</b> 2020, 2022, 2024, 2026
+          - <b> IEEE VR</b> 2020, 2021, 2022, 2023, 2024, 2026
           - <b> CSCW</b> 2022
           - <b> EICS</b> 2023
           - <b> MobileHCI</b> 2024
@@ -201,16 +201,16 @@ highlights:
       background-repeat: repeat
       background-size: initial
     features:
-      - title: 📊 Strengthening Quantitative HCI Methods
+      - title: 📊 Conducting Research in HCI/UX Methods
         icon:
-        details: My current focus is a series of meta-HCI papers aimed at improving how we conduct quantitative research. I’m tackling foundational topics, including best practices for questionnaire development and the evolution of effect sizes in HCI, to provide our community with clearer frameworks that increase the rigor and impact of our work.
+        details: I am currently conducting research on HCI and UX methods, with a focus on improving how we design, evaluate, and interpret studies of interactive technologies. This work includes meta-HCI topics such as questionnaire development, effect sizes, and methodological rigor in human-centered research.
 
-      - title: 🎓 Leading Research & Community Building
+      - title: 🧭 Transitioning to Industry UX/CX Research
         icon:
-        details: Alongside my writing, I am leading new research for the Augmented Humans conference 2026 (in Okinawa). I'm also dedicated to giving back to the community by serving as an Associate Chair (AC) for CHI 2026 and teaching courses in User Experience and hardware prototyping. Currently, I'm also developing a grant proposal to fund the next wave of my research.
+        details: I am transitioning into industry to lead UX/CX research with a focus on quantitative methods, neuroscience, and human-centered evaluation. My goal is to connect rigorous research practice with applied product, service, and customer experience decisions.
 
 copyright: false
-footer: MIT Licensed | Copyright © 2025 Steeven Villa
+footer: MIT Licensed | Copyright © 2026 Steeven Villa
 ---
 
 <!-- Scroll-down cue injected via DOM; harmless if theme ignores it -->

@@ -21,14 +21,6 @@
             <div class="row">
               <div class="badges">
                 <n-tag type="success" size="small" round>{{ lec.code }}</n-tag>
-                <n-tag
-                  type="warning"
-                  size="small"
-                  round
-                  style="margin-left: 6px"
-                >
-                  {{ lec.term }}
-                </n-tag>
               </div>
 
               <div class="title">{{ lec.title }}</div>
@@ -90,7 +82,8 @@ const isDark = useDarkMode();
 
 .badges {
   flex-shrink: 0;
-  width: 100px;
+  width: auto;
+  min-width: 48px;
   text-align: center;
 }
 

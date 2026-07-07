@@ -116,6 +116,30 @@ html {
   overflow: hidden;
 }
 
+/* Home page feature images: preserve aspect ratio and avoid stretching */
+.vp-feature-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 10rem;
+  object-fit: contain;
+}
+
+@media (max-width: 991.98px) {
+  .vp-feature-image {
+    max-height: 8rem;
+  }
+}
+
+/* Home page inline videos/images inside feature details */
+.vp-feature-details video,
+.vp-feature-details img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 /* Section dividers */
 .section-divider {
   border: 0;
@@ -291,6 +315,10 @@ html {
   object-fit: contain;
 }
 
+[data-theme="dark"] .social-link img {
+  filter: brightness(0) invert(1);
+}
+
 .contact-card {
   border: 1px solid var(--border-color);
   border-radius: 12px;
@@ -298,6 +326,12 @@ html {
   max-width: 520px;
   margin: 0 auto 24px;
   background: var(--bg-color-secondary, #fff);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .contact-card {
+  background: var(--bg-color-secondary, #1e1e1e);
+  color: var(--text-color, #eee);
 }
 
 .contact-card p {
