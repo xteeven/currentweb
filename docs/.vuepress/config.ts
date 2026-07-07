@@ -1,17 +1,23 @@
 // docs/.vuepress/config.ts
 import { defineUserConfig }        from "vuepress";
 import { hopeTheme }               from "vuepress-theme-hope";
-import { viteBundler }             from "@vuepress/bundler-vite";             // ← add this
+import { viteBundler }             from "@vuepress/bundler-vite";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { path }                    from "@vuepress/utils";
 import themeConfig                 from "./themeConfig";
 
+const siteTitle = "PostHCI";
+const profileName = "Steeven Villa";
+const siteDescription =
+  "Senior HCI/UX researcher working on Human-AI interaction, haptics, virtual reality, neurophysiology, and robotics.";
+const siteUrl = "https://posthci.com";
+const socialImage = `${siteUrl}/images/social-preview.png`;
+
 export default defineUserConfig({
-  // --- existing options ---
   base: "/",
   lang: "en-US",
-  title: "",
-  description: "HCI researcher - Steeven Villa",
+  title: siteTitle,
+  description: siteDescription,
   head: [
     [
       "link",
@@ -28,9 +34,39 @@ export default defineUserConfig({
         content: "width=device-width, initial-scale=1.0",
       },
     ],
+    ["meta", { name: "author", content: profileName }],
+    ["meta", { name: "description", content: siteDescription }],
+    ["meta", { property: "og:image", content: socialImage }],
+    ["meta", { name: "twitter:card", content: "summary_large_image" }],
+    ["meta", { name: "twitter:image", content: socialImage }],
+    [
+      "script",
+      { type: "application/ld+json" },
+      JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: profileName,
+        honorificSuffix: "PhD",
+        url: siteUrl,
+        image: socialImage,
+        jobTitle: "Senior HCI/UX Researcher",
+        knowsAbout: [
+          "Human-AI interaction",
+          "Haptics",
+          "Virtual reality",
+          "Neurophysiology",
+          "Robotics",
+          "UX research",
+        ],
+        sameAs: [
+          "https://fr.linkedin.com/in/steevenv",
+          "https://scholar.google.com/citations?user=j6rFI50AAAAJ",
+          "https://orcid.org/0000-0002-4881-1350",
+          "https://steevenvilla.medium.com",
+        ],
+      }),
+    ],
   ],
-
-  // ← tell VuePress which bundler to use:
 
   bundler: viteBundler({
     viteOptions: {
@@ -41,14 +77,11 @@ export default defineUserConfig({
       },
     },
   }),
-  // ← your theme
   theme: hopeTheme(themeConfig),
 
-  // ← plugins
   plugins: [
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
-
   ],
 });

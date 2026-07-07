@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Steeven Villa, PhD - HCI/UX Researcher">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111217"/>
+      <stop offset="0.55" stop-color="#18191f"/>
+      <stop offset="1" stop-color="#0f1413"/>
+    </linearGradient>
+    <radialGradient id="green" cx="0.18" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#3eaf7c" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3eaf7c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blue" cx="0.86" cy="0.2" r="0.58">
+      <stop offset="0" stop-color="#4b9fbf" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#4b9fbf" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#green)"/>
+  <rect width="1200" height="630" fill="url(#blue)"/>
+  <path d="M0 476 C160 386 262 390 388 492 C511 591 620 602 743 493 C872 378 1016 362 1200 430 L1200 630 L0 630 Z" fill="#3eaf7c" opacity="0.13"/>
+  <path d="M0 534 C139 422 237 429 344 522 C470 632 607 647 728 523 C856 391 992 373 1200 484 L1200 630 L0 630 Z" fill="#4b9fbf" opacity="0.12"/>
+  <g filter="url(#shadow)">
+    <rect x="74" y="72" width="1052" height="486" rx="30" fill="#181a20" opacity="0.78" stroke="#ffffff" stroke-opacity="0.12"/>
+  </g>
+  <circle cx="990" cy="150" r="8" fill="#3eaf7c"/>
+  <circle cx="1024" cy="150" r="8" fill="#4b9fbf"/>
+  <circle cx="1058" cy="150" r="8" fill="#c8d1d9" opacity="0.72"/>
+  <text x="116" y="152" fill="#3eaf7c" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="1.6">POSTHCI.COM</text>
+  <text x="116" y="286" fill="#f4f6f8" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800">Steeven Villa, PhD</text>
+  <text x="116" y="354" fill="#d4d8de" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="600">Senior HCI/UX Researcher</text>
+  <text x="116" y="428" fill="#aeb6c0" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="500">Human-AI Interaction · Haptics · VR · Robotics</text>
+  <g transform="translate(116 477)">
+    <rect width="226" height="48" rx="24" fill="#3eaf7c" opacity="0.18" stroke="#3eaf7c" stroke-opacity="0.45"/>
+    <text x="25" y="32" fill="#65d69f" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Research + UX</text>
+  </g>
+</svg>

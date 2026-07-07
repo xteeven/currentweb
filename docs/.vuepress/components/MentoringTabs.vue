@@ -30,7 +30,8 @@ import TeachingList from './TeachingList.vue'
 const props = defineProps({
   lectures: { type: Array, required: true },
   workshops: { type: Array, required: true },
-  theses: { type: Array, required: true }
+  theses: { type: Array, required: true },
+  interns: { type: Array, required: true }
 })
 
 const activeTab = ref('courses')
@@ -38,12 +39,14 @@ const activeTab = ref('courses')
 const tabs = computed(() => [
   { name: 'courses', label: 'Courses', count: props.lectures.length },
   { name: 'workshops', label: 'Workshops', count: props.workshops.length },
-  { name: 'advised', label: 'Advised', count: props.theses.length }
+  { name: 'advised', label: 'Advised', count: props.theses.length },
+  { name: 'interns', label: 'Interns', count: props.interns.length }
 ])
 
 const activeEntries = computed(() => {
   if (activeTab.value === 'workshops') return props.workshops
   if (activeTab.value === 'advised') return props.theses
+  if (activeTab.value === 'interns') return props.interns
   return props.lectures
 })
 </script>
@@ -58,7 +61,7 @@ const activeEntries = computed(() => {
   top: calc(var(--navbar-height) + 0.75rem);
   z-index: 9;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 6px;
   margin-bottom: 1.25rem;
   padding: 6px;

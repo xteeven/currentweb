@@ -1,5 +1,6 @@
 ---
 article: false
+description: Teaching, workshops, thesis supervision, and hosted research interns advised by Steeven Villa.
 next: "/contact/"
 prev: "/publications/"
 ---
@@ -7,7 +8,7 @@ prev: "/publications/"
 # Mentoring
 
 <ClientOnly>
-<MentoringTabs :lectures="lectures" :workshops="workshops" :theses="theses" />
+<MentoringTabs :lectures="lectures" :workshops="workshops" :theses="theses" :interns="interns" />
 </ClientOnly>
 
 <script setup>
@@ -89,6 +90,12 @@ const theses = [
   { code: 'Master', title: 'Anna Hubert — Using EMS Stimulation to Support Ready Position in Badminton', year: '2020' },
   { code: 'Master', title: 'Bettina Eska — Assisting Motor Skill Transfer for Dance Students', year: '2020' },
   { code: 'Master', title: 'Melanie Hauser — Supporting Situational Awareness Using a Vibrotactile Vest', year: '2019' }
+]
+
+const interns = [
+  { code: 'PhD', title: 'Beatrice Melis — Hosted research intern, University of Pisa (6 months)', year: '2026' },
+  { code: 'PhD', title: 'Daniela Fernandes — Hosted research intern, Aalto University (3 months)', year: '2026' },
+  { code: 'Intern', title: 'Nicholas Ornstein — Hosted research intern, University of Chicago (6 months)', year: '2021' }
 ]
 
 </script>

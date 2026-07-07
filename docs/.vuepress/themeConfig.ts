@@ -9,11 +9,6 @@ export const navbarConfig = [
     icon: "book-open", // You can choose an appropriate icon
     link: "/publications/", // Make sure this is the correct path
   },
- // {
- //   text: "Projects",
- //   icon: "flask", // You can choose an appropriate icon
- //   link: "/theses/", // You used this link in your features, assuming it's correct
- // },
   {
     text: "Mentoring",
     icon: "graduation-cap", // You can choose an appropriate icon
@@ -29,6 +24,7 @@ export const navbarConfig = [
 
 const themeConfig: ThemeOptions = {
   hostname: "https://posthci.com",  // required
+  navbarTitle: "Steeven Villa",
   //author: { name: "Steeven Villa", url: "https://github.com/xteeven" },
   //repo: "xteeven/currentweb",
   

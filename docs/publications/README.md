@@ -1,8 +1,12 @@
 ---
 article: false
 pageClass: custom-page-class
+description: Selected publications by Steeven Villa on Human-AI interaction, haptics, virtual reality, neurophysiology, robotics, and human augmentation.
 next: '/teaching/'
-prev: '/'
+prev:
+  text: Steeven Villa
+  link: '/'
+  icon: home
 ---
 
 # Publications

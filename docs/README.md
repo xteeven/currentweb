@@ -1,7 +1,9 @@
 ---
 home: true
 icon: home
-title: Steeven Villa
+title: Steeven Villa, PhD | HCI/UX Researcher
+shortTitle: Steeven Villa
+description: Senior HCI/UX researcher working on Human-AI interaction, haptics, virtual reality, neurophysiology, robotics, and UX research.
 heroImage: /images/Posthci-min.png
 heroImageDark: /images/Posthci-min.png
 heroText: Steeven Villa, PhD
@@ -56,15 +58,18 @@ highlights:
           This AI-powered augmented reality interface analyzes conversation context in real-time to deliver subtle, relevant cues, fostering smoother and more meaningful interactions.
           <br> <br>
               <video
+                class="lazy-video"
                 autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/videos/ar-conversational-copilot-poster.jpg"
+                width="720"
+                height="405"
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/ar-conversational-copilot.mp4" type="video/mp4">
+                <source data-src="/videos/ar-conversational-copilot.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
 
@@ -74,15 +79,18 @@ highlights:
           Feel virtual objects anywhere in a room without controllers. This 6DoF robotic platform uses phased-array ultrasound to deliver tactile sensations in mid-air.
           <br> <br>
               <video
+                class="lazy-video"
                 autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/videos/room-scale-ultrasonic-haptics-poster.jpg"
+                width="720"
+                height="405"
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/room-scale-ultrasonic-haptics.mp4" type="video/mp4">
+                <source data-src="/videos/room-scale-ultrasonic-haptics.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
 
@@ -92,15 +100,18 @@ highlights:
           This robotic end-effector renders realistic temperature changes, allowing users to feel the warmth of a virtual fire or the chill of ice in VR applications.
           <br> <br>
               <video
+                class="lazy-video"
                 autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/videos/virtual-temperature-rendering-poster.jpg"
+                width="720"
+                height="405"
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/virtual-temperature-rendering.mp4" type="video/mp4">
+                <source data-src="/videos/virtual-temperature-rendering.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
 
@@ -116,15 +127,18 @@ highlights:
           Can the color of a virtual object change how hot or cold it feels? This VR experience uses visual cues to create powerful thermal illusions with ultrasound haptics.
           <br><br>
               <video
+                class="lazy-video"
                 autoplay
                 loop
                 muted
                 playsinline
-                preload="metadata"
+                preload="none"
                 poster="/videos/thermal-haptic-illusions-poster.jpg"
+                width="720"
+                height="405"
                 style="max-width: 100%; border-radius: 8px;"
               >
-                <source src="/videos/thermal-haptic-illusions.mp4" type="video/mp4">
+                <source data-src="/videos/thermal-haptic-illusions.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
               </video>
 
@@ -195,6 +209,31 @@ highlights:
           - <b> Information Technology Journal</b> 2022
           - <b> Computers & Graphics </b> 2025
 
+  - header: Recognition
+    description: Selected awards and community recognition
+    image: /images/icons/chair.png
+    bgImage: /images/low-poly.svg
+    bgImageDark: /images/low-poly.svg
+    bgImageStyle:
+      background-repeat: repeat
+      background-size: initial
+    features:
+      - title: CHI 2025
+        icon: award
+        details: Honorable Mention Award
+      - title: ISWC 2021
+        icon: award
+        details: Honorable Mention Award
+      - title: Haptics Symposium 2020
+        icon: award
+        details: Honorable Mention Award
+      - title: WHC 2019
+        icon: trophy
+        details: 1st Place, World Haptics Competition
+      - title: Petrobras 2019
+        icon: lightbulb
+        details: Inventor Award
+
   - header: Steeven's Now
     description: A snapshot of what I'm doing and working on NOW
     image: /images/icons/now.png
@@ -215,3 +254,42 @@ highlights:
 copyright: false
 footer: MIT Licensed | Copyright © 2026 Steeven Villa
 ---
+
+<script setup>
+if (typeof window !== 'undefined') {
+  const loadVideo = (video) => {
+    if (video.dataset.loaded === 'true') return
+
+    video.querySelectorAll('source[data-src]').forEach((source) => {
+      source.src = source.dataset.src
+      source.removeAttribute('data-src')
+    })
+
+    video.dataset.loaded = 'true'
+    video.load()
+    video.play().catch(() => {})
+  }
+
+  const mountLazyVideos = () => {
+    const videos = document.querySelectorAll('video.lazy-video:not([data-loaded="true"])')
+
+    if (!('IntersectionObserver' in window)) {
+      videos.forEach(loadVideo)
+      return
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadVideo(entry.target)
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { rootMargin: '320px 0px' })
+
+    videos.forEach((video) => observer.observe(video))
+  }
+
+  requestAnimationFrame(mountLazyVideos)
+}
+</script>

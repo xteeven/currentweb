@@ -364,72 +364,91 @@ html {
 }
 
 /* ------------------------------------------------------------------
-   Portfolio grid
-   ------------------------------------------------------------------ */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  margin: 24px 0;
-}
-
-.portfolio-card {
-  border-radius: 12px;
-  overflow: hidden;
-  background: var(--bg-color-secondary, #fff);
-  border: 1px solid var(--border-color);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.portfolio-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-card .media {
-  aspect-ratio: 16 / 9;
-  background: #000;
-  overflow: hidden;
-}
-
-.portfolio-card .media iframe,
-.portfolio-card .media img,
-.portfolio-card .media video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.35s ease;
-}
-
-.portfolio-card:hover .media img,
-.portfolio-card:hover .media video {
-  transform: scale(1.04);
-}
-
-.portfolio-card .body {
-  padding: 18px 20px;
-}
-
-.portfolio-card .body h3 {
-  margin: 0 0 8px;
-  font-size: 1.15rem;
-}
-
-.portfolio-card .body p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.45;
-  opacity: 0.9;
-}
-
-/* ------------------------------------------------------------------
    Contact page social bar
    ------------------------------------------------------------------ */
+.contact-hero {
+  max-width: 780px;
+  margin: 0 auto 28px;
+  padding: 24px;
+  border: 1px solid rgba(127, 127, 127, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.54);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+}
+
+[data-theme="dark"] .contact-hero {
+  background: rgba(24, 24, 27, 0.52);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
+}
+
+.contact-kicker {
+  margin: 0 0 8px;
+  color: var(--theme-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-hero p:not(.contact-kicker) {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  opacity: 0.92;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-primary,
+.contact-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.contact-primary {
+  border: 1px solid var(--theme-color);
+  background: var(--theme-color);
+  color: #101314;
+}
+
+.contact-secondary {
+  border: 1px solid rgba(127, 127, 127, 0.28);
+  background: rgba(127, 127, 127, 0.08);
+  color: var(--text-color);
+}
+
+.contact-primary:hover,
+.contact-primary:focus-visible,
+.contact-secondary:hover,
+.contact-secondary:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--theme-color);
+}
+
 .social-bar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  gap: 12px;
   margin: 24px 0 32px;
 }
 
@@ -462,12 +481,19 @@ html {
   filter: brightness(0) invert(1);
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 780px;
+  margin: 0 auto 24px;
+}
+
 .contact-card {
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 20px 24px;
-  max-width: 520px;
-  margin: 0 auto 24px;
+  margin: 0;
   background: var(--bg-color-secondary, #fff);
   color: var(--text-color);
 }
@@ -479,6 +505,30 @@ html {
 
 .contact-card p {
   margin: 6px 0;
+}
+
+.contact-card ul {
+  margin-bottom: 0;
+  padding-inline-start: 1.15rem;
+}
+
+.contact-card li {
+  margin: 0.4rem 0;
+}
+
+@media (max-width: 719px) {
+  .contact-hero,
+  .contact-card {
+    padding: 18px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
 }
 
 /* ------------------------------------------------------------------
