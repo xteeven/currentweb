@@ -10,22 +10,26 @@
         :title="group.year"
       >
         <n-space vertical :size="4">
-          <n-card
+          <RevealWrapper
             v-for="lec in group.items"
             :key="lec.code + lec.title"
-            class="course-card"
-            size="small"
-            :bordered="false"
-            hoverable
+            :delay="lec.revealIndex < 6 ? lec.revealIndex * 80 : 0"
           >
-            <div class="row">
-              <div class="badges">
-                <n-tag type="success" size="small" round>{{ lec.code }}</n-tag>
-              </div>
+            <n-card
+              class="course-card"
+              size="small"
+              :bordered="false"
+              hoverable
+            >
+              <div class="row">
+                <div class="badges">
+                  <n-tag type="success" size="small" round>{{ lec.code }}</n-tag>
+                </div>
 
-              <div class="title">{{ lec.title }}</div>
-            </div>
-          </n-card>
+                <div class="title">{{ lec.title }}</div>
+              </div>
+            </n-card>
+          </RevealWrapper>
         </n-space>
       </n-timeline-item>
     </n-timeline>
@@ -46,6 +50,7 @@ import {
   NTimeline,
   NTimelineItem,
 } from "naive-ui";
+import RevealWrapper from "./RevealWrapper.vue";
 
 /* props */
 const { entries } = defineProps<{
@@ -55,11 +60,13 @@ const { entries } = defineProps<{
 /* group by academic year */
 const groups = computed(() => {
   const map = new Map<string, typeof entries>();
+  let revealIndex = 0;
   [...entries]
     .sort((a, b) => b.year.localeCompare(a.year)) // newest first
     .forEach((item) => {
       if (!map.has(item.year)) map.set(item.year, []);
-      map.get(item.year)!.push(item);
+      map.get(item.year)!.push({ ...item, revealIndex });
+      revealIndex += 1;
     });
   return [...map].map(([year, items]) => ({ year, items }));
 });

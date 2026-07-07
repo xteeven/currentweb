@@ -15,9 +15,11 @@
       </button>
     </div>
 
-    <div class="mentoring-tab-panel" role="tabpanel">
-      <TeachingList :entries="activeEntries" />
-    </div>
+    <Transition name="mentoring-panel" mode="out-in">
+      <div :key="activeTab" class="mentoring-tab-panel" role="tabpanel">
+        <TeachingList :entries="activeEntries" />
+      </div>
+    </Transition>
   </div>
 </template>
 
@@ -128,6 +130,19 @@ const activeEntries = computed(() => {
 
 .mentoring-tab-panel {
   padding-top: 0.25rem;
+}
+
+.mentoring-panel-enter-active,
+.mentoring-panel-leave-active {
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
+}
+
+.mentoring-panel-enter-from,
+.mentoring-panel-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
 }
 
 @media (max-width: 719px) {
