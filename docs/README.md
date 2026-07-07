@@ -215,24 +215,3 @@ highlights:
 copyright: false
 footer: MIT Licensed | Copyright © 2026 Steeven Villa
 ---
-
-<!-- Scroll-down cue injected via DOM; harmless if theme ignores it -->
-<script setup>
-if (typeof window !== 'undefined') {
-  const hero = document.querySelector('.vp-hero-info-wrapper, .vp-hero-info')
-  if (hero && !hero.querySelector('.hero-scroll-down')) {
-    const cue = document.createElement('a')
-    cue.className = 'hero-scroll-down'
-    cue.href = '#main-content'
-    cue.setAttribute('aria-label', 'Scroll down')
-    cue.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-      <span style="font-size:0.75rem">Scroll</span>
-    `
-    hero.style.position = 'relative'
-    hero.appendChild(cue)
-  }
-}
-</script>

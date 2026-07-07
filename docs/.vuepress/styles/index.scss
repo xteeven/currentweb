@@ -96,28 +96,6 @@ html {
   transition-delay: calc(var(--i, 0) * 80ms);
 }
 
-/* Hero scroll-down cue */
-.hero-scroll-down {
-  position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  color: var(--text-color);
-  opacity: 0.75;
-  animation: fade-in 1s ease 0.8s both, pulse-soft 2s ease-in-out 1.5s infinite;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.hero-scroll-down svg {
-  width: 28px;
-  height: 28px;
-}
-
 /* Hover lift for cards / images */
 .hover-lift {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
