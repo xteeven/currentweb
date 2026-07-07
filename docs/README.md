@@ -24,20 +24,23 @@ highlights:
     bgImage: /images/waves-dark.svg
     bgImageDark: /images/waves-dark.svg
     features:
-      - title: The Power of Expectation
-        image: /images/thumbnails/CHB.jpg
+      - title: |
+          <span class="feature-thumb"><img src="/images/thumbnails/CHB.jpg" alt="" loading="lazy" decoding="async"></span>
+          The Power of Expectation
         icon: arrow-up-right-dots
         details: High expectations alone can significantly alter user behavior in augmented systems. This finding is key for designing AI that adapts to user mental-model and belief. <br><i> in Computers in Human Behavior </i>
         link: https://www.sciencedirect.com/science/article/pii/S0747563223001383
 
-      - title: Decoding Haptic Illusions
-        image: /images/thumbnails/TOH.jpg
+      - title: |
+          <span class="feature-thumb"><img src="/images/thumbnails/TOH.jpg" alt="" loading="lazy" decoding="async"></span>
+          Decoding Haptic Illusions
         icon: wave-square
         details: Using EEG, we can pinpoint the precise neural markers that signal a user's detection of a haptic illusion, offering a direct window into sensory processing in VR. <br><i> in IEEE Transactions on Haptics</i>
         link: https://ieeexplore.ieee.org/document/11028875
 
-      - title: Bias vs. AI Performance
-        image: /images/thumbnails/CHI24.jpg
+      - title: |
+          <span class="feature-thumb"><img src="/images/thumbnails/CHI24.jpg" alt="" loading="lazy" decoding="async"></span>
+          Bias vs. AI Performance
         icon: balance-scale-left
         details: Can negative descriptions harm AI effectiveness? Our research shows that performance benefits from augmentation are surprisingly resistant to this "nocebo" effect. <br><i> in ACM CHI24 </i>
         link: https://dl.acm.org/doi/10.1145/3613904.3642633
