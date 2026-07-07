@@ -1,24 +1,68 @@
 [
   {
+    "title": "Is it Me? Toward Self-Extension to AI Avatars in Virtual Reality",
+    "authors": "Jieying Zhang, Steeven Villa, Abdallah El Ali",
+    "venue": "Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)",
+    "year": 2026,
+    "picture": "/images/papers/zhang-2026-self-extension-ai-avatars-vr.jpg",
+    "link": "https://doi.org/10.1145/3772363.3798899",
+    "alias": "ACM",
+    "abstract": "Advances in generative AI, speech synthesis, and embodied avatars enable systems that not only assist communication, but can act as proxies on users' behalf. We introduce ProxyMe, a work-in-progress VR prototype that allows users to embody an avatar whose voice and spoken content are modified by an AI system. The work frames avatar self-extension as a design and research space for AI-mediated communication, perceived agency, authorship, and self-identification.",
+    "pdf": "/papers/zhang-2026-self-extension-ai-avatars-vr.pdf"
+  },
+  {
+    "title": "Thermal Illusions Reliably Shift Perceived Object Temperatures Across Materials in Mixed Reality",
+    "authors": "Yannick Weiss, Dominic Lenz, Steeven Villa",
+    "venue": "Augmented Humans International Conference (AHs '26)",
+    "year": 2026,
+    "picture": "/images/papers/weiss-2026-thermal-illusions-mixed-reality.jpg",
+    "link": "https://doi.org/10.1145/3795011.3795037",
+    "alias": "ACM",
+    "abstract": "Thermal illusions offer a lightweight way to alter temperature perception in mixed reality without specialized thermal hardware. This study adapted established thermal illusions to mixed reality and evaluated their effects across physical materials. Results show that visual, auditory, and visuo-auditory illusions can reliably shift subjective temperature ratings while revealing material-dependent design opportunities for richer thermal experiences.",
+    "pdf": "/papers/weiss-2026-thermal-illusions-mixed-reality.pdf"
+  },
+  {
+    "title": "15 Years of Augmented Human(s) Research: Where Do We Stand?",
+    "authors": "Steeven Villa, Abdallah El Ali",
+    "venue": "Augmented Humans International Conference (AHs '26)",
+    "year": 2026,
+    "picture": "/images/papers/villa-2026-15-years-augmented-humans-research.jpg",
+    "link": "https://doi.org/10.1145/3795011.3795065",
+    "alias": "ACM",
+    "abstract": "This paper examines the trajectory of the Augmented Human(s) conference series through a scientometric analysis of 15 years of publications. The analysis traces publication and citation patterns, geographic trends, author activity, and core topics such as haptics, wearable sensing, vision and eye tracking, embodied interaction, and sports or motion. The work reflects on the field's intellectual foundations, external impact, and scope ambiguities.",
+    "pdf": "/papers/villa-2026-15-years-augmented-humans-research.pdf"
+  },
+  {
+    "title": "Multi-sensory Dark Patterns",
+    "authors": "Karthikeya Puttur Venkatraj, Donald Degraen, Abdallah El Ali, Jan Gugenheimer, Gijs Huisman, Veronika Krauß, Christina Schneegass, Steeven Villa",
+    "venue": "Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)",
+    "year": 2026,
+    "picture": "/images/papers/venkatraj-2026-multi-sensory-dark-patterns.jpg",
+    "link": "https://doi.org/10.1145/3772363.3778876",
+    "alias": "ACM",
+    "abstract": "This meet-up brings together researchers and practitioners interested in multisensory manipulative interface design. It explores how deceptive patterns for touch, sound, taste, smell, balance, pain, and interoception can be created, embedded, detected, and mitigated in current and future technologies, with the goal of building a responsible research community around multisensory deceptive patterns.",
+    "pdf": "/papers/venkatraj-2026-multi-sensory-dark-patterns.pdf"
+  },
+  {
     "title": "Manipulating Stiffness Perception of Compliant Objects While Pinching in Virtual Reality",
     "authors": "Yannick Weiss, Steeven Villa, Moritz Ziarko, Florian Müller",
-    "venue": "VRST",
+    "venue": "31st ACM Symposium on Virtual Reality Software and Technology (VRST '25)",
     "year": 2025,
     "picture": "/images/papers/manipulating.jpg",
-    "link": "",
-    "alias": "None",
+    "link": "https://doi.org/10.1145/3756884.3765988",
+    "alias": "ACM",
     "abstract": "Providing users with realistic sensations of object stiffness in virtual environments remains challenging due to the intricacies of our haptic sense. We investigate the use of a visuo-haptic illusion to alter the perceived stiffness of hand-held objects in virtual reality. We manipulate the Control-to-Display ratio of the index finger and thumb movements during pinching to make virtual objects feel softer or harder. We evaluated this approach on a variety of haptic representations and visualizations we selected through a pre-study survey (N=24). Results of our user study (N=20) demonstrate that this method effectively and reliably modifies stiffness perception, bridging gaps of 50% in physical stiffness without adversely affecting the visuo-haptic experience. Our findings offer insights into how different visual and haptic presentations impact stiffness perception, contributing to more effective and adaptable future haptic feedback systems.",
     "pdf": "/papers/weiss-2025-manipulating-stiffness-perception.pdf"
   },
   {
     "title": "Quantifying the Effect of Thermal Illusions in Virtual Reality",
     "authors": "Yannick Weiss, Marlene Eder, Oguzhan Cesur, Steeven Villa",
-    "venue": "VRST",
+    "venue": "31st ACM Symposium on Virtual Reality Software and Technology (VRST '25)",
     "year": 2025,
     "picture": "/images/papers/quantifying.jpg",
-    "link": "",
-    "alias": "None",
-    "abstract": "",
+    "link": "https://doi.org/10.1145/3756884.3766009",
+    "alias": "ACM",
+    "abstract": "Thermal sensations are central to how we experience the world, yet most virtual and extended reality systems fail to simulate them effectively. This work investigates thermal illusions as lightweight alternatives to physical heating or cooling. Across two psychophysical studies, visual, auditory, and visuo-auditory cues reliably affected subjective judgments, but the measured perceptual shifts remained relatively small, suggesting that future thermal experiences should be designed and evaluated beyond abstract subjective ratings.",
     "pdf": "/papers/weiss-2025-quantifying-thermal-illusions-vr.pdf"
   },
   {
