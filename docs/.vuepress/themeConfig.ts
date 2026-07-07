@@ -15,7 +15,7 @@ export const navbarConfig = [
  //   link: "/theses/", // You used this link in your features, assuming it's correct
  // },
   {
-    text: "Teaching and Supervision",
+    text: "Mentoring",
     icon: "graduation-cap", // You can choose an appropriate icon
     link: "/teaching/", // You used this link in your features, assuming it's correct
   },

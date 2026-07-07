@@ -42,6 +42,8 @@ const lectures = [
 ]
 
 const workshops = [
+  { code: 'Dagstuhl', term: 'Ws',  title: 'Vision for Cognitive Sensing in 5, 15, and 50 Years',                              year: '2025' },
+  { code: 'CHI',      term: 'Ws',  title: 'Multi-sensory Dark Patterns @ CHI',                                                    year: '2026' },
   { code: 'CHI',      term: 'Ws',  title: 'EvalAI @ CHI',                                                                    year: '2024' },
   { code: 'Dagstuhl', term: 'Ws',  title: 'Human Augmentation – Immediate Issues @ BMBF Cognitive Augmentation Seminar',      year: '2022' },
   { code: 'BMBF',     term: 'Tut', title: 'Haptic Perception @ BMBF Social XR',                                              year: '2022' },

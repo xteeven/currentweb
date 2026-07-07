@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: Steeven Villa, PhD | Senior HCI Researcher
+title: Steeven Villa
 heroImage: /images/Posthci-min.png
 heroImageDark: /images/Posthci-min.png
 heroText: Steeven Villa, PhD
