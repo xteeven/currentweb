@@ -6,27 +6,11 @@ prev: "/publications/"
 
 # Mentoring
 
-## Lectures / Courses
-
 <ClientOnly>
-<TeachingList :entries="lectures" />
-</ClientOnly>
-
-## Workshops and Tutorials
-
-<ClientOnly>
-  <TeachingList :entries="workshops" />
-</ClientOnly>
-
-## Advised Junior Researchers
-
-<ClientOnly>
-  <TeachingList :entries="theses" />
+<MentoringTabs :lectures="lectures" :workshops="workshops" :theses="theses" />
 </ClientOnly>
 
 <script setup>
-import { NButton } from 'naive-ui'
-
 const lectures = [
   { code: 'MMI',  term: 'WS', title: 'Mensch‑Maschine‑Interaktion @ LMU',                    year: '2026' },
   { code: 'UX1',  term: 'WS', title: 'User Experience 1 @ LMU',                              year: '2025/2026' },
@@ -104,4 +88,5 @@ const theses = [
   { code: 'Master', title: 'Bettina Eska — Assisting Motor Skill Transfer for Dance Students', year: '2020' },
   { code: 'Master', title: 'Melanie Hauser — Supporting Situational Awareness Using a Vibrotactile Vest', year: '2019' }
 ]
+
 </script>
