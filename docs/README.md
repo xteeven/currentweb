@@ -3,11 +3,11 @@ home: true
 icon: home
 title: Steeven Villa, PhD | HCI/UX Researcher
 shortTitle: Steeven Villa
-description: Senior HCI/UX researcher translating rigorous human-centered research into product-relevant insights for Human-AI interaction, haptics, XR, robotics, and emerging interfaces.
+description: Senior HCI/UX researcher translating rigorous human-centered research into product-relevant insight for Human-AI interaction, haptics, XR, robotics, and emerging interfaces.
 heroImage: /images/Posthci-min.png
 heroImageDark: /images/Posthci-min.png
 heroText: Steeven Villa, PhD
-tagline: I study how people perceive, trust, and adapt to emerging interactive systems.
+tagline: I help teams understand how people perceive, trust, and adapt to emerging interactive systems.
 actions:
   - text: Contact
     link: /contact/
@@ -21,18 +21,33 @@ actions:
     type: secondary
 
 highlights:
+  - header: At a Glance
+    description: Peer-reviewed research, working prototypes, and international service across HCI, AI, XR, haptics, and human augmentation.
+    image: /images/icons/at-a-glance.png
+    features:
+      - title: 50+ Publications
+        icon: book-open
+        details: ACM, IEEE, Elsevier, Springer, and interdisciplinary venues across HCI, haptics, XR, AI, and human augmentation.
+
+      - title: Awarded Research
+        icon: trophy
+        details: Honorable mentions, competition awards, and recognition from CHI, ISWC, Haptics Symposium, WHC, and Petrobras.
+
+      - title: Emerging Tech Evaluation
+        icon: microscope
+        details: Controlled studies, mixed-method UX research, neurophysiology, prototypes, and evidence for technologies before they become mainstream.
+
+      - title: Research Leadership
+        icon: users
+        details: Conference chairing, reviewing, mentoring, and community service across CHI, UIST, IEEE VR, AHs, ISMAR, and related venues.
+
   - header: Research Impact
-    description: I translate experimental HCI research into insight for teams building human-AI systems, embodied interfaces, XR experiences, and emerging interaction technologies.
+    description: I translate experimental HCI research into product-relevant insight for teams building AI systems, embodied interfaces, XR experiences, and emerging interaction technologies.
     image: /images/icons/research-impact.png
-    bgImage: /images/low-poly.svg
-    bgImageDark: /images/low-poly.svg
-    bgImageStyle:
-      background-repeat: repeat
-      background-size: initial
     features:
       - title: Human-AI Interaction
         icon: brain
-        details: Evaluating how AI explanations, framing, feedback, and automation shape human decisions, trust, performance, and perceived value.
+        details: Evaluating how AI explanations, framing, feedback, and automation shape decisions, trust, performance, and perceived value.
 
       - title: Embodied & Multisensory UX
         icon: hand-sparkles
@@ -40,16 +55,35 @@ highlights:
 
       - title: Research Strategy & Evaluation
         icon: chart-line
-        details: Turning ambiguous questions into prototypes, behavioral studies, mixed-method evaluations, and practical recommendations decisions.
+        details: Turning ambiguous questions into prototypes, behavioral studies, mixed-method evaluations, and practical product recommendations.
 
       - title: Evidence for Emerging Interfaces
         icon: microscope
-        details: Combining controlled experiments, neurophysiology, UX methods to understand what new interfaces actually do for people.
+        details: Combining controlled experiments, neurophysiology, and UX methods to understand what new interfaces actually do for people.
 
-  - header: Featured Research
+  - header: How I Help Teams
+    description: Practical research support for teams deciding whether a new interaction concept is useful, trustworthy, usable, and worth building.
+    image: /images/icons/how-help-teams.png
+    features:
+      - title: Evaluate Before Launch
+        icon: checklist
+        details: Design studies that reveal whether AI, XR, haptic, or robotic interfaces actually improve user experience and decision quality.
+
+      - title: Make Trust Measurable
+        icon: chart-line
+        details: Translate abstract concerns such as trust, perceived agency, usefulness, and expectations into measurable research questions.
+
+      - title: Prototype the Unknown
+        icon: lightbulb
+        details: Build and test early interaction concepts when teams need evidence before committing to a full product direction.
+
+      - title: Turn Research Into Decisions
+        icon: arrow-up-right-dots
+        details: Convert findings into product implications, design recommendations, and clear next steps for stakeholders.
+
+  - header: Selected Research
+    description: Studies showing how expectations, perception, and framing shape the way people experience AI, augmentation, and haptic systems.
     image: /images/icons/research.png
-    bgImage: /images/waves-dark.svg
-    bgImageDark: /images/waves-dark.svg
     features:
       - title: |
           <span class="feature-thumb"><img src="/images/thumbnails/CHB.jpg" alt="" loading="lazy" decoding="async"></span>
@@ -72,10 +106,9 @@ highlights:
         details: Can negative descriptions harm AI effectiveness? Our research shows that performance benefits from augmentation are surprisingly resistant to this "nocebo" effect. <br><i> in ACM CHI24 </i>
         link: https://dl.acm.org/doi/10.1145/3613904.3642633
 
-  - header: Featured Prototypes
+  - header: Research Prototypes
+    description: Working systems that make abstract research questions tangible, testable, and easier to reason about.
     image: /images/icons/proto.png
-    bgImage: /images/layered-waves.svg
-    bgImageDark: /images/layered-waves.svg
     features:
       - title: AR Conversational Co-pilot
         icon: brain
@@ -174,107 +207,52 @@ highlights:
           <br><br>
           <img src="/images/papers/vest.png" loading="lazy" decoding="async" width="720" height="405" style="max-width: 100%; border-radius: 8px;">
 
-  - header: Conference Chairing & Leadership
-    image: /images/icons/chair.png
-    bgImage: /images/wavey-fingerprint.svg
-    bgImageDark: /images/wavey-fingerprint.svg
-    bgImageStyle:
-      background-repeat: repeat
-      background-size: initial
+  - header: Community & Recognition
+    description: Selected service, reviewing, and awards across the HCI, XR, haptics, and human augmentation communities.
+    image: /images/icons/community-recognition.png
     features:
-      - title: Augmented <br> Humans <br> Conference (AHs)
-        icon:
-        details: 2026 Proceedings Chair, 2025 ad hoc Proceedings Chair, 2024 Proceedings Chair, 2023 Poster Chair, 2022 Web Chair
-      - title: ACM Symposium on User Interface Software and Technology (UIST)
-        icon:
-        details: 2023 Video Chair, 2022 Video Chair
-      - title: Symposium <br> on Virtual and<br> Augmented Reality (SVR)
-        icon:
-        details: 2021 Publicity Chair
-      - title: Mensch und Computer (MuC)
-        icon:
-        details: 2022 Video Chair
-      - title: Neuroergonomics Conference
-        icon:
-        details: 2021 Public Relations
+      - title: Conference Leadership
+        icon: users
+        details: <b>AHs</b> 2022-2026, Web, Poster, and Proceedings Chair roles<br><b>UIST</b> 2022-2023 Video Chair<br><b>SVR</b> 2021 Publicity Chair<br><b>MuC</b> 2022 Video Chair<br><b>Neuroergonomics</b> 2021 Public Relations
 
-  - header: Have Reviewed for
-    image: /images/icons/review.png
-    bgImage: /images/low-poly.svg
-    bgImageDark: /images/low-poly.svg
-    bgImageStyle:
-      background-repeat: repeat
-      background-size: initial
-    features:
-      - title: Conferences
-        details:
-          - <b> CHI</b> 2022, 2023, 2024, 2025, 2026
-          - <b> UIST</b> 2023, 2024, 2025, 2026
-          - <b> TEI</b> 2023
-          - <b> DIS</b> 2023
-          - <b> AHs</b> 2021, 2022, 2023, 2024, 2025, 2026
-          - <b> MuC</b> 2022, 2023, 2024, 2025, 2026
-          - <b> WHC</b> 2021
-          - <b> ISMAR</b> 2020, 2022, 2024, 2026
-          - <b> IEEE VR</b> 2020, 2021, 2022, 2023, 2024, 2026
-          - <b> CSCW</b> 2022
-          - <b> EICS</b> 2023
-          - <b> MobileHCI</b> 2024
-          - <b> SIGGRAPH</b> 2023
+      - title: Reviewing
+        icon: clipboard-check
+        details: <b>CHI</b> 2022, 2023, 2024, 2025, 2026<br><b>UIST</b> 2023, 2024, 2025, 2026<br><b>AHs</b> 2021, 2022, 2023, 2024, 2025, 2026<br><b>ISMAR</b> 2020, 2022, 2024, 2026<br><b>IEEE VR</b> 2020, 2021, 2022, 2023, 2024, 2026<br><b>Computers in Human Behavior</b><br><b>Transactions on CHI</b> 2022, 2024<br><b>Transactions on Haptics</b> 2023, 2024, 2025
 
-      - title: Journals
-        icon:
-        details:
-          - <b> Computers in Human Behavior</b>
-          - <b> Transactions on CHI</b> 2022, 2024
-          - <b> Transactions on Haptics</b> 2023, 2024, 2025
-          - <b> IMWUT</b> 2022
-          - <b> Frontiers in Computer Science</b> 2022
-          - <b> Behaviour & Information Technology</b> 2024, 2025
-          - <b> Information Technology Journal</b> 2022
-          - <b> Computers & Graphics </b> 2025
-
-  - header: Recognition
-    description: Selected awards and community recognition
-    image: /images/icons/recognition.png
-    bgImage: /images/low-poly.svg
-    bgImageDark: /images/low-poly.svg
-    bgImageStyle:
-      background-repeat: repeat
-      background-size: initial
-    features:
-      - title: CHI 2025
+      - title: Recognition
         icon: award
-        details: Honorable Mention Award
-      - title: ISWC 2021
-        icon: award
-        details: Honorable Mention Award
-      - title: Haptics Symposium 2020
-        icon: award
-        details: Honorable Mention Award
-      - title: WHC 2019
-        icon: trophy
-        details: 1st Place, World Haptics Competition
-      - title: Petrobras 2019
-        icon: lightbulb
-        details: Inventor Award
+        details: <b>CHI 2025</b> Honorable Mention Award<br><b>ISWC 2021</b> Honorable Mention Award<br><b>Haptics Symposium 2020</b> Honorable Mention Award<br><b>WHC 2019</b> 1st Place, World Haptics Competition<br><b>Petrobras 2019</b> Inventor Award
 
-  - header: Steeven's Now
-    description: A snapshot of what I'm doing and working on NOW
+  - header: Current Focus
+    description: A snapshot of the work I am prioritizing now.
     image: /images/icons/now.png
-    bgImage: /images/endless-constellation.svg
-    bgImageDark: /images/endless-constellation.svg
-    bgImageStyle:
-      background-repeat: repeat
-      background-size: initial
     features:
-      - title: 📊 Conducting Research in HCI/UX Methods
-        icon:
+      - title: HCI/UX Methods
+        icon: chart-line
         details: I am currently conducting research on HCI and UX methods, with a focus on improving how we design, evaluate, and interpret studies of interactive technologies. This work includes meta-HCI topics such as questionnaire development, effect sizes, and methodological rigor in human-centered research.
 
-      - title: 🧭 Transitioning to Industry UX/CX Research
-        icon:
+      - title: Industry UX/CX Research
+        icon: compass
         details: I am transitioning into industry to lead UX/CX research with a focus on quantitative methods, neuroscience, and human-centered evaluation. My goal is to connect rigorous research practice with applied product, service, and customer experience decisions.
+
+  - header: Work With Me
+    description: If you are building AI, XR, haptic, robotic, or emerging-interface products, I can help turn uncertainty about people into research-backed decisions.
+    image: /images/icons/work-with-me.png
+    features:
+      - title: Start a Conversation
+        icon: at
+        details: Reach out to discuss UX research, product evaluation, emerging technology strategy, or research collaboration.
+        link: /contact/
+
+      - title: Review the Evidence
+        icon: book-open
+        details: Browse peer-reviewed studies, PDFs, preprints, and selected publications across HCI, AI, XR, haptics, and augmentation.
+        link: /publications/
+
+      - title: Download CV
+        icon: file-lines
+        details: See the full academic and professional record in one document.
+        link: /cv/steeven-villa-cv.pdf
 
 copyright: false
 footer: MIT Licensed | Copyright © 2026 Steeven Villa
