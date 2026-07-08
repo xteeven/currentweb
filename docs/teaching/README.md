@@ -56,7 +56,8 @@ const workshops = [
 
 const theses = [
   { code: 'Bachelor', title: 'Paul Thiesse — Mitigating Metacognitive Impairments in Human–AI Interaction through Targeted Interventions', year: '2026' },
-  { code: 'Einzelpraktikum', title: 'Marlene Eder — Exploring the Effects of Transcranial Direct Current Stimulation on Roughness Perception in VR', year: '2026' },
+  { code: 'Practica', title: 'Marlene Eder — Exploring the Effects of Transcranial Direct Current Stimulation on Roughness Perception in VR', year: '2026' },
+  { code: 'Master', title: 'Kimberly Eder — ERP Markers of Semantic Similarity in Discourse Completion Tasks', year: '2026' },
   { code: 'Master', title: 'Moritz Ziarko — Thermal Vision in Augmented Reality for Temperature Discrimination', year: '2026' },
   { code: 'Master', title: 'Ziyang Zhou — Exploring Sounds to Trick Our Haptic Perception', year: '2025' },
   { code: 'Bachelor', title: 'Dominic Manuel Lenz — Exploring Illusionary Temperature Sensations in Augmented Reality', year: '2025' },

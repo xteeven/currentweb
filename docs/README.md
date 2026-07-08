@@ -13,7 +13,7 @@ actions:
     link: /contact/
     type: primary
   - text: Download CV
-    link: https://posthci.com/cv/steeven-villa-cv.pdf
+    link: /cv/steeven-villa-cv.pdf
     type: secondary
     target: _blank
   - text: View Publications
