@@ -221,7 +221,7 @@
   },
   {
     "title": "Exploring Redirection and Shifting Techniques to Mask Hand Movements from Shoulder-Surfing Attacks during PIN Authentication in Virtual Reality",
-    "authors": "Yannick Weiss, Steeven Villa, Jesse W Grootjen, Matthias Hoppe, Yasin Kale, Florian Müller",
+    "authors": "Yannick Weiss, Steeven Villa, Jesse Grootjen, Matthias Hoppe, Yasin Kale, Florian Müller",
     "venue": "Proceedings of the ACM on Human-Computer Interaction (MobileHCI'24)",
     "year": 2024,
     "picture": "/images/papers/aut.png",
@@ -243,7 +243,7 @@
   },
   {
     "title": "'AI enhances our performance, I have no doubt this one will do the same': The Placebo effect is robust to negative descriptions of AI",
-    "authors": "Agnes M Kloft, Robin Welsch, Thomas Kosch, Steeven Villa",
+    "authors": "Agnes Mercedes Kloft, Robin Welsch, Thomas Kosch, Steeven Villa",
     "venue": "The ACM Conference on Human Factors in Computing Systems, CHI24",
     "year": 2024,
     "picture": "/images/papers/TeaserPlacebox.png",
@@ -287,7 +287,7 @@
   },
   {
     "title": "Would You Hold My Hand? Exploring External Observers’ Perception of Artificial Hands",
-    "authors": "Svenja Y Schött, Patricia Capsi-Morales, Steeven Villa, Andreas Butz, Cristina Piazza",
+    "authors": "Svenja Schött, Patricia Capsi-Morales, Steeven Villa, Andreas Butz, Cristina Piazza",
     "venue": "Multimodal Technologies and Interaction",
     "year": 2023,
     "picture": "/images/papers/mti.png",
@@ -298,7 +298,7 @@
   },
   {
     "title": "Towards an Implicit Metric of Sensory-Motor Accuracy: Brain Responses to Auditory Prediction Errors in Pianists",
-    "authors": "Elisabeth Pangratz; Francesco Chiossi; Steeven Villa; Klaus Gramann; Lukas Gehrke",
+    "authors": "Elisabeth Pangratz, Francesco Chiossi, Steeven Villa, Klaus Gramann, Lukas Gehrke",
     "venue": "Proceedings of the 15th Conference on Creativity and Cognition",
     "year": 2023,
     "picture": "/images/papers/TowardsMetric.png",
@@ -309,7 +309,7 @@
   },
   {
     "title": "The Placebo Effect of Human Augmentation: Anticipating Cognitive Augmentation Increases Risk-Taking Behavior",
-    "authors": "Steeven Villa; Thomas Kosch; Felix Grelka Albrecht Schmidt; Robin Welsch",
+    "authors": "Steeven Villa, Thomas Kosch, Felix Grelka, Albrecht Schmidt, Robin Welsch",
     "venue": "Journal: Computers in Human Behavior (CHB)",
     "year": 2023,
     "picture": "/images/papers/CHB.jpg",
@@ -320,7 +320,7 @@
   },
   {
     "title": "Using Pseudo-Stiffness to Enrich the Haptic Experience in Virtual Reality",
-    "authors": "Yannick Weiss; Steeven Villa; Albrecht Schmidt; Sven Mayer; Florian Müller",
+    "authors": "Yannick Weiss, Steeven Villa, Albrecht Schmidt, Sven Mayer, Florian Müller",
     "venue": "The ACM Conference on Human Factors in Computing Systems, CHI23",
     "year": 2023,
     "picture": "/images/papers/pseudostiffness.png",
@@ -331,7 +331,7 @@
   },
   {
     "title": "Understanding Perception of Human Augmentation: A Mixed-Method Study",
-    "authors": "Steeven Villa; Jasmin Niess; Takuro Nakao; Jonathan Lazar; Albrecht Schmidt; Tonja-Katrin Machulla",
+    "authors": "Steeven Villa, Jasmin Niess, Takuro Nakao, Jonathan Lazar, Albrecht Schmidt, Tonja-Katrin Machulla",
     "venue": "The ACM Conference on Human Factors in Computing Systems, CHI23",
     "year": 2023,
     "picture": "/images/papers/understanding.jpg",
@@ -342,7 +342,7 @@
   },
   {
     "title": "Extended Mid-air Ultrasound Haptics for Virtual Reality",
-    "authors": "Steeven Villa; Sven Mayer; Jess Hartcher O’brien; Albrecht Schmidt; Tonja-Katrin Machulla",
+    "authors": "Steeven Villa, Sven Mayer, Jess Hartcher-O'Brien, Albrecht Schmidt, Tonja-Katrin Machulla",
     "venue": "Proceedings of the ACM Humuman-Computer Interaction Journal",
     "year": 2022,
     "picture": "/images/papers/extended.jpg",
@@ -353,7 +353,7 @@
   },
   {
     "title": "Cobity: A Plug-And-Play Toolbox to Deliver Haptics in Virtual Reality",
-    "authors": "Villa, Steeven and Mayer, Sven",
+    "authors": "Steeven Villa, Sven Mayer",
     "venue": "Proceedings of Mensch und Computer",
     "year": 2022,
     "picture": "/images/papers/cobity.jpg",
@@ -364,7 +364,7 @@
   },
   {
     "title": "Virtual Reality Adaptation Using Electrodermal Activity to Support the User Experience",
-    "authors": "Chiossi, Francesco; Welsch, Robin; Villa, Steeven; Chuang, Lewis L.; Mayer, Sven",
+    "authors": "Francesco Chiossi, Robin Welsch, Steeven Villa, Lewis Chuang, Sven Mayer",
     "venue": "Big Data and Cognitive Computing",
     "year": 2022,
     "picture": "/images/papers/MDPIADAPT.jpg",
@@ -375,7 +375,7 @@
   },
   {
     "title": "Design of on-body tactile displays to enhance situation awareness in automated vehicles",
-    "authors": "Francesco Chiossi; Steeven Villa; Melanie Hauser; Robin Welsch; Lewis Chuang",
+    "authors": "Francesco Chiossi, Steeven Villa, Melanie Hauser, Robin Welsch, Lewis Chuang",
     "venue": "CIVEMSA",
     "year": 2022,
     "picture": "/images/papers/onbody.jpg",
@@ -386,7 +386,7 @@
   },
   {
     "title": "Designing a Physiological Loop for the Adaptation of Virtual Human Characters in a Social VR Scenario",
-    "authors": "Chiossi, Francesco; Welsch, Robin; Villa, Steeven; Chuang, Lewis L.; Mayer, Sven",
+    "authors": "Francesco Chiossi, Robin Welsch, Steeven Villa, Lewis Chuang, Sven Mayer",
     "venue": "IEE VR",
     "year": 2022,
     "picture": "/images/papers/vr-adaptation.jpg",
@@ -397,7 +397,7 @@
   },
   {
     "title": "Designing a Wearable Sensor-Fusion Toolkit for Motor Skill Learning",
-    "authors": "Eska, Bettina; Villa, Steeven; Mayer, Sven; Niess, Jasmin",
+    "authors": "Bettina Eska, Steeven Villa, Sven Mayer, Jasmin Niess",
     "venue": "Workshop on Toolkits & Wearables: Developing Toolkits for Exploring Wearable Designs.",
     "year": 2022,
     "picture": "/images/papers/eska2022designing-300x169.jpg",
@@ -408,7 +408,7 @@
   },
   {
     "title": "EMStriker: Potentials of Enhancing the Training Process of Racket-based Sports via Electrical Muscle Stimulation",
-    "authors": "Faltaous, Sarah; Hubert, Anna; Karolus, Jakob; Villa, Steeven; Kosch, Thomas; Wozniak, Pawel",
+    "authors": "Sarah Faltaous, Anna Hubert, Jakob Karolus, Steeven Villa, Thomas Kosch, Pawel Wozniak",
     "venue": "Sixteenth International Conference on Tangible, Embedded, and Embodied Interaction",
     "year": 2022,
     "picture": "/images/papers/emsstriker.jpg",
@@ -419,7 +419,7 @@
   },
   {
     "title": "Immediate Effects of Vibrotactile Biofeedback Instructions on Human Postural Control",
-    "authors": "Tannert, Isabel; Schulleri, Katrin; Michel, Youssef; Villa, Steeven; Leif, Johannsen; Hermsdorfer, Joachim; Lee, Dongheui",
+    "authors": "Isabel Tannert, Katrin Schulleri, Youssef Michel, Steeven Villa, Leif Johannsen, Joachim Hermsdorfer, Dongheui Lee",
     "venue": "43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)",
     "year": 2021,
     "picture": "/images/papers/posture.jpg",
@@ -430,7 +430,7 @@
   },
   {
     "title": "Body As Starting Point 4: Inbodied Interaction Design for Health Ownership.",
-    "authors": "mc schraefel; Josh Andrés; Aaron Tabor; Scott Bateman; Abby Wanyu Liu; Mike Jones; Kai Kunze; Elizabeth Murnane; Steeven Villa",
+    "authors": "m.c. schraefel, Josh Andrés, Aaron Tabor, Scott Bateman, Abby Wanyu Liu, Mike Jones, Kai Kunze, Elizabeth Murnane, Steeven Villa",
     "venue": "CHI EA '21",
     "year": 2021,
     "picture": "/images/papers/Inbodied.jpg",
@@ -441,7 +441,7 @@
   },
   {
     "title": "Assisting Motor Skill Transfer for Dance Students Using Wearable Feedback",
-    "authors": "Villa, Steeven; Niess, Jasmin; Eska, Bettina; Schmidt, Albrecht; Machulla, Tonja",
+    "authors": "Steeven Villa, Jasmin Niess, Bettina Eska, Albrecht Schmidt, Tonja Machulla",
     "venue": "International Symposium on Wearable Computers",
     "year": 2021,
     "picture": "/images/papers/assisting.jpg",
@@ -452,7 +452,7 @@
   },
   {
     "title": "Altering the Stiffness, Friction, and Shape Perception of Tangible Objects in Virtual Reality Using Wearable Haptics",
-    "authors": "Villa, Steeven.; Pacchierotti, C; De Tinguy, Xavier.; Maciel, Anderson.; Marchal, Maud.",
+    "authors": "Steeven Villa, Claudio Pacchierotti, Xavier de Tinguy, Anderson Maciel, Maud Marchal",
     "venue": "IEEE Transactions on Haptics.",
     "year": 2020,
     "picture": "/images/papers/altering.jpg",
@@ -463,7 +463,7 @@
   },
   {
     "title": "Touching is believing: exploring physics-based simulation and haptics to feel virtual worlds",
-    "authors": "Villa, Steeven.",
+    "authors": "Steeven Villa",
     "venue": "LUME Digital Repository.",
     "year": 2019,
     "picture": "/images/papers/heat-based.jpg",
@@ -474,7 +474,7 @@
   },
   {
     "title": "Phys-Sketch: Sketching 3D Dynamic Objects in Immersive Virtual Reality",
-    "authors": "Ticona, Jose.; Villa, Steeven.; Torchelsen, Rafael; Maciel, Anderson.; Nedel, Luciana.",
+    "authors": "Jose Ticona, Steeven Villa, Rafael Torchelsen, Anderson Maciel, Luciana Nedel",
     "venue": "Computer Graphics International .",
     "year": 2019,
     "picture": "/images/papers/phys-sketch.png",
@@ -485,7 +485,7 @@
   },
   {
     "title": "Towards Moving Virtual Arms Using Brain-Computer Interface",
-    "authors": "Salas, Jaime.; Villa, Steeven.; Maciel, Aanderson.; Nedel, Luciana.; Barone, Dante.",
+    "authors": "Jaime Salas, Steeven Villa, Anderson Maciel, Luciana Nedel, Dante Barone",
     "venue": "Computer Graphics International .",
     "year": 2019,
     "picture": "/images/papers/towards.png",
@@ -496,7 +496,7 @@
   },
   {
     "title": "Heat-based Bidirectional Phase Shifting Simulation Using Position-based Dynamics",
-    "authors": "Villa, Steeven. ; Ticona, Jose.; Torchelsen, R; Maciel, A.; Nedel, L.",
+    "authors": "Steeven Villa, Jose Ticona, Rafael Torchelsen, Anderson Maciel, Luciana Nedel",
     "venue": "Computers & Graphics .",
     "year": 2018,
     "picture": "/images/papers/heat-based.jpg",
@@ -507,7 +507,7 @@
   },
   {
     "title": "3dathlon: 3d Gestural Interfaces To Support A 3-stage Contest In Vr",
-    "authors": "Grandi, Jj; Debarba, H; Franz, J; Oliveira, V; Ticona, Jose; Souza, G; Berti, I; Villa, S. ; Maciel, A.; Nedel, L.",
+    "authors": "Jerônimo Grandi, Henrique Debarba, Juliano Franz, Victor Oliveira, Abel Ticona, Gabrielle Souza, Izadora Berti, Steeven Villa, Anderson Maciel, Luciana Nedel",
     "venue": "Ieee Conference On Virtual Reality And 3d User Interfaces .",
     "year": 2018,
     "picture": "/images/papers/3dathlon.jpg",
@@ -518,7 +518,7 @@
   },
   {
     "title": "Evaluation Of Visual, Auditory And Vibro-tactile Alerts In Supervised Interfaces",
-    "authors": "Souza, G.; Amaya, L.; Stein, V; Villa, S. ;ticona, J.; Maciel, A.; Nedel, L.",
+    "authors": "Gabrielle Almeida de Souza, Laura Amaya Torres, Vinicius Stein Dani, Steeven Villa, Abel Ticona Larico, Anderson Maciel, Luciana Nedel",
     "venue": "20th Symposium On Virtual And Augmented Reality",
     "year": 2018,
     "picture": "/images/papers/evaluating.jpg",
