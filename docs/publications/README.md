@@ -31,15 +31,8 @@ prev:
 </ClientOnly>
 
 <script setup>
-import { ref, onMounted } from 'vue'
 import PublicationList from '../.vuepress/components/PublicationList.vue'
+import publicationsData from '../.vuepress/data/publications.json'
 
-const publications = ref([])
-
-onMounted(async () => {
-  const res = await fetch('/publications.json')
-  if (res.ok) {
-    publications.value = await res.json()
-  }
-})
+const publications = publicationsData
 </script>

@@ -1,5 +1,16 @@
 [
   {
+    "title": "Inventory of User Expectations for Technology (iExpect)",
+    "authors": "Steeven Villa, Thomas Kosch, Agnes Mercedes Kloft, Jasper Quinn, Sari Kujala, Robin Welsch",
+    "venue": "Computers in Human Behavior Reports",
+    "year": 2026,
+    "picture": "/images/papers/villa-2026-inventory-user-expectations-technology-iexpect.jpg",
+    "link": "https://doi.org/10.1016/j.chbr.2026.101014",
+    "alias": "sciencedirect",
+    "abstract": "User expectations can shape how people evaluate interactive technologies before any interaction takes place. This paper presents the Inventory of User Expectations for Technology (iExpect), a validated scale for measuring pre-use expectations. Across expert review and two participant studies, the work develops a 22-item instrument with three factors: Anticipated Ease of Use, Anticipated Usefulness, and Anticipated Enjoyment. The scale helps researchers, UX professionals, and designers account for expectation-based effects during technology evaluation.",
+    "pdf": "/papers/villa-2026-inventory-user-expectations-technology-iexpect.pdf"
+  },
+  {
     "title": "Is it Me? Toward Self-Extension to AI Avatars in Virtual Reality",
     "authors": "Jieying Zhang, Steeven Villa, Abdallah El Ali",
     "venue": "Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26)",

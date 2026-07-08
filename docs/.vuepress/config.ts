@@ -70,6 +70,14 @@ export default defineUserConfig({
 
   bundler: viteBundler({
     viteOptions: {
+      build: {
+        rollupOptions: {
+          onwarn(warning, warn) {
+            if (warning.code === "INVALID_ANNOTATION") return;
+            warn(warning);
+          },
+        },
+      },
       ssr: {
         // Force naive-ui to be bundled (so its ESM build is used),
         // rather than imported as an external CJS package.
