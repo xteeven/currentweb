@@ -79,7 +79,7 @@ const theses = [
   { code: 'Bachelor', title: 'Aylin Aldemir — Transcranial Stimulation as Augmentation Technology - Placebo or Reality?', year: '2023' },
   { code: 'Bachelor', title: 'Marlene Eder — Evaluating Temperature Illusions in Virtual Reality', year: '2023' },
   { code: 'Master', title: 'Jambaldorj Ochirpurev — AI Ownership in Co-Creation (TUM Munich)', year: '2023' },
-  { code: 'Bachelor', title: 'Yasin — Proprioceptive Illusion in Virtual Reality for Enhanced Privacy', year: '2023' },
+  { code: 'Bachelor', title: 'Yasin Kale — Proprioceptive Illusion in Virtual Reality for Enhanced Privacy', year: '2023' },
   { code: 'Master', title: 'Bilel Ayech — Stretch Haptic Feedback for Smartphone Interaction', year: '2023' },
   { code: 'Bachelor', title: 'Thuy-Duong Nguyen — Creating a Taxonomy of Emotions for Vibrotactile Feedback', year: '2022' },
   { code: 'Bachelor', title: 'Robert Scholz — Detecting Implicit Bias Towards Augmented Humans', year: '2022' },
