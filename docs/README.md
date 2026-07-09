@@ -28,18 +28,22 @@ highlights:
       - title: 50+ Publications
         icon: book-open
         details: ACM, IEEE, Elsevier, Springer, and interdisciplinary venues across HCI, haptics, XR, AI, and human augmentation.
+        link: /publications/
 
       - title: Awarded Research
         icon: trophy
         details: Honorable mentions, competition awards, and recognition from CHI, ISWC, Haptics Symposium, WHC, and Petrobras.
+        link: /#community-recognition
 
       - title: Emerging Tech Evaluation
         icon: microscope
         details: Controlled studies, mixed-method UX research, neurophysiology, prototypes, and evidence for technologies before they become mainstream.
+        link: /#research-prototypes
 
       - title: Research Leadership
         icon: users
         details: Conference chairing, reviewing, mentoring, and community service across CHI, UIST, IEEE VR, AHs, ISMAR, and related venues.
+        link: /#community-recognition
 
   - header: Research Impact
     description: I translate experimental HCI research into product-relevant insight for teams building AI systems, embodied interfaces, XR experiences, and emerging interaction technologies.
@@ -231,9 +235,9 @@ highlights:
         icon: chart-line
         details: I am currently conducting research on HCI and UX methods, with a focus on improving how we design, evaluate, and interpret studies of interactive technologies. This work includes meta-HCI topics such as questionnaire development, effect sizes, and methodological rigor in human-centered research.
 
-      - title: Industry UX/CX Research
+      - title: UX/CX Research
         icon: compass
-        details: I am transitioning into industry to lead UX/CX research with a focus on quantitative methods, neuroscience, and human-centered evaluation. My goal is to connect rigorous research practice with applied product, service, and customer experience decisions.
+        details: I am leading UX/CX research with a focus on quantitative methods, neuroscience, and human-centered evaluation. My goal is to connect rigorous research practice with applied product, service, and customer experience decisions.
 
   - header: Work With Me
     description: If you are building AI, XR, haptic, robotic, or emerging-interface products, I can help turn uncertainty about people into research-backed decisions.
@@ -302,45 +306,78 @@ onMounted(() => {
   const home = document.querySelector('.vp-project-home')
   if (!home) return
 
-  const spine = document.createElement('div')
-  spine.className = 'home-progress-spine'
-  spine.setAttribute('aria-hidden', 'true')
-  home.appendChild(spine)
+  const mountSectionAnchors = () => {
+    const sectionIds = {
+      'At a Glance': 'at-a-glance',
+      'Research Impact': 'research-impact',
+      'How I Help Teams': 'how-i-help-teams',
+      'Selected Research': 'selected-research',
+      'Research Prototypes': 'research-prototypes',
+      'Community & Recognition': 'community-recognition',
+      'Current Focus': 'current-focus',
+      'Work With Me': 'work-with-me',
+    }
+
+    home.querySelectorAll('.vp-feature-wrapper').forEach((section) => {
+      const header = section.querySelector('.vp-feature-header')
+      const id = sectionIds[header?.textContent?.trim()]
+
+      if (id) section.id = id
+    })
+
+    const target = window.location.hash ? document.querySelector(window.location.hash) : null
+    if (target) requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }))
+  }
+
+  mountSectionAnchors()
 
   let ticking = false
-  const updateProgress = () => {
-    ticking = false
-    const firstSection = home.querySelector('.vp-feature-wrapper')
-    const lastSection = [...home.querySelectorAll('.vp-feature-wrapper')].at(-1)
+  let currentGlow = 0
+  let targetGlow = 0
+  let animatingGlow = false
 
-    if (!firstSection || !lastSection) return
+  const renderCtaGlow = () => {
+    currentGlow += (targetGlow - currentGlow) * 0.16
+    home.style.setProperty('--home-cta-glow', currentGlow.toFixed(4))
 
-    const homeTop = home.getBoundingClientRect().top + window.scrollY
-    const start = firstSection.getBoundingClientRect().top + window.scrollY - homeTop + 48
-    const end = lastSection.getBoundingClientRect().bottom + window.scrollY - homeTop - 96
-    const height = Math.max(1, end - start)
-    const pageY = window.scrollY + window.innerHeight * 0.5 - homeTop
-    const progress = Math.min(1, Math.max(0, (pageY - start) / height))
+    if (Math.abs(targetGlow - currentGlow) > 0.001) {
+      window.requestAnimationFrame(renderCtaGlow)
+      return
+    }
 
-    home.style.setProperty('--home-spine-start', `${Math.round(start)}px`)
-    home.style.setProperty('--home-spine-height', `${Math.round(height)}px`)
-    home.style.setProperty('--home-scroll-progress', progress.toFixed(4))
+    animatingGlow = false
   }
 
-  const queueProgress = () => {
+  const updateCtaGlow = () => {
+    ticking = false
+    const ctaCard = home.querySelector('.vp-feature-wrapper:nth-of-type(8) .vp-feature-item.link:first-child')
+
+    if (!ctaCard) return
+
+    const rect = ctaCard.getBoundingClientRect()
+    const entry = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / Math.max(220, window.innerHeight * 0.42)))
+    const centered = Math.max(0, 1 - Math.abs(rect.top + rect.height * 0.5 - window.innerHeight * 0.56) / Math.max(220, window.innerHeight * 0.34))
+    targetGlow = Math.max(entry * 0.86, centered)
+
+    if (!animatingGlow) {
+      animatingGlow = true
+      window.requestAnimationFrame(renderCtaGlow)
+    }
+  }
+
+  const queueCtaGlow = () => {
     if (ticking) return
     ticking = true
-    window.requestAnimationFrame(updateProgress)
+    window.requestAnimationFrame(updateCtaGlow)
   }
 
-  updateProgress()
-  window.addEventListener('scroll', queueProgress, { passive: true })
-  window.addEventListener('resize', queueProgress)
+  updateCtaGlow()
+  window.addEventListener('scroll', queueCtaGlow, { passive: true })
+  window.addEventListener('resize', queueCtaGlow)
 
   cleanupHomeEffects = () => {
-    window.removeEventListener('scroll', queueProgress)
-    window.removeEventListener('resize', queueProgress)
-    spine.remove()
+    window.removeEventListener('scroll', queueCtaGlow)
+    window.removeEventListener('resize', queueCtaGlow)
   }
 })
 

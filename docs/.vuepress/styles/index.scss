@@ -418,53 +418,9 @@ html {
    Home page identity pass: research-interface rhythm
    ------------------------------------------------------------------ */
 .vp-project-home {
-  --home-scroll-progress: 0;
-  --home-spine-start: 0px;
-  --home-spine-height: 100%;
+  --home-cta-glow: 0;
   position: relative;
   background: #1a1f2b;
-}
-
-.vp-project-home .home-progress-spine {
-  position: absolute;
-  top: var(--home-spine-start);
-  left: max(1.25rem, calc((100vw - 1180px) / 2 - 2.6rem));
-  z-index: 3;
-  width: 2.5rem;
-  height: var(--home-spine-height);
-  pointer-events: none;
-}
-
-.vp-project-home .home-progress-spine::before,
-.vp-project-home .home-progress-spine::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 999px;
-}
-
-.vp-project-home .home-progress-spine::before {
-  inset-block: 0;
-  width: 2px;
-  background:
-    linear-gradient(180deg, rgba(103, 232, 178, 0), rgba(103, 232, 178, 0.48), rgba(116, 169, 255, 0.44), rgba(240, 195, 109, 0.38), rgba(103, 232, 178, 0));
-  opacity: 0.5;
-  box-shadow: 0 0 18px rgba(103, 232, 178, 0.24);
-}
-
-.vp-project-home .home-progress-spine::after {
-  top: 0;
-  width: 0.92rem;
-  height: 0.92rem;
-  background:
-    radial-gradient(circle, #f7fffb 0 18%, #67e8b2 19% 46%, rgba(103, 232, 178, 0.18) 47% 100%);
-  box-shadow:
-    0 0 0 7px rgba(103, 232, 178, 0.12),
-    0 0 26px rgba(103, 232, 178, 0.56),
-    0 0 42px rgba(126, 167, 255, 0.26);
-  transform: translateX(-50%) translateY(calc(var(--home-scroll-progress) * (var(--home-spine-height) - 0.92rem)));
-  transition: transform 0.12s linear;
 }
 
 .vp-project-home .vp-hero,
@@ -525,8 +481,8 @@ html {
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(1) {
-  --home-section-accent: #60e6ad;
-  --home-section-accent-soft: rgba(96, 230, 173, 0.18);
+  --home-section-accent: #64e7b4;
+  --home-section-accent-soft: rgba(100, 231, 180, 0.18);
   background:
     linear-gradient(115deg, rgba(255, 255, 255, 0.025) 0 8%, transparent 8% 100%),
     radial-gradient(circle at 18% 6%, rgba(96, 230, 173, 0.2), transparent 28rem),
@@ -546,8 +502,8 @@ html {
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(2) {
-  --home-section-accent: #5ce0d2;
-  --home-section-accent-soft: rgba(92, 224, 210, 0.18);
+  --home-section-accent: #63dccd;
+  --home-section-accent-soft: rgba(99, 220, 205, 0.18);
   background:
     radial-gradient(circle at 8% 24%, rgba(92, 224, 210, 0.2), transparent 28rem),
     radial-gradient(circle at 86% 50%, rgba(92, 124, 255, 0.16), transparent 32rem),
@@ -571,8 +527,8 @@ html {
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(3) {
-  --home-section-accent: #73eba6;
-  --home-section-accent-soft: rgba(115, 235, 166, 0.18);
+  --home-section-accent: #f0a86d;
+  --home-section-accent-soft: rgba(240, 168, 109, 0.18);
   background:
     radial-gradient(circle at 74% 22%, rgba(136, 93, 255, 0.2), transparent 30rem),
     radial-gradient(circle at 20% 70%, rgba(115, 235, 166, 0.16), transparent 30rem),
@@ -581,7 +537,7 @@ html {
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(3)::before {
   background:
-    linear-gradient(90deg, transparent 0 12%, rgba(115, 245, 174, 0.22) 12% 12.3%, transparent 12.3% 34%, rgba(126, 187, 255, 0.18) 34% 34.3%, transparent 34.3% 100%),
+    linear-gradient(90deg, transparent 0 12%, rgba(240, 168, 109, 0.22) 12% 12.3%, transparent 12.3% 34%, rgba(184, 127, 255, 0.18) 34% 34.3%, transparent 34.3% 100%),
     repeating-linear-gradient(0deg, transparent 0 42px, rgba(255, 255, 255, 0.08) 43px 45px, transparent 46px 120px),
     radial-gradient(circle at 62% 22%, rgba(164, 130, 255, 0.28), transparent 18rem);
   background-size: 240px 100%, auto;
@@ -590,8 +546,8 @@ html {
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(4) {
-  --home-section-accent: #66d7ff;
-  --home-section-accent-soft: rgba(102, 215, 255, 0.16);
+  --home-section-accent: #f0c36d;
+  --home-section-accent-soft: rgba(240, 195, 109, 0.18);
   background:
     radial-gradient(circle at 50% 2%, rgba(102, 215, 255, 0.16), transparent 34rem),
     radial-gradient(circle at 86% 82%, rgba(246, 190, 103, 0.12), transparent 30rem),
@@ -600,9 +556,9 @@ html {
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(4)::before {
   background:
-    repeating-linear-gradient(90deg, transparent 0 22px, rgba(102, 225, 255, 0.16) 23px 25px, transparent 26px 72px),
-    repeating-linear-gradient(0deg, transparent 0 28px, rgba(246, 202, 120, 0.1) 29px 31px, transparent 32px 86px),
-    radial-gradient(circle at 50% 24%, rgba(102, 225, 255, 0.24), transparent 18rem);
+    repeating-linear-gradient(90deg, transparent 0 22px, rgba(240, 195, 109, 0.16) 23px 25px, transparent 26px 72px),
+    repeating-linear-gradient(0deg, transparent 0 28px, rgba(255, 157, 122, 0.1) 29px 31px, transparent 32px 86px),
+    radial-gradient(circle at 50% 24%, rgba(255, 209, 122, 0.24), transparent 18rem);
   mask-image: radial-gradient(ellipse at 52% 32%, black 0%, transparent 86%);
   opacity: 0.42;
 }
@@ -627,8 +583,8 @@ html {
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(6) {
-  --home-section-accent: #f0c36d;
-  --home-section-accent-soft: rgba(240, 195, 109, 0.18);
+  --home-section-accent: #f2c46e;
+  --home-section-accent-soft: rgba(242, 196, 110, 0.2);
   background:
     radial-gradient(circle at 18% 24%, rgba(240, 195, 109, 0.16), transparent 30rem),
     radial-gradient(circle at 78% 18%, rgba(152, 105, 255, 0.2), transparent 34rem),
@@ -647,8 +603,8 @@ html {
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(7) {
-  --home-section-accent: #62e1b5;
-  --home-section-accent-soft: rgba(98, 225, 181, 0.18);
+  --home-section-accent: #c8d879;
+  --home-section-accent-soft: rgba(200, 216, 121, 0.18);
   background:
     radial-gradient(circle at 16% 18%, rgba(98, 225, 181, 0.18), transparent 30rem),
     radial-gradient(circle at 82% 74%, rgba(126, 167, 255, 0.14), transparent 34rem),
@@ -657,16 +613,16 @@ html {
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(7)::before {
   background:
-    repeating-linear-gradient(90deg, transparent 0 34px, rgba(98, 240, 190, 0.14) 35px 37px, transparent 38px 112px),
-    repeating-linear-gradient(0deg, transparent 0 54px, rgba(126, 187, 255, 0.13) 55px 57px, transparent 58px 132px),
-    radial-gradient(circle at 72% 52%, rgba(126, 187, 255, 0.24), transparent 21rem);
+    repeating-linear-gradient(90deg, transparent 0 34px, rgba(200, 216, 121, 0.14) 35px 37px, transparent 38px 112px),
+    repeating-linear-gradient(0deg, transparent 0 54px, rgba(98, 240, 190, 0.12) 55px 57px, transparent 58px 132px),
+    radial-gradient(circle at 72% 52%, rgba(255, 209, 122, 0.22), transparent 21rem);
   mask-image: radial-gradient(ellipse at 50% 44%, black 0%, transparent 86%);
   opacity: 0.4;
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(8) {
-  --home-section-accent: #5fe0a9;
-  --home-section-accent-soft: rgba(95, 224, 169, 0.2);
+  --home-section-accent: #ffb176;
+  --home-section-accent-soft: rgba(255, 177, 118, 0.2);
   background:
     radial-gradient(circle at 28% 18%, rgba(95, 224, 169, 0.18), transparent 30rem),
     radial-gradient(circle at 74% 24%, rgba(140, 100, 255, 0.2), transparent 34rem),
@@ -675,10 +631,10 @@ html {
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(8)::before {
   background:
-    radial-gradient(circle at 50% 18%, rgba(95, 238, 180, 0.3), transparent 20rem),
-    repeating-linear-gradient(90deg, transparent 0 48px, rgba(95, 238, 180, 0.13) 49px 51px, transparent 52px 132px),
-    repeating-linear-gradient(135deg, transparent 0 32px, rgba(152, 112, 255, 0.14) 33px 35px, transparent 36px 112px),
-    radial-gradient(circle at 74% 32%, rgba(152, 112, 255, 0.24), transparent 20rem);
+    radial-gradient(circle at 50% 18%, rgba(255, 177, 118, 0.28), transparent 20rem),
+    repeating-linear-gradient(90deg, transparent 0 48px, rgba(255, 177, 118, 0.12) 49px 51px, transparent 52px 132px),
+    repeating-linear-gradient(135deg, transparent 0 32px, rgba(116, 232, 190, 0.12) 33px 35px, transparent 36px 112px),
+    radial-gradient(circle at 74% 32%, rgba(152, 112, 255, 0.22), transparent 20rem);
   mask-image: radial-gradient(ellipse at 50% 42%, black 0%, transparent 88%);
   opacity: 0.42;
 }
@@ -891,8 +847,28 @@ html {
 
 .vp-project-home > .vp-feature-wrapper:nth-of-type(8) .vp-feature-item.link:first-child {
   background:
-    radial-gradient(circle at 50% 0%, rgba(95, 224, 169, 0.18), transparent 12rem),
+    radial-gradient(circle at 50% 0%, rgba(255, 177, 118, calc(var(--home-cta-glow) * 0.32)), transparent 14rem),
+    radial-gradient(circle at 22% 100%, rgba(95, 224, 169, calc(var(--home-cta-glow) * 0.18)), transparent 12rem),
+    radial-gradient(circle at 50% 0%, rgba(255, 177, 118, 0.16), transparent 12rem),
     linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035));
+  border-color: color-mix(in srgb, var(--home-section-accent) calc(30% + var(--home-cta-glow) * 62%), rgba(255, 255, 255, 0.12));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.06),
+    0 16px 34px rgba(0, 0, 0, 0.12),
+    0 0 calc(var(--home-cta-glow) * 42px) rgba(255, 177, 118, 0.46),
+    0 0 calc(var(--home-cta-glow) * 76px) rgba(95, 224, 169, 0.22);
+}
+
+.vp-project-home > .vp-feature-wrapper:nth-of-type(8) .vp-feature-item.link:first-child::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 245, 224, 0.34), rgba(255, 177, 118, 0.24) 18%, transparent 48%),
+    linear-gradient(180deg, rgba(255, 177, 118, 0.14), transparent);
+  opacity: var(--home-cta-glow);
+  pointer-events: none;
 }
 
 /* Final contrast pass: make progression, texture, and section identity legible */
@@ -978,57 +954,64 @@ html {
   background:
     linear-gradient(115deg, rgba(255, 255, 255, 0.08) 0 8%, transparent 8% 100%),
     radial-gradient(circle at 18% 6%, rgba(100, 255, 195, 0.34), transparent 32rem),
-    radial-gradient(circle at 92% 0%, rgba(145, 132, 255, 0.32), transparent 36rem),
-    linear-gradient(180deg, #334150 0%, #1c2531 100%);
+    radial-gradient(circle at 92% 0%, rgba(255, 190, 122, 0.24), transparent 36rem),
+    linear-gradient(180deg, #354452 0%, #1d2830 100%);
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(2) {
   background:
     radial-gradient(circle at 8% 24%, rgba(92, 244, 225, 0.36), transparent 32rem),
-    radial-gradient(circle at 86% 50%, rgba(100, 145, 255, 0.3), transparent 36rem),
-    linear-gradient(160deg, #1d4541 0%, #1d3350 58%, #192330 100%);
+    radial-gradient(circle at 86% 50%, rgba(255, 188, 117, 0.18), transparent 34rem),
+    radial-gradient(circle at 78% 14%, rgba(100, 145, 255, 0.22), transparent 36rem),
+    linear-gradient(160deg, #1d4541 0%, #20394d 58%, #1a2630 100%);
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(3) {
   background:
-    radial-gradient(circle at 74% 22%, rgba(164, 130, 255, 0.36), transparent 34rem),
-    radial-gradient(circle at 20% 70%, rgba(115, 245, 174, 0.28), transparent 34rem),
-    linear-gradient(180deg, #3a2850 0%, #1d2330 100%);
+    radial-gradient(circle at 74% 22%, rgba(255, 177, 118, 0.34), transparent 34rem),
+    radial-gradient(circle at 18% 72%, rgba(155, 116, 255, 0.28), transparent 34rem),
+    radial-gradient(circle at 18% 18%, rgba(115, 245, 174, 0.16), transparent 28rem),
+    linear-gradient(180deg, #4a2f43 0%, #202331 100%);
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(4) {
   background:
-    radial-gradient(circle at 50% 2%, rgba(102, 225, 255, 0.32), transparent 36rem),
-    radial-gradient(circle at 86% 82%, rgba(255, 209, 122, 0.22), transparent 32rem),
-    linear-gradient(180deg, #243d5a 0%, #1a2532 100%);
+    radial-gradient(circle at 50% 2%, rgba(255, 211, 128, 0.32), transparent 36rem),
+    radial-gradient(circle at 86% 82%, rgba(255, 139, 116, 0.2), transparent 32rem),
+    radial-gradient(circle at 16% 74%, rgba(102, 225, 255, 0.16), transparent 30rem),
+    linear-gradient(180deg, #3d3547 0%, #1d2632 100%);
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(5) {
   background:
-    radial-gradient(circle at 18% 14%, rgba(95, 238, 180, 0.26), transparent 36rem),
+    radial-gradient(circle at 18% 14%, rgba(95, 238, 180, 0.2), transparent 36rem),
+    radial-gradient(circle at 46% 86%, rgba(255, 168, 116, 0.14), transparent 30rem),
     radial-gradient(circle at 86% 24%, rgba(151, 112, 255, 0.38), transparent 38rem),
     linear-gradient(180deg, #273452 0%, #1a2432 100%);
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(6) {
   background:
-    radial-gradient(circle at 18% 24%, rgba(255, 209, 122, 0.34), transparent 34rem),
-    radial-gradient(circle at 78% 18%, rgba(164, 120, 255, 0.32), transparent 36rem),
-    linear-gradient(180deg, #443249 0%, #1d2330 100%);
+    radial-gradient(circle at 18% 24%, rgba(255, 209, 122, 0.4), transparent 34rem),
+    radial-gradient(circle at 80% 18%, rgba(255, 142, 116, 0.24), transparent 34rem),
+    radial-gradient(circle at 78% 72%, rgba(164, 120, 255, 0.24), transparent 36rem),
+    linear-gradient(180deg, #4d3542 0%, #211f2d 100%);
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(7) {
   background:
-    radial-gradient(circle at 16% 18%, rgba(98, 240, 190, 0.32), transparent 34rem),
-    radial-gradient(circle at 82% 74%, rgba(126, 187, 255, 0.28), transparent 36rem),
-    linear-gradient(180deg, #1d453f 0%, #1a2432 100%);
+    radial-gradient(circle at 16% 18%, rgba(200, 216, 121, 0.3), transparent 34rem),
+    radial-gradient(circle at 82% 74%, rgba(98, 240, 190, 0.24), transparent 34rem),
+    radial-gradient(circle at 86% 20%, rgba(255, 190, 122, 0.16), transparent 36rem),
+    linear-gradient(180deg, #344338 0%, #1a2630 100%);
 }
 
 .vp-project-home .vp-feature-wrapper:nth-of-type(8) {
   background:
-    radial-gradient(circle at 28% 18%, rgba(95, 238, 180, 0.32), transparent 34rem),
-    radial-gradient(circle at 74% 24%, rgba(152, 112, 255, 0.36), transparent 36rem),
-    linear-gradient(180deg, #28334f 0%, #1a2432 100%);
+    radial-gradient(circle at 26% 18%, rgba(255, 177, 118, 0.3), transparent 34rem),
+    radial-gradient(circle at 72% 24%, rgba(152, 112, 255, 0.28), transparent 36rem),
+    radial-gradient(circle at 34% 82%, rgba(95, 238, 180, 0.2), transparent 32rem),
+    linear-gradient(180deg, #3b344a 0%, #1a2632 100%);
 }
 
 .vp-project-home .vp-feature-item {
@@ -1054,10 +1037,6 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .vp-project-home .vp-feature-wrapper::before {
     animation: none;
-  }
-
-  .vp-project-home .home-progress-spine::after {
-    transition: none;
   }
 }
 
@@ -1088,6 +1067,8 @@ html {
 
 @media (max-width: 959px) {
   .vp-project-home > .vp-feature-wrapper:nth-of-type(1) .vp-features,
+  .vp-project-home > .vp-feature-wrapper:nth-of-type(2) .vp-features,
+  .vp-project-home > .vp-feature-wrapper:nth-of-type(3) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(4) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(5) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(6) .vp-features,
@@ -1127,11 +1108,15 @@ html {
 
 @media (max-width: 719px) {
   .vp-project-home .vp-feature {
+    width: min(100%, calc(100vw - 28px));
     max-width: calc(100vw - 28px);
+    overflow: hidden;
   }
 
-  .vp-project-home .home-progress-spine {
-    display: none;
+  .vp-project-home .vp-features,
+  .vp-project-home .vp-feature-item {
+    width: 100%;
+    min-width: 0;
   }
 
   .vp-project-home .vp-feature-wrapper::before {
@@ -1139,12 +1124,21 @@ html {
   }
 
   .vp-project-home > .vp-feature-wrapper:nth-of-type(1) .vp-features,
+  .vp-project-home > .vp-feature-wrapper:nth-of-type(2) .vp-features,
+  .vp-project-home > .vp-feature-wrapper:nth-of-type(3) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(4) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(5) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(6) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(7) .vp-features,
   .vp-project-home > .vp-feature-wrapper:nth-of-type(8) .vp-features {
     grid-template-columns: 1fr;
+  }
+
+  .vp-project-home > .vp-feature-wrapper:nth-of-type(2) .vp-features,
+  .vp-project-home > .vp-feature-wrapper:nth-of-type(3) .vp-features {
+    width: 100%;
+    min-width: 0;
+    gap: 0.85rem;
   }
 
   .vp-project-home > .vp-feature-wrapper:nth-of-type(1) .vp-feature-item {
