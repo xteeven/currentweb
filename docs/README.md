@@ -259,7 +259,11 @@ footer: MIT Licensed | Copyright © 2026 Steeven Villa
 ---
 
 <script setup>
-if (typeof window !== 'undefined') {
+import { onMounted, onUnmounted } from 'vue'
+
+let cleanupHomeEffects = () => {}
+
+onMounted(() => {
   const loadVideo = (video) => {
     if (video.dataset.loaded === 'true') return
 
@@ -294,5 +298,53 @@ if (typeof window !== 'undefined') {
   }
 
   requestAnimationFrame(mountLazyVideos)
-}
+
+  const home = document.querySelector('.vp-project-home')
+  if (!home) return
+
+  const spine = document.createElement('div')
+  spine.className = 'home-progress-spine'
+  spine.setAttribute('aria-hidden', 'true')
+  home.appendChild(spine)
+
+  let ticking = false
+  const updateProgress = () => {
+    ticking = false
+    const firstSection = home.querySelector('.vp-feature-wrapper')
+    const lastSection = [...home.querySelectorAll('.vp-feature-wrapper')].at(-1)
+
+    if (!firstSection || !lastSection) return
+
+    const homeTop = home.getBoundingClientRect().top + window.scrollY
+    const start = firstSection.getBoundingClientRect().top + window.scrollY - homeTop + 48
+    const end = lastSection.getBoundingClientRect().bottom + window.scrollY - homeTop - 96
+    const height = Math.max(1, end - start)
+    const pageY = window.scrollY + window.innerHeight * 0.5 - homeTop
+    const progress = Math.min(1, Math.max(0, (pageY - start) / height))
+
+    home.style.setProperty('--home-spine-start', `${Math.round(start)}px`)
+    home.style.setProperty('--home-spine-height', `${Math.round(height)}px`)
+    home.style.setProperty('--home-scroll-progress', progress.toFixed(4))
+  }
+
+  const queueProgress = () => {
+    if (ticking) return
+    ticking = true
+    window.requestAnimationFrame(updateProgress)
+  }
+
+  updateProgress()
+  window.addEventListener('scroll', queueProgress, { passive: true })
+  window.addEventListener('resize', queueProgress)
+
+  cleanupHomeEffects = () => {
+    window.removeEventListener('scroll', queueProgress)
+    window.removeEventListener('resize', queueProgress)
+    spine.remove()
+  }
+})
+
+onUnmounted(() => {
+  cleanupHomeEffects()
+})
 </script>
