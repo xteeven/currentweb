@@ -326,10 +326,36 @@ onMounted(() => {
     })
 
     const target = window.location.hash ? document.querySelector(window.location.hash) : null
-    if (target) requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }))
+    if (target) requestAnimationFrame(() => scrollToHomeSection(target, false))
+  }
+
+  const scrollToHomeSection = (target, smooth = true) => {
+    const navbar = document.querySelector('.vp-navbar')
+    const offset = (navbar?.getBoundingClientRect().height || 0) + 16
+    const top = target.getBoundingClientRect().top + window.scrollY - offset
+
+    window.scrollTo({
+      top,
+      behavior: smooth && !window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'auto',
+    })
+  }
+
+  const handleHomeAnchorClick = (event) => {
+    const link = event.target.closest('a[href^="/#"]')
+    if (!link) return
+
+    const hash = new URL(link.href, window.location.origin).hash
+    const target = hash ? document.querySelector(hash) : null
+
+    if (!target) return
+
+    event.preventDefault()
+    window.history.pushState(null, '', hash)
+    scrollToHomeSection(target)
   }
 
   mountSectionAnchors()
+  home.addEventListener('click', handleHomeAnchorClick)
 
   let ticking = false
   let currentGlow = 0
@@ -378,6 +404,7 @@ onMounted(() => {
   cleanupHomeEffects = () => {
     window.removeEventListener('scroll', queueCtaGlow)
     window.removeEventListener('resize', queueCtaGlow)
+    home.removeEventListener('click', handleHomeAnchorClick)
   }
 })
 
